@@ -1,0 +1,114 @@
+/* Using Tutorial: https://www.youtube.com/watch?v=MXrtXg1kpVs by Julio Codes*/
+
+.faq-container {
+    padding: 10vh 0 10vh 0;
+    background-image: url('./../../assets/wallpaper-faq.jpg');
+    min-height: 75vh;
+    width: 100vw;
+}
+
+.faq-container > h1 {
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+.accordion {
+    width: 100%;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.accordion-item {
+    background-color: #283042;
+    border-radius: 0.4rem;
+    -o-border-radius: 0.4rem;
+    -ms-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+    -o-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+    -ms-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.accordion-link {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none !important;
+    background-color: #283042;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link:hover {
+    color: white;
+}
+
+.accordion-link i {
+    color: #e7d5ff;
+    padding: 0.5rem;
+}
+
+.accordion-link .ion-md-remove {
+    display: none;
+}
+
+.answer {
+    max-height: 0;
+    overflow: auto;
+    position: relative;
+    background-color: #212838;
+    transition: max-height 0.65s;
+    -o-transition: max-height 0.65s;
+    -ms-transition: max-height 0.65s;
+    -moz-transition: max-height 0.65s;
+    -webkit-transition: max-height 0.65s;
+}
+
+.answer::before {
+    content: "";
+    position: absolute;
+    width: 0.6rem;
+    height: 90%;
+    background-color: teal;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.answer p {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.4rem;
+    padding: 2rem;
+}
+
+.accordion-item:target .answer {
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link .ion-md-add {
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove {
+    display: block;
+}
+
+@media only screen and (max-width: 680px) {
+    .faq-container {
+        background-image: url("../../assets/wallpaper-faq-phone.jpg");
+    }
+}

@@ -1,0 +1,105 @@
+.contact-me-container {
+    background-color: #E9E9E9;
+    display:inline-block;
+    padding-top: 20vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.contact-me-col-left header {
+    color: black;
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+
+.container > p {
+    color: inherit;
+    font-size: 16;
+}
+
+.summary {
+    justify-content: center;
+    text-align: center;
+    /*
+    animation: slidein 0.5s ease forwards 0s;
+    -o-animation: slidein 0.5s ease forwards 0s;
+    -ms-animation: slidein 0.5s ease forwards 0s;
+    -moz-animation: slidein 0.5s ease forwards 0s;
+    -webkit-animation: slidein 0.5s ease forwards 0s;
+    */
+}
+
+.summary > img {
+    margin: 10px 0 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*
+    opacity: 0;
+    animation: showup 0.5s ease forwards 2s;
+    -o-animation: showup 0.5s ease forwards 2s;
+    -ms-animation: showup 0.5s ease forwards 2s;
+    -moz-animation: showup 0.5s ease forwards 2s;
+    -webkit-animation: showup 0.5s ease forwards 2s;
+    */
+}
+
+.contact-list > li {
+    color: inherit;
+    list-style-type: none;
+    /*
+    opacity: 0;
+    animation: showup 0.2s ease forwards 0.1s;
+    -o-animation: showup 0.2s ease forwards 0.1s;
+    -ms-animation: showup 0.2s ease forwards 0.1s;
+    -moz-animation: showup 0.2s ease forwards 0.1s;
+    -webkit-animation: showup 0.2s ease forwards 0.1s;
+    */
+}
+
+.signature {
+    font-family: 'Cookie', cursive;
+    font-size: 3rem;
+    /*
+    opacity: 0%;
+    animation: showup 1s ease forwards 1s;
+    -o-animation: showup 1s ease forwards 1s;
+    -ms-animation: showup 1s ease forwards 1s;
+    -moz-animation: showup 1s ease forwards 1s;
+    -webkit-animation: showup 1s ease forwards 1s;
+    */
+}
+
+.contact-me-col-left {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+.contact-me-col-right {
+    display: flex;
+    justify-content: center;
+}
+
+/* For Monitors and Large Displays */
+@media screen and (min-width: 1024px) {
+    .contact-me-col-left {
+        padding-left: 10vw;
+        text-align: left;
+    }
+    .contact-me-col-right {
+        padding-right: 10vw;
+    }
+    .summary {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .contact-me-col-left {
+        padding-left: 20vw;
+    }
+    .contact-me-col-right {
+        padding-right: 20vw;
+    }
+}

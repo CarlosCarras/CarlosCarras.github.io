@@ -55,13 +55,15 @@ function Home() {
                         </svg>
                     </h1>
 
-                    <h2 id="title-caption">University of</h2>
-                    <h2 id="title-caption"><span>&nbsp;Florida</span></h2>
+                    <h2 id="title-caption">Georgia Institute of</h2>
+                    <h2 id="title-caption"><span>&nbsp;Technology</span></h2>
+                    <br/><br/>
+                    <h4 id="title-caption-append">Robotics PhD Student (Expected May 2026)</h4>
 
-                    <h5 id="degree-list"><span className="bold-text font-size-1pt2em">Expected May 2021</span><br/>
+                    <h5 id="degree-list"><span className="bold-text font-size-1pt2em">University of Florida</span><br/>
                         <ul id="degree-list-items">
-                            <li> Bachelor of Science, Mechanical Engineering</li>
-                            <li> Bachelor of Science, Computer Engineering</li>
+                            <li> B.S. Mechanical Engineering, 2021</li>
+                            <li> B.S. Computer Engineering, 2021</li>
                         </ul>
                     </h5>
                 </header>
@@ -82,23 +84,20 @@ function Home() {
                     <div className="two-col-format-column">
                         <div className="about-me-text">
 
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            My name is Carlos Carrasquillo, and I was born in Canovanas, Puerto Rico. My dad, who was a licensed recreational pilot at the time, exposed me to planes at a young age. I developed an interest
-                            for mechanical systems by learning about the intricacies of how aircraft worked. In high school, I was exposed to computer science via an introductory course, which sparked my interest in software engineering.
-                            I later enrolled into the University of Florida with the goal of pursuing mechanical engineering. After being inspired by some electrical engineering classes, I picked up a second degree in computer engineering &nbsp;
+                            My name is Carlos Carrasquillo, and I am first-year Robotics Ph.D. student at Georgia Tech. I enjoy anything and everything engineering, 
+                            including mechatronics, artificial intelligence, and control systems theory. You can read about what I have been up to in the <a href="./Projects" style={{color:"white"}}>Projects</a> page &nbsp;
 
                             <span data-tip data-for='dual-degree-info'>
                                 <i className="fa fa-info-circle" style={{color: 'white'}}></i>
                             </span>
                             <ReactTooltip id='dual-degree-info' delayHide={500} type='info' effect='solid' place={'right'}>
-                                <span style={{textIndent:"0px"}}>For more info on this decision, click <a href="./FAQ#question1" style={{color:"white"}}>here</a>.</span>
+                                <span style={{textIndent:"0px"}}>Click <a href="./Projects" style={{color:"white"}}>here</a> to view the Projects page.</span>
                             </ReactTooltip> .
                         </div>
                         <br/>
                         <div className="about-me-text">
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            At the University of Florida, I spend my time working on undergraduate research, mechanical design teams, and personal projects. My passion for teaching others has also led me to become a TA for various courses under the Mechanical and
-                            Aerospace Engineering Department. I hope that someday, my work in engineering will inspire others and benefit the generations to come.
+                            In my free tine, I enjoy playing drums, basketball, rock climbing, biking, and longboarding. 
+                            Feel free to reach out to me if you have any questions about what I do, or even if you just want to chat.
                         </div>
                     </div>
                 </div>

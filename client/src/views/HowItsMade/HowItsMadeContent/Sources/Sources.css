@@ -1,0 +1,10 @@
+.source-list {
+    padding: 0 20vw 50px;
+}
+
+.sources-section > h1 {
+    font-size: 3em;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 5vh 8vh 5vh;
+}

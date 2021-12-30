@@ -1,0 +1,39 @@
+.howitsmade-container {
+    background-color: #E9E9E9;
+    display:inline-block;
+    min-height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.howitsmade-container > h1 {
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 5vh 8vh 5vh;
+}
+
+.howitsmade-container > p {
+    padding: 0 8vw 0 8vw;
+    font-size: 1rem;
+}
+
+.howitsmade-container > .button-group {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.github-repo-logo-color {
+    fill: #ffffff;
+}
+
+
+.howitsmade-scroll-link {
+    color: #007bff;
+}
+.howitsmade-scroll-link:hover {
+    color: #0056b3;
+}

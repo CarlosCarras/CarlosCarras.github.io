@@ -1,0 +1,45 @@
+.semester-section-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0 20px 0;
+}
+
+.semeser-section {
+    padding: 20px 40px 50px;
+}
+
+.semester-course-list {
+    padding-left: 40px;
+}
+
+.credit-label {
+    float: left;
+}
+
+.credit-number {
+    float: left;
+    padding-left: 40px;
+}
+
+.credit-total {
+    padding-left: 48px;
+    font-weight: bold;
+}
+
+.four-year-plan-text {
+      padding-left: 20px;
+}
+
+.section-content .two-col-format-column li {
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+.section-content .two-col-format-column li::before {
+    content: "\2013";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

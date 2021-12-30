@@ -1,0 +1,59 @@
+.resume-page-container {
+    padding: 10vh 0 10vh 0;
+    background-image: url("../../assets/wallpaper-resume.jpg");
+    min-height: 75vh;
+    width: 100vw;
+}
+.resume-page-container > h1 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 8vh;
+    box-sizing: border-box;
+}
+
+.resume-page-container > .paper {
+    position: relative;
+    display: inline-block;
+    width: 90vw;
+    max-width: 1024px;
+    background: rgba(255,255,255,0.8);
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    box-shadow: 0px 0px 5px 0px #888;
+    -o-box-shadow: 0px 0px 5px 0px #888;
+    -ms-box-shadow: 0px 0px 5px 0px #888;
+    -moz-box-shadow: 0px 0px 5px 0px #888;
+    -webkit-box-shadow: 0px 0px 5px 0px #888;
+    animation: slideup 1.5s;
+    -o-animation: slideup 1.5s;
+    -ms-animation: slideup 1.5s;
+    -moz-animation: slideup 1.5s;
+    -webkit-animation: slideup 1.5s;
+}
+
+.resume-page-container > .button-group {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8vh;
+}
+
+.resume-page-container > .button-group Button {
+    color: white;
+}
+
+img.resumeImage {
+    width: 100%;
+}
+
+/* For Smartphone viewing */
+@media (max-width: 1024px) {
+  .sticky {
+    display: none;
+  }
+}

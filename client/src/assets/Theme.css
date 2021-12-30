@@ -39,6 +39,10 @@
     font-size: 2em;
 }
 
+.normal-text {
+  font-weight: normal;
+}
+
 .bold-text {
     font-weight: bold;
 }
@@ -65,6 +69,7 @@
   background: #ffc;
   box-shadow: 0px 0px 5px 0px #888;
   overflow: hidden;
+  z-index: 10;
 }
 
 .sticky-text {

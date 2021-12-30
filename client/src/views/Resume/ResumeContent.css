@@ -1,0 +1,99 @@
+.paper-content {
+    position: relative;
+}
+
+.paper-content > .header {
+    margin-top: 40px;
+}
+
+.name {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info-content {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.section {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.section-header {
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.section-content {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.entry {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.entry-name, .entry-date {
+    text-align: left;
+}
+
+.entry-name{
+    flex-grow: 7;
+}
+
+.entry-date{
+    flex-grow: 1;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.resume-text {
+    font-size: 1rem;
+}
+
+.dotted-bullet {
+    height: 0.25rem;
+    width: 0.25rem;
+    transform: translate(0, 200%);
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background: black;
+    border-radius: 50%;
+}
+
+.divider-line {
+    border-bottom: 2px solid navy;
+}
+
+.course-list-ul li {
+    list-style-type: none;
+    padding-left: 50px;
+}
+
+.course-list-ul li::before {
+    content: "\2013";
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.entry-name > a {
+    cursor: pointer;
+}
+
+#coursework-info {
+     pointer-events: auto;
+     &:hover {
+        visibility: visible;
+        opacity: 1;
+     }
+}

@@ -47,7 +47,7 @@
     color: white;
     position: relative;
     text-align: left;
-    margin-top: 25vh;
+    margin-top: 12vh;
     /*
     opacity: 0%;
     animation: showup 1s ease forwards 5.2s;
@@ -56,6 +56,14 @@
     -moz-animation: showup 1s ease forwards 5.2s;
     -webkit-animation: showup 1s ease forwards 5.2s;
     */
+}
+.section1 > header > h4 {
+  font-size: 1em;
+  position: relative;
+  display: block;
+  color: white;
+  float: left;
+  padding-left: 1em;
 }
 
 .section2 {
@@ -294,10 +302,9 @@
 /* End of Tutorial */
 
 #title-caption {
-    display: inline-block;
-    overflow: hidden;
-    white-space: nowrap;
-    float: left;
+  overflow: hidden;
+  white-space: nowrap;
+  float: left;
 }
 
 #title-caption:first-of-type {
@@ -313,7 +320,7 @@
 
 
 #title-caption:last-of-type span {
-    color: orange;
+    color: #B3A369;
     margin-left:-355px;
     animation: slidein 3s ease forwards 0.4s;
     -o-animation: slidein 3s ease forwards 0.4s;
