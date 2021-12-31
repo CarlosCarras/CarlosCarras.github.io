@@ -12,7 +12,7 @@ function ResumeContent() {
                     <div className="dotted-bullet"></div>
                     <h2 className="info-content tnr">Email: ccarrasquillo3@gatech.edu</h2>
                     <div className="dotted-bullet"></div>
-                    <h2 className="info-content tnr">Domain: http://www.CarlosCarras.tech</h2>
+                    <h2 className="info-content tnr">Domain: http://www.carloscarras.tech</h2>
                 </div>
             </div>
 

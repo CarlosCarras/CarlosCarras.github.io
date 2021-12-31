@@ -109,7 +109,7 @@ function Home() {
                         </div>
                         <br/>
                         <div className="about-me-text">
-                            In my free tine, I enjoy playing drums, basketball, rock climbing, biking, and longboarding. 
+                            In my free time, I enjoy playing drums, basketball, rock climbing, biking, and longboarding. 
                             Feel free to reach out to me if you have any questions about what I do, or even if you just want to chat.
                         </div>
                     </div>

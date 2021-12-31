@@ -42,7 +42,7 @@ class FAQ extends React.Component {
                         <div className="answer">
                             <p>
                                 I am extremely passionate about music, in part because I have been a drummer since I was 8. I also enjoy playing 
-                                and watching basketball, going rock climbing, bike, longboarding, and weightlifting regularly. I'm starting to get
+                                and watching basketball, going rock climbing, biking, longboarding, and weightlifting regularly. I'm starting to get
                                 into playing volleyball and tennis, so let me know if you live in the Atlanta area and have some spare time!
                             </p>
                         </div>
@@ -59,7 +59,7 @@ class FAQ extends React.Component {
                                 <br/>
                                 <br/>
                                 If you visited this website before 2022, you may have noticed that my previous answer was MATLAB. 
-                                Any while MATLAB remains my favorite for RandD, it falls short in two fronts: (1) the Object-Oriented 
+                                And while MATLAB remains my favorite for R&amp;D, it falls short in two fronts: (1) the Object-Oriented 
                                 structure, and (2) the IDE. Python does most things that MATLAB can do, and has particularly friendly 
                                 OOP conventions. It is also entirely open-source, and supports the most common ML libraries.
                                 <br/>

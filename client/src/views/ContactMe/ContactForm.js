@@ -54,16 +54,16 @@ class App extends Component {
 
         switch (name) {
             case "firstName":
-                formErrors.firstName = value.length < 3 ? "minimum 3 characaters required" : "";
+                formErrors.firstName = value.length < 3 ? "minimum 3 characters required" : "";
             break;
             case "lastName":
-                formErrors.lastName = value.length < 3 ? "minimum 3 characaters required" : "";
+                formErrors.lastName = value.length < 3 ? "minimum 3 characters required" : "";
             break;
             case "email":
                 formErrors.email = emailRegex.test(value) ? "" : "invalid email address";
             break;
             case "message":
-                formErrors.message = value.length < 10 ? "minimum 10 characaters required" : "";
+                formErrors.message = value.length < 10 ? "minimum 10 characters required" : "";
             break;
             default:
             break;
