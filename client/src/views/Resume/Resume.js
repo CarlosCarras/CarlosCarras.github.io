@@ -15,19 +15,17 @@ class Resume extends React.Component {
                 <img src={ResumeImage} alt="carlos\'s resume" className="resumeImage"/>
             )
         }
-        else {
-            return (
-                <div className="paper">
-                    <ResumeContent/>
-                </div>
-            )
-        }
+        return (
+            <div className="paper">
+                <ResumeContent/>
+            </div>
+        )
     }
 
     render() {
         return(
           <div className="resume-page-container parallax">
-              <h1>R&eacute;sum&eacute;</h1>
+              <h1>Resume</h1>
 
               <div className="button-group">
                   <a href={ResumeFile} target="_blank" rel="noopener noreferrer">

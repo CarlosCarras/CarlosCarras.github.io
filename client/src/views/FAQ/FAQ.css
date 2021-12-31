@@ -38,7 +38,7 @@
 }
 
 .accordion-link {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none !important;
     background-color: #283042;
@@ -91,7 +91,7 @@
 
 .answer p {
     color: rgba(255, 255, 255, 0.6);
-    font-size: 1.4rem;
+    font-size: 1rem;
     padding: 2rem;
 }
 

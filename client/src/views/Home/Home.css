@@ -36,7 +36,7 @@
     justify-content: left;
     margin-bottom: 15vh;
 }
-.section1 > header > h2 {
+.section1 > header > div > h2 {
     font-size: 2em;
     color: white;
     position: relative;

@@ -15,7 +15,7 @@ class NavBar extends React.Component {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mr-auto ">
                             <Nav.Link href="/Home#AboutMe">About Me</Nav.Link>
-                            <Nav.Link href="/Resume">R&eacute;sum&eacute;</Nav.Link>
+                            <Nav.Link href="/Resume">Resume</Nav.Link>
                             <Nav.Link href="/ContactMe">Contact Me</Nav.Link>
                             <Nav.Link href="/Gallery">Gallery</Nav.Link>
                             <Nav.Link href="/HowItsMade">How It's Made</Nav.Link>
@@ -40,7 +40,7 @@ class NavBar extends React.Component {
                     <Navbar.Brand href="/Home">C/C</Navbar.Brand>
                     <Nav className="mr-auto ">
                         <Nav.Link href="/Home#AboutMe">About Me</Nav.Link>
-                        <Nav.Link href="/Resume">R&eacute;sum&eacute;</Nav.Link>
+                        <Nav.Link href="/Resume">Resume</Nav.Link>
                         <Nav.Link href="/ContactMe">Contact Me</Nav.Link>
                         <Nav.Link href="/Gallery">Gallery</Nav.Link>
                         <Nav.Link href="/HowItsMade">How It's Made</Nav.Link>

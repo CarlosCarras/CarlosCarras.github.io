@@ -5,6 +5,21 @@ import { Link as ScrollLink } from "react-scroll";
 
 const ProfilePic = require('./../../assets/profile-picture.jpeg')
 
+function renderTitle() {
+    var MIN_SCREEN_WIDTH = 800,
+    SCREEN_WIDTH = window.screen.width;
+    
+    var text1 = SCREEN_WIDTH < MIN_SCREEN_WIDTH ? "Georgia" : "Georgia Institute of";
+    var text2 = SCREEN_WIDTH < MIN_SCREEN_WIDTH ? "Tech" : "Technology";
+
+    return (
+        <div>
+            <h2 id="title-caption">{text1}</h2>
+            <h2 id="title-caption"><span>&nbsp;{text2}</span></h2>
+        </div>
+    )
+}
+
 function Home() {
     console.log("Ahh! You found an easter egg!")
     
@@ -54,11 +69,9 @@ function Home() {
                                   d="M662.816 143.039L662.819 143.034C664.867 138.482 665.852 133.249 665.852 127.398V123.805C665.852 117.979 664.867 112.761 662.82 108.211C660.769 103.625 657.781 100.031 653.829 97.5517C649.923 95.0577 645.438 93.8438 640.461 93.8438C635.544 93.8438 631.084 95.0798 627.16 97.5979C623.242 100.102 620.26 103.702 618.184 108.28C616.111 112.852 615.109 118.046 615.109 123.805V127.906V127.918L615.109 127.931C615.164 133.584 616.195 138.673 618.272 143.14L618.276 143.149L618.28 143.157C620.389 147.602 623.383 151.117 627.279 153.607L627.279 153.607L627.29 153.614C631.19 156.077 635.633 157.281 640.539 157.281C645.537 157.281 650.025 156.083 653.913 153.609C657.806 151.131 660.765 147.569 662.816 143.039ZM649.826 109.716L649.832 109.723C652.086 112.715 653.391 117.267 653.391 123.727V127.93C653.314 134.224 652.005 138.684 649.792 141.637C647.66 144.457 644.687 145.914 640.539 145.914C636.48 145.914 633.453 144.401 631.186 141.347C628.872 138.169 627.57 133.61 627.57 127.398V123.234C627.647 117.151 628.971 112.744 631.246 109.724C633.483 106.763 636.465 105.289 640.461 105.289C644.613 105.289 647.631 106.782 649.826 109.716Z"/>
                         </svg>
                     </h1>
-
-                    <h2 id="title-caption">Georgia Institute of</h2>
-                    <h2 id="title-caption"><span>&nbsp;Technology</span></h2>
+                   {renderTitle()}
                     <br/><br/>
-                    <h4 id="title-caption-append">Robotics PhD Student (Expected May 2026)</h4>
+                    <h4 id="title-caption-append">Robotics PhD Student (Exp. 2026)</h4>
 
                     <h5 id="degree-list"><span className="bold-text font-size-1pt2em">University of Florida</span><br/>
                         <ul id="degree-list-items">

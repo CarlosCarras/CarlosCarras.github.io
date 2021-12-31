@@ -24,19 +24,19 @@
 }
 
 .font-size-1em {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .font-size-1pt1em {
-    font-size: 1.1em;
+  font-size: 1.1em;
 }
 
 .font-size-1pt2em {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .font-size-2em {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 .normal-text {
@@ -44,15 +44,15 @@
 }
 
 .bold-text {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .italic-text {
-    font-style: italic;
+  font-style: italic;
 }
 
 .tnr {
-    font-family: "Times New Roman", Times, serif !important;
+  font-family: "Times New Roman", Times, serif !important;
 }
 
 .parallax {
@@ -60,6 +60,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+/* turn off parallax scrolling for all tablets and phones */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
 .sticky {

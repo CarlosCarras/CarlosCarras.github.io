@@ -3,13 +3,9 @@ import './FAQ.css';
 
 class FAQ extends React.Component {
     getTitle() {
-        if (window.screen.width <= 680) {
-            return "FAQ"
-        }
-        else {
-            return "Frequently Asked Questions"
-        }
+        return window.screen.width <= 680 ? "FAQ" : "Frequently Asked Questions";
     }
+    
     render() {
         return(
             <div className="faq-container parallax">
