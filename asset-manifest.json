@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CarlosCarras.github.io/static/css/main.ff045238.css",
-    "main.js": "/CarlosCarras.github.io/static/js/main.ef9c95a3.js",
+    "main.js": "/CarlosCarras.github.io/static/js/main.5cf9708f.js",
     "static/media/project-rtrescue1.png": "/CarlosCarras.github.io/static/media/project-rtrescue1.70334d5f9f8c9cdaf796.png",
     "static/media/gallery-football.PNG": "/CarlosCarras.github.io/static/media/gallery-football.5bcc03660611971b94bf.PNG",
     "static/media/project-MAX-battery.png": "/CarlosCarras.github.io/static/media/project-MAX-battery.f8a615ec9e18daff5ab7.png",
@@ -73,10 +73,10 @@
     "static/media/logo-linkedin.svg": "/CarlosCarras.github.io/static/media/logo-linkedin.f544dbe6cbb2b1ca606fb91fc9d395ec.svg",
     "index.html": "/CarlosCarras.github.io/index.html",
     "main.ff045238.css.map": "/CarlosCarras.github.io/static/css/main.ff045238.css.map",
-    "main.ef9c95a3.js.map": "/CarlosCarras.github.io/static/js/main.ef9c95a3.js.map"
+    "main.5cf9708f.js.map": "/CarlosCarras.github.io/static/js/main.5cf9708f.js.map"
   },
   "entrypoints": [
     "static/css/main.ff045238.css",
-    "static/js/main.ef9c95a3.js"
+    "static/js/main.5cf9708f.js"
   ]
 }
