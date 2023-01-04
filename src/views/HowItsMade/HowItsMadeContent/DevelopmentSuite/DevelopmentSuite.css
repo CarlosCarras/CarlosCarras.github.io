@@ -1,0 +1,147 @@
+/* Using Tutorial https://codepen.io/palimadra/pen/uhDec by Pali Madra */
+
+a.polaroid {
+		display: block;
+		text-decoration: none;
+	   text-align: center;
+		color: #333;
+		padding: 10px 10px 20px 10px;
+		width: 150px;
+		border: 1px solid #BFBFBF;
+		background-color: white;
+		z-index: 2;
+		font-size: 0.7em;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-webkit-transition: -webkit-transform 0.5s ease-in;
+}
+a.polaroid:hover,
+a.polaroid:focus,
+a.polaroid:active {
+		z-index: 999;
+		border-color: #6A6A6A;
+		-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		transform: rotate(0deg);
+}
+.polaroid img {
+		margin: 0 0 15px;
+		width: 150px;
+		height: 150px;
+}
+
+a img {
+		border: none;
+		display: block;
+}
+
+.development-suite-album {
+		position: relative;
+		margin-left: 10vw;
+		height: 360px;
+		min-width: 400px;
+}
+
+.development-suite-album .polaroid {
+		position: relative;
+}
+
+.development-suite-album .small {
+		width: 120px;
+		padding: 6px 6px 12px 6px;
+		font-size: 1em;
+}
+.development-suite-album .small img {
+		width: 108px;
+		height: 108px;
+}
+.development-suite-album .medium {
+		width: 160px;
+		padding: 8px 8px 12px 8px;
+		font-size: 1em;
+}
+.development-suite-album .medium img {
+		width: 144px;
+		height: 144px;
+}
+.development-suite-album .large {
+		width: 200px;
+		padding: 13px 13px 20px 13px;
+		font-size: 1em;
+}
+.development-suite-album .large img {
+		width: 174px;
+		height: 174px;
+}
+.development-suite-album .img1 {
+		top: 10px;
+		left: 120px;
+		-webkit-transform: rotate(10deg);
+		-moz-transform: rotate(10deg);
+		transform: rotate(10deg);
+}
+.development-suite-album .img2 {
+		top: -155px;
+		left: 0px;
+		-webkit-transform: rotate(-4deg);
+		-moz-transform: rotate(-4deg);
+		transform: rotate(-4deg);
+}
+.development-suite-album .img3 {
+		left: 300px;
+		top: -450px;
+		-webkit-transform: rotate(-5deg);
+		-moz-transform: rotate(-5deg);
+		transform: rotate(-5deg);
+}
+.development-suite-album .img4 {
+		top: -530px;
+		left: 400px;
+		-webkit-transform: rotate(20deg);
+		-moz-transform: rotate(20deg);
+		transform: rotate(20deg);
+}
+.development-suite-album .img5 {
+		top: -860px;
+		left: 80px;
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		transform: rotate(2deg);
+}
+
+	/* End of Tutorial */
+
+.coding-process-col-img {
+		display: flex;
+		justify-content: center;
+		padding: 12vh 5vw 0;
+}
+
+.development-suite-col-text {
+		padding: 0 10vw 0 10vw;
+}
+
+@media screen and (min-width: 600px) {
+		.coding-process-col-img {
+				padding: 0 8vw 0 2vw;
+		}
+		.development-suite-col-text {
+				padding: 0 10vw 0 5vw;
+		}
+}
+
+@media screen and (max-width: 1200px) {
+			.development-suite-album .img3 {
+					display: none;
+			}
+			.development-suite-album .img4 {
+					display: none;
+			}
+			.development-suite-album .img5 {
+					display: none;
+			}
+	}

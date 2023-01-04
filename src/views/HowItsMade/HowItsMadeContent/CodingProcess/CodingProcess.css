@@ -1,0 +1,72 @@
+/* Using Tutorial: https://codepen.io/knyttneve/pen/YgZbLO by Mert Cukuren*/
+
+.coding-process-container {
+	  display: flex;
+	  width: 100%;
+	  padding: 4% 2%;
+	  box-sizing: border-box;
+	  height: 400px;
+}
+
+.image-box {
+	  flex: 1;
+	  overflow: hidden;
+	  transition: .3s;
+		-o-transition: .3s;
+		-ms-transition: .3s;
+		-moz-transition: .3s;
+		-webkit-transition: .3s;
+	  margin: 0 2%;
+		background-color: white;
+	  box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+		-o-box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+		-ms-box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+		-moz-box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+		-webkit-box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+	  line-height: 0;
+}
+
+.image-box > img {
+	  width: 200%;
+	  height: 85%;
+	  object-fit: cover;
+		transition: .5s;
+		-o-transition: .5s;
+		-ms-transition: .5s;
+		-moz-transition: .5s;
+		-webkit-transition: .5s;
+}
+
+.image-box > span {
+	  font-size: 1em;
+	  display: block;
+	  text-align: center;
+	  line-height: 3.5;
+}
+
+.image-box:hover {
+		flex: 1 1 50%;
+}
+.image-box:hover > img {
+	  width: 100%;
+	  height: 100%;
+}
+
+.coding-process-col-img {
+		display: flex;
+		justify-content: center;
+		padding: 0 5vw 0;
+}
+
+.coding-process-col-text {
+		padding: 10vw 10vw 0;
+}
+
+@media screen and (min-width: 600px) {
+		.coding-process-col-img {
+				padding: 0 8vw 0 2vw;
+		}
+		.coding-process-col-text {
+				padding: 50px 5vw 0 10vw;
+		}
+}
