@@ -42,3 +42,9 @@
 .howitsmade-scroll-link:hover {
     color: #0056b3;
 }
+
+#howitsmade-story-container {
+    width: 80vw;
+    max-width: 1500px;
+    margin: auto;
+}

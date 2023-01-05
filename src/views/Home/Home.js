@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import ReactTooltip from 'react-tooltip';
 import { Link as ScrollLink } from "react-scroll";
 
 const ProfilePic = require('./../../assets/profile-picture.jpeg')
@@ -106,9 +106,6 @@ function Home() {
                             <ReactTooltip id='dual-degree-info' delayHide={500} type='info' effect='solid' place={'right'}>
                                 <span style={{textIndent:"0px"}}>Click <a href="./Projects" style={{color:"white"}}>here</a> to view the Projects page.</span>
                             </ReactTooltip> .
-
-                            <p id="my-element" data-tooltip-content="hello world">Tooltip</p>
-                            <ReactTooltip anchorId="my-element" />
                         </div>
                         <br/>
                         <div className="about-me-text">

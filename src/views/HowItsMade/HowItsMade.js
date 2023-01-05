@@ -46,11 +46,13 @@ class HowItsMade extends React.Component {
                         </Button>
                     </a>
                 </div>
-                <UserStories/>
-                <WireframeDesign/>
-                <DevelopmentSuite/>
-                <CodingProcess/>
-                <Deploying/>
+                <div id="howitsmade-story-container">
+                    <UserStories/>
+                    <WireframeDesign/>
+                    <DevelopmentSuite/>
+                    <CodingProcess/>
+                    <Deploying/>
+                </div>
                 <Sources/>
                 <BugList/>
             </div>

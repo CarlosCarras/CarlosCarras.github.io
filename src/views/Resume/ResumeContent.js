@@ -1,5 +1,5 @@
 import React from 'react';
-import { Tooltip as ReactTooltip } from 'react-tooltip'
+import ReactTooltip from 'react-tooltip';
 import './ResumeContent.css'
 
 function ResumeContent() {
@@ -104,15 +104,18 @@ function ResumeContent() {
                     </div>
                     <br/>
                     <div className="row">
-                        <div className="course-list-ul entry">
+                        <div className="two-col-format-column course-list-ul entry">
                             <span className="resume-text">
                                 <li className="tnr">CS6601: Artificial Intelligence</li>
-                                <li className="tnr">ME7785: Introduction to Robotics</li>
+                                <li className="tnr">CS7641: Machine Learning</li>
+                                <li className="tnr">CS7643: Deep Learning</li>
                             </span>
                         </div>
-                        <div className="course-list-ul">
+                        <div className="two-col-format-column course-list-ul">
                             <span className="resume-text">
-                                {/* <li className="tnr">ME7785: Introduction to Robotics</li> */}
+                                <li className="tnr">ME6407: Robotics</li>
+                                <li className="tnr">ME7785: Introduction to Robotics</li>
+                                <li className="tnr">ME8843: Introduction to Wearable</li>
                             </span>
                         </div>
                     </div>

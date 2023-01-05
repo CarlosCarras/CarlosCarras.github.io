@@ -79,35 +79,35 @@ a img {
 }
 .development-suite-album .img1 {
 		top: 10px;
-		left: 120px;
+		left: -30px;
 		-webkit-transform: rotate(10deg);
 		-moz-transform: rotate(10deg);
 		transform: rotate(10deg);
 }
 .development-suite-album .img2 {
 		top: -155px;
-		left: 0px;
+		left: -150px;
 		-webkit-transform: rotate(-4deg);
 		-moz-transform: rotate(-4deg);
 		transform: rotate(-4deg);
 }
 .development-suite-album .img3 {
-		left: 300px;
 		top: -450px;
+		left: 150px;
 		-webkit-transform: rotate(-5deg);
 		-moz-transform: rotate(-5deg);
 		transform: rotate(-5deg);
 }
 .development-suite-album .img4 {
 		top: -530px;
-		left: 400px;
+		left: 250px;
 		-webkit-transform: rotate(20deg);
 		-moz-transform: rotate(20deg);
 		transform: rotate(20deg);
 }
 .development-suite-album .img5 {
 		top: -860px;
-		left: 80px;
+		left: -90px;
 		-webkit-transform: rotate(2deg);
 		-moz-transform: rotate(2deg);
 		transform: rotate(2deg);

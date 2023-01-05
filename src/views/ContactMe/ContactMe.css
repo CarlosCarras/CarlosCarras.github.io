@@ -44,6 +44,10 @@
     */
 }
 
+.contact-list {
+    padding: 0;
+}
+
 .contact-list > li {
     color: inherit;
     list-style-type: none;
