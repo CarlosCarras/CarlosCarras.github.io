@@ -1,7 +1,7 @@
 {
   "name": "my_website_client",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "https://carloscarras.github.io",
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.20.7",
