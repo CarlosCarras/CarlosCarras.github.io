@@ -1,9 +1,10 @@
 {
   "name": "my_website_client",
   "version": "0.1.0",
-  "homepage": "https://CarlosCarras.github.io/CarlosCarras.github.io",
+  "homepage": ".",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.20.7",
     "antd": "^4.7.3",
     "bootstrap": "^5.2.3",
     "jquery": "^3.4.1",
