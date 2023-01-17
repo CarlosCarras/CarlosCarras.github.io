@@ -48,7 +48,7 @@ function ResumeContent() {
                     </div>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">Minor,&nbsp;
-                            <span className="italic-text tnr">Control of Autonomous Robots</span>
+                            <span className="italic-text tnr">Biomedical Engineering</span>
                         </li>
                         <div className="entry-date bold-text tnr">Expected May 2026</div>
                     </div>
@@ -115,7 +115,7 @@ function ResumeContent() {
                             <span className="resume-text">
                                 <li className="tnr">ME6407: Robotics</li>
                                 <li className="tnr">ME7785: Introduction to Robotics</li>
-                                <li className="tnr">ME8843: Introduction to Wearable</li>
+                                <li className="tnr">ME8843: Introduction to Wearable Robotics</li>
                             </span>
                         </div>
                     </div>
