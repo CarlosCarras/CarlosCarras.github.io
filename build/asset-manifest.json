@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.39fcb990.css",
-    "main.js": "/static/js/main.56a32abe.js",
+    "main.css": "/static/css/main.8ba9f07c.css",
+    "main.js": "/static/js/main.d90c482a.js",
     "static/media/project-rtrescue1.png": "/static/media/project-rtrescue1.70334d5f9f8c9cdaf796.png",
     "static/media/gallery-football.PNG": "/static/media/gallery-football.5bcc03660611971b94bf.PNG",
     "static/media/project-MAX-battery.png": "/static/media/project-MAX-battery.f8a615ec9e18daff5ab7.png",
@@ -69,14 +69,15 @@
     "static/media/wallpaper-4Yplan.jpg": "/static/media/wallpaper-4Yplan.b87d0359a09c0d4c598f.jpg",
     "static/media/logo-react.png": "/static/media/logo-react.c2861c4dff64d52adf93.png",
     "static/media/logo-html.png": "/static/media/logo-html.bca18b7f5fb5456536ea.png",
+    "static/media/ASB_Logo.png": "/static/media/ASB_Logo.6608d28b55ed67733d90.png",
     "static/media/logo-css.png": "/static/media/logo-css.9d56f9438ebb9ff1940b.png",
     "index.html": "/index.html",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.f544dbe6cbb2b1ca606fb91fc9d395ec.svg",
-    "main.39fcb990.css.map": "/static/css/main.39fcb990.css.map",
-    "main.56a32abe.js.map": "/static/js/main.56a32abe.js.map"
+    "main.8ba9f07c.css.map": "/static/css/main.8ba9f07c.css.map",
+    "main.d90c482a.js.map": "/static/js/main.d90c482a.js.map"
   },
   "entrypoints": [
-    "static/css/main.39fcb990.css",
-    "static/js/main.56a32abe.js"
+    "static/css/main.8ba9f07c.css",
+    "static/js/main.d90c482a.js"
   ]
 }

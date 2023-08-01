@@ -16,6 +16,7 @@ import MAX from "./views/Projects/ProjectListings/MAX";
 import Bioprinter from "./views/Projects/ProjectListings/Bioprinter";
 import MIPS from "./views/Projects/ProjectListings/MIPS";
 import FourYearPlan from "./views/FourYearPlan/FourYearPlan";
+import ASB2023 from "./views/ASB2023/ASB2023";
 import Footer from "./components/Footer/Footer";
 import './assets/Theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -40,6 +41,7 @@ const App = () => {
         <Route exact path="/Projects/MIPS" component={MIPS}></Route>
         <Route exact path="/Projects/MAX" component={MAX}></Route>
         <Route exact path="/FourYearPlan" component={FourYearPlan}></Route>
+        <Route exact path="/ASB2023" component={ASB2023}></Route>
         <Route component={NotFound}/>
       </Switch>
       <Footer/>

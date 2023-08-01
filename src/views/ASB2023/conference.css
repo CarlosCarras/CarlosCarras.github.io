@@ -1,0 +1,52 @@
+.conference-container {
+    background-color: #E9E9E9;
+    display:inline-block;
+    min-height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.conference-container > h1 {
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 5vh 8vh 5vh;
+}
+
+.conference-container > p {
+    padding: 0 8vw 0 8vw;
+    font-size: 1rem;
+}
+
+.conference-container > .button-group {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+#github-btn-txt{
+    transform: translateY(-5px);
+}
+
+
+.github-repo-logo-color {
+    fill: #ffffff;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+}
+
+.asb-logo-container {
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Horizontally center the image within the container */
+    align-items: center;
+}
+
+.asb-logo-container img {
+    height: 100px;
+    margin-bottom: 30px;
+}
