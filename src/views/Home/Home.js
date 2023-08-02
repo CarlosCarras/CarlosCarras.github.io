@@ -3,7 +3,7 @@ import './Home.css';
 import ReactTooltip from 'react-tooltip';
 import { Link as ScrollLink } from "react-scroll";
 
-const ProfilePic = require('./../../assets/profile-picture.jpeg')
+const ProfilePic = require('./../../assets/profile-pic.jpg')
 
 function renderTitle() {
     var MIN_SCREEN_WIDTH = 800,
@@ -21,7 +21,7 @@ function renderTitle() {
 }
 
 function Home() {
-    console.log("Ahh! You found an easter egg!")
+    console.log("Hmm, what are you doing here?")
     
     return (
         <div className="App">
@@ -89,16 +89,13 @@ function Home() {
                 <header><ScrollLink to="section2" spy={true} smooth={true} offset={-70} duration= {500}> About Me </ScrollLink></header>
                 <div className="row" style={{paddingBottom:"15vh"}}>
                     <div className="two-col-format-column about-me-column-left">
-                        <div className="profile-pic-frame">
-                            <img src={ProfilePic} alt="profile pic"/>
-                        </div>
-                        <div></div>
+                        <img id="profile-pic" src={ProfilePic} alt="profile pic"/>
                     </div>
                     <div className="two-col-format-column">
                         <div className="about-me-text">
 
-                            My name is Carlos Carrasquillo, and I am first-year Robotics Ph.D. student at Georgia Tech. I enjoy anything and everything engineering, 
-                            including mechatronics, artificial intelligence, and control systems theory. You can read about what I have been up to in the <a href="./Projects" style={{color:"white"}}>Projects</a> page &nbsp;
+                            My name is Carlos Carrasquillo, and I am second-year Robotics Ph.D. student at Georgia Tech. I enjoy anything and everything engineering, 
+                            from mechatronics to artificial intelligence and control systems theory. You can read about what I have been up to in the <a href="./Projects" style={{color:"white"}}>Projects</a> page &nbsp;
 
                             <span data-tip data-for='dual-degree-info'>
                                 <i className="fa fa-info-circle" style={{color: 'white'}}></i>
@@ -109,7 +106,10 @@ function Home() {
                         </div>
                         <br/>
                         <div className="about-me-text">
-                            In my free time, I enjoy playing drums, basketball, rock climbing, biking, and longboarding. 
+                            I'm currently working on the control of active wearable exoskeletons for safe human operation. More about this soon.
+                        </div>
+                        <br/>
+                        <div className="about-me-text">
                             Feel free to reach out to me if you have any questions about what I do, or even if you just want to chat.
                         </div>
                     </div>

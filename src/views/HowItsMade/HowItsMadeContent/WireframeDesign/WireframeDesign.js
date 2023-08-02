@@ -26,7 +26,7 @@ class WireframeDesign extends React.Component {
                 <p>
                     Next, to imagine what the end result might look like, I drew up a couple of wireframes using Microsoft PowerPoint and Notability.
                     These wireframes were medium-fidelity, which means that, while better than a hand-drawn concept, all dimensions were not final.
-                    The wireframes served as a blueprint from which to base the later HTML and CSS design off of.
+                    The wireframes served as a blueprint for the HTML and CSS. If you're making your own website now, I highly recommend looking into dedicated design software like Figma instead.
                 </p>
             </div>
         )

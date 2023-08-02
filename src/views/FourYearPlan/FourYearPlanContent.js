@@ -96,9 +96,9 @@ function FourYearPlanContent() {
                 <div className="entry">
                     <h2 className="info-content tnr">Phone: (787) 668-8096</h2>
                     <div className="dotted-bullet"></div>
-                    <h2 className="info-content tnr">Email: c.carrasquillo@ufl.edu</h2>
+                    <h2 className="info-content tnr">Email: carlos.carrasquillo99@gmail.edu</h2>
                     <div className="dotted-bullet"></div>
-                    <h2 className="info-content tnr">Domain: http://www.CarlosCarras.tech</h2>
+                    <h2 className="info-content tnr">Domain: http://www.carloscarras.tech</h2>
                 </div>
             </div>
 
@@ -461,7 +461,7 @@ function FourYearPlanContent() {
             </div>
 
             <div className="semeser-section">
-                <div className="semester-section-header tnr">Semester 11 (Last)<span style={{float:"right"}} className="tnr">Spring, 2021</span></div>
+                <div className="semester-section-header tnr">Semester 11 <span style={{float:"right"}} className="tnr">Spring, 2021</span></div>
                 <div className="divider-line"></div>
                 <div className="section-content">
                     <div className="semester-course-list">

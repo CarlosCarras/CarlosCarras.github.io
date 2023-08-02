@@ -16,6 +16,13 @@ function Deploying() {
                   Domains.com to make the website more accessible. The domain was applied to the Heroku project
                   to produce the site you see now.
               </p>
+              <p> 
+                <span className='bold-text'>2022 Edit: </span>
+                Heroku eliminated their free plan, so this page is now hosted by Github Pages. Github 
+                does not naitvely support single page apps (SPA), so I found this
+                &nbsp;<a href='https://github.com/rafgraph/spa-github-pages' target='_blank' rel="noopener noreferrer">brilliant hack</a>&nbsp;
+                to support frontend routing. 
+              </p>
           </div>
       </div>
     );

@@ -8,7 +8,7 @@ class FourYearPlan extends React.Component {
     render() {
         return(
           <div className="four-year-plan-page-container parallax">
-              <h1>Four Year Plan</h1>
+              <h1>Undergraduate Coursework</h1>
               <div className="paper">
                   <FourYearPlanContent/>
               </div>

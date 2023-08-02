@@ -39,20 +39,24 @@ function ResumeContent() {
                             Aug 2021 - Present
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">Doctor of Philosophy,&nbsp;
                             <span className="italic-text tnr">Robotics</span>
                         </li>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div className="entry-date bold-text tnr">Expected May 2026</div>
-                    </div>
-                    <div className="entry course-list-ul">
+
                         <li className="entry-name tnr">Minor,&nbsp;
                             <span className="italic-text tnr">Biomedical Engineering</span>
                         </li>
                         <div className="entry-date bold-text tnr">Expected May 2026</div>
                     </div>
-                    <br/>
                 </div>
 
                 <div className="section-content">
@@ -67,15 +71,12 @@ function ResumeContent() {
                             Aug 2017 - May 2021
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">Bachelor of Science,&nbsp;
                             <span className="italic-text tnr">Mechanical Engineering,&nbsp;</span>
                             Magna Cum Laude Honors
                         </li>
                         <div className="entry-date bold-text tnr">May 2021</div>
-                    </div>
-                    <div className="entry course-list-ul">
                         <li className="entry-name tnr">Bachelor of Science,&nbsp;
                             <span className="italic-text tnr">Computer Engineering,&nbsp;</span>
                             Magna Cum Laude Honors
@@ -102,13 +103,13 @@ function ResumeContent() {
                             Aug 2017 - Present
                         </div>
                     </div>
-                    <br/>
                     <div className="row">
                         <div className="two-col-format-column course-list-ul entry">
                             <span className="resume-text">
                                 <li className="tnr">CS6601: Artificial Intelligence</li>
                                 <li className="tnr">CS7641: Machine Learning</li>
                                 <li className="tnr">CS7643: Deep Learning</li>
+                                <li className="tnr">BMED8813: Interfacing Engineering, Technology, and Rehab </li>
                             </span>
                         </div>
                         <div className="two-col-format-column course-list-ul">
@@ -116,6 +117,7 @@ function ResumeContent() {
                                 <li className="tnr">ME6407: Robotics</li>
                                 <li className="tnr">ME7785: Introduction to Robotics</li>
                                 <li className="tnr">ME8843: Introduction to Wearable Robotics</li>
+                                <li className="tnr">AE6310: Optimization for Design of Engineered Systems </li>
                             </span>
                         </div>
                     </div>
@@ -133,6 +135,31 @@ function ResumeContent() {
                 </div>
                 <div className="divider-line"></div>
                 <div className="section-content">
+                <div className="entry">
+                        <div className="entry-name bold-text font-size-1pt1em tnr">
+                            Graduate Research Assistant
+                            <span className="normal-text font-size-1em tnr"> 
+                                &nbsp;&nbsp;|&nbsp; Georgia Institute of Technology, IRIM 
+                            </span>
+                        </div>
+                        <div className="entry-date bold-text font-size-1pt1em tnr">
+                            August 2021 - Present
+                        </div>
+                    </div>
+                    <div className="entry course-list-ul">
+                        <li className="entry-name tnr">
+                            Designed exoskeleton controller to help humans with impaired vision navigate around obstacles. Fractional potential fields help steer 
+                            wearers away from danger zones (high potentials) and toward safe zones (low potentials). Experiments conducted in virtual reality.
+                        </li>
+                        <li className="entry-name tnr">
+                            Controller Design: Designed hip exoskeleton impedance controllers for lifting, ramp/stair ascent, etc. Validated using indirect calorimetry.
+                        </li>
+                        <li className="entry-name tnr">
+                            Mechatronics: Developed software modules and PCBs to interface with exoskeleton motor controllers, sensors, and master computer.
+                        </li>
+                    </div>
+                    <br/>
+
                     <div className="entry">
                         <div className="entry-name bold-text font-size-1pt1em tnr">
                             Computer Science / Mechanical Engineering Intern
@@ -141,10 +168,9 @@ function ResumeContent() {
                             </span>
                         </div>
                         <div className="entry-date bold-text font-size-1pt1em tnr">
-                            May 2019 - Present
+                            May 2021 - May 2022
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">
                             Developed a robust and comprehensive web application to find components on a PCB by search and mouseover. The web app was developed using the MERN stack.
@@ -170,7 +196,6 @@ function ResumeContent() {
                             Jan 2019 - Aug 2021
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">
                             Wrote custom C++ libraries for the D3 CubeSat’s IMU, antenna, radio, and GPS avionics. All code runs on a BeagleBone Black.
@@ -201,7 +226,6 @@ function ResumeContent() {
                             May 2019 - May 2021
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">
                             <span className="italic-text tnr">Dynamics and Controls Lab: </span>
@@ -230,7 +254,6 @@ function ResumeContent() {
                             Apr 2018 – Aug 2018
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">
                             Handled inventory, gave DIY recommendations, mixed paint, assisted fellow associates in hardware.
@@ -252,7 +275,6 @@ function ResumeContent() {
                             Jan 2020
                         </div>
                     </div>
-                    <br/>
                     <div className="entry course-list-ul">
                         <li className="entry-name tnr">
                             Won award at a hackathon hosted by UF for proposing a solution to the problems with current hurricane relief efforts.
@@ -261,57 +283,46 @@ function ResumeContent() {
                             Idea: Utilize a city’s topology map, storm surge data, boat draft, and capacity to map the most accessible path (by boat) to a victim.
                         </li>
                     </div>
-                    <br/>
                 </div>
             </div>
 
             <div className="section">
-                <div className="section-header tnr">Publications</div>
+                <div className="section-header tnr">Jounral Papers</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
+                    <ol className='reference-list tnr'>
+                        <li className='tnr'>
+                            <span className='reference-number tnr'></span>
+                            A. Bajpai,&nbsp;
+                            <span className='bold-text tnr'>C. Carrasquillo</span>,
+                            J. Carlson, J. Park, D. Iyengar, K. Herrin, A. Young, A. Mazumdar. “Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton”. IEEE Transactions on Mechatronics. 2023. (Submitted)
+                        </li>
+                    </ol>
+                </div>
+            </div>
 
-                    <div className="entry">
-                        <div className="entry-name bold-text font-size-1pt1em tnr">
-                            A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission
-                        </div>
-                        <div className="entry-date bold-text font-size-1pt1em tnr">
-                            Jul 2021
-                        </div>
-                    </div>
-                    <br/>
-                    <div className="entry course-list-ul">
-                        <li className="entry-name tnr">
-                            Honorable Mention in the 2021 SmallSat Conference Frank J. Redd Student Competition
+            <div className="section">
+                <div className="section-header tnr">Conference Papers</div>
+                <div className="divider-line"></div>
+                <div className="section-content">
+                    <ol className='reference-list tnr'>
+                        <li className='tnr'>
+                            <span className='reference-number tnr'></span>
+                            <span className='bold-text tnr'>C. Carrasquillo</span>,&nbsp;
+                            A. Bajpai, D. Iyengar, K. Collins, A. Young, A. Mazumdar. “Enhancing Human Navigation Ability Using an Active Wearable Exoskeleton”. American Society of Biomechanics. 2023. (Submitted)
                         </li>
-                        <li className="entry-name tnr">
-                            Source: https://digitalcommons.usu.edu/smallsat/2021/all2021/269/
+                        <li className='tnr'>
+                            <span className='reference-number tnr'></span>
+                            <span className='bold-text tnr'>C. Carrasquillo</span>
+                            . “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021. (Student Competition Best Paper Honorable Mention)
                         </li>
-                    </div>
-                    <br/>
-
-                    <div className="entry">
-                        <div className="entry-name bold-text font-size-1pt1em tnr">
-                        A Novel Approach to CubeSat Flight Software Development Using Robot Operating System (ROS)
-                        </div>
-                        <div className="entry-date bold-text font-size-1pt1em tnr">
-                            Jul 2020
-                        </div>
-                    </div>
-                    <br/>
-                    <div className="entry course-list-ul">
-                        <li className="entry-name tnr">
-                            2020 SmallSat Conference 
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <li className='tnr'>
+                            <span className='reference-number tnr'></span>
+                            S. Buckner,&nbsp;
+                            <span className='bold-text tnr'>C. Carrasquillo</span>, 
+                            M. Elosegui, R. Bevilacqua. “A Novel Approach to CubeSat Flight Software Development Using Robot Operating System (ROS)”. Small Satellite Conference. 2021.
                         </li>
-                        <li className="entry-name tnr">
-                            Source: https://digitalcommons.usu.edu/smallsat/2020/all2020/241/
-                        </li>
-                    </div>
-                    <br/>
+                    </ol>
                 </div>
             </div>
 

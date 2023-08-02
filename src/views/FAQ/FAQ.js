@@ -3,7 +3,7 @@ import './FAQ.css';
 
 class FAQ extends React.Component {
     getTitle() {
-        return window.screen.width <= 680 ? "FAQ" : "Frequently Asked Questions";
+        return window.screen.width <= 680 ? "Q&A" : "Questions & Answers";
     }
     
     render() {
@@ -20,7 +20,7 @@ class FAQ extends React.Component {
                         <div className="answer">
                             <p>
                                 UF did not offer a robotics program, so this was my attempt at designing my own. I thought it was 
-                                incredibly useful to learn both disciplines, and would encourage anyone interested in Robotics to
+                                incredibly useful to learn both disciplines, and would encourage anyone interested in regularlyobotics to
                                 do the same. 
                                 <br/>
                                 <br/>
@@ -41,32 +41,9 @@ class FAQ extends React.Component {
                         </a>
                         <div className="answer">
                             <p>
-                                I am extremely passionate about music, in part because I have been a drummer since I was 8. I also enjoy playing 
-                                and watching basketball, going rock climbing, biking, longboarding, and weightlifting regularly. I'm starting to get
-                                into playing volleyball and tennis, so let me know if you live in the Atlanta area and have some spare time!
-                            </p>
-                        </div>
-                    </div>
-                    <div className="accordion-wrapper" id="question3">
-                        <a className="accordion-link" href="#question3">
-                            What is your favorite general-purpose programming language?
-                            <i className="icon ion-md-add"/>
-                            <i className="icon ion-md-remove"/>
-                        </a>
-                        <div className="answer">
-                            <p>
-                                TLDR; Python.
-                                <br/>
-                                <br/>
-                                If you visited this website before 2022, you may have noticed that my previous answer was MATLAB. 
-                                And while MATLAB remains my favorite for R&amp;D, it falls short in two fronts: (1) the Object-Oriented 
-                                structure, and (2) the IDE. Python does most things that MATLAB can do, and has particularly friendly 
-                                OOP conventions. It is also entirely open-source, and supports the most common ML libraries.
-                                <br/>
-                                <br/>
-                                My fondness of Python is also particularly surprising- I generally prefer strongly-typed languages 
-                                like C/C++, but I have yet to run into any substantial typing bugs using Python. If this happens, I 
-                                may revisit this answer and declare C++ as my favorite.
+                                I am extremely passionate about music, in part because I have been a drummer since I was 8. I am currently getting into aviation 
+                                and am currently working towards a private pilot licnse. I also enjoy playing and watching basketball, going rock climbing, biking, 
+                                longboarding, and weightlifting regularly.
                             </p>
                         </div>
                     </div>

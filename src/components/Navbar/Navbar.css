@@ -24,3 +24,12 @@
   fill: #bbbbbb;
 }
 */
+
+#responsive-navbar-nav .navlink {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.navdropdown-item {
+  background-color: #096dd9;
+}

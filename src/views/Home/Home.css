@@ -11,7 +11,7 @@
 .section1 > header {
     position: relative;
     top: 5vh;
-    left: 8vh;
+    left: 8vw;
     width: 100%;
     padding: 20px 10px;
 }
@@ -86,13 +86,10 @@
     height: 380px;
 }
 
-
-.profile-pic-frame {
-    background: white;
-    margin-top: 25px;
-    padding-top: 10px;
-    height: 400px;
-    width: 320px;
+#profile-pic {
+  border-radius: 50%;
+  height: 300px;
+  padding-bottom: 50px;
 }
 
 .two-col-format-column > .about-me-text {
@@ -335,7 +332,11 @@
 #degree-list-items {
     list-style-type: none;
     float: left;
-    margin-left: 20px;
+    padding-left: 2em;
+}
+
+#degree-list-items li {
+    padding-top:0.25em;
 }
 
 /* Using Tutorial: https://codepen.io/nxworld/pen/OyRrGy by Naoya */
@@ -458,9 +459,6 @@
     .section2 {
         padding: 0;
         justify-content: center;
-    }
-    .profile-pic-frame {
-        margin-bottom: 50px;
     }
     .about-me-column-left {
         display: flex;

@@ -42,7 +42,7 @@ class Resume extends React.Component {
                   <div className="sticky">
                       <div className="sticky-text"  /*contentEditable="true" spellCheck="false"*/>
                           Last Update: <br/>
-                          December 30, 2021 <br/><br/>
+                          August 2, 2023 <br/><br/>
                           Upcoming:
                           N/A <br/><br/>
                           [Move Me]
