@@ -89,7 +89,7 @@
 #profile-pic {
   border-radius: 50%;
   height: 300px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .two-col-format-column > .about-me-text {

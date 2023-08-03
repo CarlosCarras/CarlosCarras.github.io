@@ -103,46 +103,21 @@ class Gallery extends React.Component {
             <a href={images[n][3]}>{this.getItem(n)}</a> : this.getItem(n)
     }
 
+    getGallery() {
+        return (
+            <div className="gallery-container">
+                {images.map((item, index) => (
+                    this.getElement(index)
+                ))}
+            </div>
+        )
+    }
+
     render() {
         return(
           <div className="gallery-page-container parallax">
               <h1>Gallery</h1>
-              <div className="gallery-container">
-                  {this.getElement(0)}
-                  {this.getElement(1)}
-                  {this.getElement(2)}
-                  {this.getElement(3)}
-                  {this.getElement(4)}
-                  {this.getElement(5)}
-                  {this.getElement(6)}
-                  {this.getElement(7)}
-                  {this.getElement(8)}
-                  {this.getElement(9)}
-                  {this.getElement(10)}
-                  {this.getElement(11)}
-                  {this.getElement(12)}
-                  {this.getElement(13)}
-                  {this.getElement(14)}
-                  {this.getElement(15)}
-                  {this.getElement(16)}
-                  {this.getElement(17)}
-                  {this.getElement(18)}
-                  {this.getElement(19)}
-                  {this.getElement(20)}
-                  {this.getElement(21)}
-                  {this.getElement(22)}
-                  {this.getElement(23)}
-                  {this.getElement(24)}
-                  {this.getElement(25)}
-                  {this.getElement(26)}
-                  {this.getElement(27)}
-                  {this.getElement(28)}
-                  {this.getElement(29)}
-                  {this.getElement(30)}
-                  {this.getElement(31)}
-                  {this.getElement(32)}
-                  {this.getElement(33)}
-              </div>
+              {this.getGallery()}
           </div>
         )
     }

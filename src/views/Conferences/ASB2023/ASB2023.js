@@ -4,7 +4,38 @@ import './ASB2023.css';
 import ASBLogo from './ASB_Logo.png';
 import Poster from './ASB2023_poster.pdf';
 
+const Carlos  = require('./../Pictures/collaborators-Carlos.jpg'),
+      Divya   = require('./../Pictures/collaborators-Divya.jpg'),
+      Aakash  = require('./../Pictures/collaborators-Aakash.jpg'),
+      Anirban = require('./../Pictures/collaborators-Anirban.jpg'),
+      Aaron   = require('./../Pictures/collaborators-Aaron.jpg');
+
+const collaborators = [
+    [Carlos, 'Carlos Carrasquillo', 'Graduate Student'],
+    [Aakash, 'Aakash Bajpai', 'Graduate Student'],
+    [Divya, 'Divya Iyengar', 'Graduate Student'],
+    [Anirban, 'Dr. Anirban Mazumdar', 'Assistant Professor'],
+    [Aaron, 'Dr. Aaron Young', 'Associate Professor'],
+]
+
 class HowItsMade extends React.Component {
+
+    getCollaborators() {
+        return (
+            <div className='conference-collaborators-images'>
+                {collaborators.map((item, index) => (
+                    <div className='conference-collaborator'>
+                        <img src={item[0]} key={index} alt={item[1]}/>
+                        <div className='conference-collabrator-titleblock'>
+                            <span className='conference-collaborator-name'>{item[1]}</span>
+                            <br/>
+                            <span className='conference-collaborator-occupation'>{item[2]}</span>
+                        </div>
+                    </div>
+                ))}
+            </div>
+        )
+    }
 
     render() {
         return(
@@ -15,11 +46,17 @@ class HowItsMade extends React.Component {
                             <span>Welcome</span>
                             <br/>
                             <span>ASB 2023!</span>
+                            <br/>
+                            <div className='asb2023-details'>
+                                <span>Knoxville, Tennessee</span>
+                                <br/>
+                                <span>August 8-11, 2023</span>
+                            </div>
                         </div>
                     </div>
                     <div className="two-col-format-column">
                         <div className="conference-col-right">
-                            <div class="iframe-container">
+                            <div className="iframe-container">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mh0tAw-QQfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
@@ -34,6 +71,10 @@ class HowItsMade extends React.Component {
                 </div>
                 <div className="asb-logo-container">
                     <img src={ASBLogo} alt='ASB Logo'/>
+                </div>  
+                <div className="conference-collaborators-container">
+                    <span className='conference-collaborators-title'>Collaborators</span>
+                    {this.getCollaborators()}
                 </div>  
             </div>
         )

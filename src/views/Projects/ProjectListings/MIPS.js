@@ -59,8 +59,8 @@ class MIPS extends React.Component {
                             </div>
                         </div>
                         <div className="three-col-format-column">
-                            <ul class="project-timeline">
-                                <li class="project-timeline-event" data-date="March 30, 2020">
+                            <ul className="project-timeline">
+                                <li className="project-timeline-event" data-date="March 30, 2020">
                                     <h3>Coming Soon</h3>
                                     <p>The timeline will be updated soon.</p>
                                 </li>

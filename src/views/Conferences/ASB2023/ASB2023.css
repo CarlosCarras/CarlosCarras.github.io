@@ -35,7 +35,7 @@
 .conference-container .title-block span {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    padding-left: 0.5em;
+    padding-left: 20px;
 }
 
 .conference-container > p {
@@ -82,4 +82,57 @@
 .asb-logo-container img {
     height: 100px;
     margin-bottom: 30px;
+}
+
+.conference-container .title-block .asb2023-details {
+    display: block;
+}
+
+.conference-container .title-block .asb2023-details span {
+    color: goldenrod;
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.conference-collaborators-container {
+    text-align: center;
+}
+
+.conference-collaborators-title {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.conference-collaborators-images {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 0;
+}
+
+.conference-collaborator {
+    display: inline-block;
+    width: 280px;
+    height: 280px;
+    margin-bottom: 30px;
+}
+
+.conference-collaborator img {
+    width: 100%;
+    padding: 30px 30px 15px;
+    max-width: 300px;
+}
+
+.conference-collabrator-titleblock {
+}
+
+.conference-collabrator-titleblock .conference-collaborator-name {
+    font-size: 1.2em;
+    color: #4781e1;
+}
+
+.conference-collaborator-titleblock .conference-collaborator-occupation {
+    font-size: 0.6em;
 }

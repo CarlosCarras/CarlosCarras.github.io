@@ -68,20 +68,20 @@ class MountingBracket extends React.Component {
                           </div>
                       </div>
                       <div className="three-col-format-column">
-                          <ul class="project-timeline">
-                              <li class="project-timeline-event" data-date="January 30, 2018">
+                          <ul className="project-timeline">
+                              <li className="project-timeline-event" data-date="January 30, 2018">
                                   <h3>The computer was overclocked.</h3>
                                   <p>This resulted in higher temperatures which warped the plastic mounting bracket.</p>
                               </li>
-                              <li class="project-timeline-event" data-date="November 1, 2019">
+                              <li className="project-timeline-event" data-date="November 1, 2019">
                                   <h3>The PC was taken apart for maintenance.</h3>
                                   <p>The liquid coolant was emptied out and the pump was removed.</p>
                               </li>
-                              <li class="project-timeline-event" data-date="November 1, 2019">
+                              <li className="project-timeline-event" data-date="November 1, 2019">
                                   <h3>The mounting bracket was manufactured.</h3>
                                   <p>The block of aluminum was milled down to shape and finished with a polish.</p>
                               </li>
-                              <li class="project-timeline-event" data-date="November 2, 2019">
+                              <li className="project-timeline-event" data-date="November 2, 2019">
                                   <h3>The mounting bracket was installed.</h3>
                                   <p>The PC was then flushed with distilled water and refilled with pastel coolant.</p>
                               </li>

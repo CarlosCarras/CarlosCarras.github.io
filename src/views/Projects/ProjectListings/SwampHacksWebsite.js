@@ -85,16 +85,16 @@ class SwampHacksWebsite extends React.Component {
                           </div>
                       </div>
                       <div className="three-col-format-column">
-                          <ul class="project-timeline">
-                              <li class="project-timeline-event" data-date="January 31, 2020">
+                          <ul className="project-timeline">
+                              <li className="project-timeline-event" data-date="January 31, 2020">
                                   <h3>Swamphacks 2020 began.</h3>
                                   <p>Coding officially began at 10:00:00 PM.</p>
                               </li>
-                              <li class="project-timeline-event" data-date="February 1, 2020">
+                              <li className="project-timeline-event" data-date="February 1, 2020">
                                   <h3>Swamphacks 2020 began for us.</h3>
                                   <p>We decided to sleep the previous night. It had been a busy week.</p>
                               </li>
-                              <li class="project-timeline-event" data-date="Febrary 2, 2020">
+                              <li className="project-timeline-event" data-date="Febrary 2, 2020">
                                   <h3>SwampHacks 2020 ended.</h3>
                                   <p>We demoed our project and received Infinite Energy's Best Hack award. Special Thanks to Infinite Energy for sponsoring SwampHacks!</p>
                               </li>
