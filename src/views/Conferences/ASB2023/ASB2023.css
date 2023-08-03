@@ -20,7 +20,6 @@
 
 .conference-container .title-block {
     background-color: #084185;
-    font-size: 2.9em;
     text-align: center;
     box-sizing: border-box;
     height: 100%;
@@ -30,6 +29,10 @@
     width: 100%;
     margin: 0 auto;
     padding-top: 40px;
+}
+
+.conference-container .title-block > span {
+    font-size: 2.9em;
 }
 
 .conference-container .title-block span {
@@ -85,12 +88,13 @@
 }
 
 .conference-container .title-block .asb2023-details {
+    margin-top: 30px;
     display: block;
+    font-size: 1.2em;
 }
 
 .conference-container .title-block .asb2023-details span {
     color: goldenrod;
-    font-size: 1rem;
     padding-left: 20px;
 }
 

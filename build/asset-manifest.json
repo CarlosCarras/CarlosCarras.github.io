@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5eda6c1b.css",
-    "main.js": "/static/js/main.4f354717.js",
+    "main.css": "/static/css/main.038f3bf5.css",
+    "main.js": "/static/js/main.950ee2e1.js",
     "static/media/project-rtrescue1.png": "/static/media/project-rtrescue1.70334d5f9f8c9cdaf796.png",
     "static/media/gallery-football.PNG": "/static/media/gallery-football.5bcc03660611971b94bf.PNG",
     "static/media/project-MAX-battery.png": "/static/media/project-MAX-battery.f8a615ec9e18daff5ab7.png",
@@ -73,22 +73,27 @@
     "static/media/project-bioprinter-full.png": "/static/media/project-bioprinter-full.c45330a230ee49606e04.png",
     "static/media/gallery-dml_8B.JPG": "/static/media/gallery-dml_8B.fe599a81c46105c99c37.JPG",
     "static/media/process-testing.png": "/static/media/process-testing.3159eb00749102679f9e.png",
+    "static/media/collaborators-Carlos.jpg": "/static/media/collaborators-Carlos.4ec2573c3ce05be27cd9.jpg",
     "static/media/gallery-drumline.JPG": "/static/media/gallery-drumline.20c840f89d1a0e1a973d.JPG",
     "static/media/wallpaper-4Yplan.jpg": "/static/media/wallpaper-4Yplan.61749c85e476fceef8e8.jpg",
     "static/media/project-bioprinter-head.png": "/static/media/project-bioprinter-head.7a7cc3e7833eccd32246.png",
     "static/media/wallpaper-faq.jpg": "/static/media/wallpaper-faq.80858d5690c3b6964f5e.jpg",
+    "static/media/collaborators-Aaron.jpg": "/static/media/collaborators-Aaron.baee90ea2fdfcefdce79.jpg",
     "static/media/logo-nodejs.png": "/static/media/logo-nodejs.57f1722aa0d5af76c735.png",
     "static/media/logo-react.png": "/static/media/logo-react.c2861c4dff64d52adf93.png",
     "static/media/logo-html.png": "/static/media/logo-html.bca18b7f5fb5456536ea.png",
     "static/media/ASB_Logo.png": "/static/media/ASB_Logo.6608d28b55ed67733d90.png",
     "static/media/logo-css.png": "/static/media/logo-css.9d56f9438ebb9ff1940b.png",
+    "static/media/collaborators-Divya.jpg": "/static/media/collaborators-Divya.725d8903e962804e51a0.jpg",
+    "static/media/collaborators-Anirban.jpg": "/static/media/collaborators-Anirban.d0d8143f2daa71f13619.jpg",
+    "static/media/collaborators-Aakash.jpg": "/static/media/collaborators-Aakash.7d3219d77668d20c9a1e.jpg",
     "index.html": "/index.html",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.f544dbe6cbb2b1ca606fb91fc9d395ec.svg",
-    "main.5eda6c1b.css.map": "/static/css/main.5eda6c1b.css.map",
-    "main.4f354717.js.map": "/static/js/main.4f354717.js.map"
+    "main.038f3bf5.css.map": "/static/css/main.038f3bf5.css.map",
+    "main.950ee2e1.js.map": "/static/js/main.950ee2e1.js.map"
   },
   "entrypoints": [
-    "static/css/main.5eda6c1b.css",
-    "static/js/main.4f354717.js"
+    "static/css/main.038f3bf5.css",
+    "static/js/main.950ee2e1.js"
   ]
 }
