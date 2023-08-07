@@ -1,0 +1,42 @@
+.gt-audition-container {
+    width: 100vw;
+    overflow: hidden;
+    padding: 10vh 10vw;
+    color: black;
+    background-color: #eeeeee;
+}
+
+.gt-audition-container h1 {
+    color: black;
+    margin-bottom: 25px;
+}
+
+.gt-audition-container p {
+    padding-top: 1em;
+}
+
+.gt-audition-instrument {
+    color: #EAAA00;
+    font-weight: bold;
+}
+
+.gt-audition-playlist-name {
+    color: #003057;
+    font-weight: bold;
+}
+
+.gt-audition-picturelinks-container {
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gt-audition-picturelink {
+    margin: 20px;
+}
+
+.gt-audition-picturelink img {
+    width: 100%;
+    max-width: 500px;
+}

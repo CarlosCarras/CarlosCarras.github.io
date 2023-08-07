@@ -21,6 +21,8 @@ import Footer from "./components/Footer/Footer";
 import './assets/Theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import GTAudition from './views/Unlisted/GTAudition/GTAudition';
+
 const App = () => {
   return (
     <div>
@@ -42,6 +44,7 @@ const App = () => {
         <Route exact path="/Projects/MAX" component={MAX}></Route>
         <Route exact path="/FourYearPlan" component={FourYearPlan}></Route>
         <Route exact path="/ASB2023" component={ASB2023}></Route>
+        <Route exact path="/Private/GTAudition" component={GTAudition}></Route>
         <Route component={NotFound}/>
       </Switch>
       <Footer/>
