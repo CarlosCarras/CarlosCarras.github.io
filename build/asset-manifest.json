@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e83ea10a.css",
-    "main.js": "/static/js/main.7adc1776.js",
+    "main.css": "/static/css/main.c64c0a95.css",
+    "main.js": "/static/js/main.5aa40b47.js",
     "static/media/project-rtrescue1.png": "/static/media/project-rtrescue1.70334d5f9f8c9cdaf796.png",
     "static/media/gallery-football.PNG": "/static/media/gallery-football.5bcc03660611971b94bf.PNG",
     "static/media/project-MAX-battery.png": "/static/media/project-MAX-battery.f8a615ec9e18daff5ab7.png",
@@ -13,12 +13,15 @@
     "static/media/gallery-pcbuild2.jpg": "/static/media/gallery-pcbuild2.a04f7f4a92b5e2c0f85e.jpg",
     "static/media/gallery-bookshelf.PNG": "/static/media/gallery-bookshelf.bf843cc573d214eccfd5.PNG",
     "static/media/gallery-drums.jpg": "/static/media/gallery-drums.bf621dbeff2d059e9e40.jpg",
+    "static/media/GTAudition_snare.png": "/static/media/GTAudition_snare.e928cd9657ddcf45bf96.png",
     "static/media/project-bioprinter-poster.png": "/static/media/project-bioprinter-poster.073af442351109eea362.png",
     "static/media/gallery-skiing.JPG": "/static/media/gallery-skiing.bfc434c11930b9ea418a.JPG",
     "static/media/gallery-dart.JPG": "/static/media/gallery-dart.cb789ccf9f8f11e65b3c.JPG",
     "static/media/gallery-interns.JPG": "/static/media/gallery-interns.9495b9109f9038b41adc.JPG",
     "static/media/project-pc_build6.JPG": "/static/media/project-pc_build6.b5441cfdd1bf67270489.JPG",
     "static/media/gallery-longboard.JPG": "/static/media/gallery-longboard.0fb9c7b998ad7efb1d74.JPG",
+    "static/media/GTAudition_snarecentered.png": "/static/media/GTAudition_snarecentered.8804247258357fb66441.png",
+    "static/media/GTAudition_tenorscentered.png": "/static/media/GTAudition_tenorscentered.7b729b141e7aa532af19.png",
     "static/media/project-MAX-print.jpg": "/static/media/project-MAX-print.8dda28852e85e8edc248.jpg",
     "static/media/project-MAX-pcb.jpg": "/static/media/project-MAX-pcb.9ecb1813eda31d80ebbf.jpg",
     "static/media/ASB2023_poster.pdf": "/static/media/ASB2023_poster.d10e803be00e9aaf8970.pdf",
@@ -28,6 +31,7 @@
     "static/media/project-mounting_bracket0.jpg": "/static/media/project-mounting_bracket0.a0d16f4ed35b8e343266.jpg",
     "static/media/project-mounting_bracket1.JPG": "/static/media/project-mounting_bracket1.d96760113eb1bbb28b35.JPG",
     "static/media/project-pc_build7.JPG": "/static/media/project-pc_build7.ee9204541815b4eb3a51.JPG",
+    "static/media/GTAudition_tenors.png": "/static/media/GTAudition_tenors.6d1eb033f6696effe1a8.png",
     "static/media/gallery-zipline.jpg": "/static/media/gallery-zipline.9c6401873f72347cd0cd.jpg",
     "static/media/gallery-family.jpg": "/static/media/gallery-family.622b16cf33d7743c4456.jpg",
     "static/media/gallery-ohmmeter.jpg": "/static/media/gallery-ohmmeter.25d54f9cecffa65b4dfb.jpg",
@@ -89,11 +93,11 @@
     "static/media/collaborators-Aakash.jpg": "/static/media/collaborators-Aakash.7d3219d77668d20c9a1e.jpg",
     "index.html": "/index.html",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.f544dbe6cbb2b1ca606fb91fc9d395ec.svg",
-    "main.e83ea10a.css.map": "/static/css/main.e83ea10a.css.map",
-    "main.7adc1776.js.map": "/static/js/main.7adc1776.js.map"
+    "main.c64c0a95.css.map": "/static/css/main.c64c0a95.css.map",
+    "main.5aa40b47.js.map": "/static/js/main.5aa40b47.js.map"
   },
   "entrypoints": [
-    "static/css/main.e83ea10a.css",
-    "static/js/main.7adc1776.js"
+    "static/css/main.c64c0a95.css",
+    "static/js/main.5aa40b47.js"
   ]
 }

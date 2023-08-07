@@ -28,17 +28,17 @@ class GTAudition extends React.Component {
                         </a>
                     </div>
                     <div className='gt-audition-picturelink'>
-                        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target='_blank'>
+                        <a href='https://www.youtube.com/playlist?list=PLRmRhh668QrurRnI_-gPzHXbKhk3FsoXT' target='_blank'>
                             <img src={TenorsCentered} alt='Tenors-Centered Audition Playlist'/>
                         </a>
                     </div>
                     <div className='gt-audition-picturelink'>
-                        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target='_blank'>
+                        <a href='https://www.youtube.com/playlist?list=PLRmRhh668Qrv7IpHFjAJ7B7A4GbEbQVez' target='_blank'>
                             <img src={SnareOnly} alt='Snare Only Audition Playlist'/>
                         </a>
                     </div>
                     <div className='gt-audition-picturelink'>
-                        <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley' target='_blank'>
+                        <a href='https://www.youtube.com/playlist?list=PLRmRhh668QruVTentUk6CBrZjaT7YiPhj' target='_blank'>
                             <img src={TenorsOnly} alt='Tenors Only Audition Playlist'/>
                         </a>
                     </div>
