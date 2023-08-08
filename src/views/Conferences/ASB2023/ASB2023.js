@@ -15,7 +15,7 @@ const collaborators = [
     [Carlos, 'Carlos Carrasquillo', 'Graduate Student'],
     [Aakash, 'Aakash Bajpai', 'Graduate Student'],
     [Divya, 'Divya Iyengar', 'Graduate Student'],
-    [Killian, 'Killian Collins', 'Undergraduate Website'],
+    [Killian, 'Killian Collins', 'Undergraduate Student'],
     [Anirban, 'Dr. Anirban Mazumdar', 'Assistant Professor'],
     [Aaron, 'Dr. Aaron Young', 'Associate Professor']
 ]
