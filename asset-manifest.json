@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c64c0a95.css",
-    "main.js": "/static/js/main.a5860b33.js",
+    "main.js": "/static/js/main.b65f1224.js",
     "static/media/project-rtrescue1.png": "/static/media/project-rtrescue1.70334d5f9f8c9cdaf796.png",
     "static/media/gallery-football.PNG": "/static/media/gallery-football.5bcc03660611971b94bf.PNG",
     "static/media/project-MAX-battery.png": "/static/media/project-MAX-battery.f8a615ec9e18daff5ab7.png",
@@ -40,6 +40,7 @@
     "static/media/gallery-unlock.JPG": "/static/media/gallery-unlock.3232434bbedcc3c326c0.JPG",
     "static/media/profile-pic.jpg": "/static/media/profile-pic.723a04a984d4e86b4020.jpg",
     "static/media/project-MAX-altium.png": "/static/media/project-MAX-altium.8c8482c020349f1135c3.png",
+    "static/media/collaborators-Killian.jpg": "/static/media/collaborators-Killian.6cfeb29db13dfab48aa0.jpg",
     "static/media/gallery-nasajpl.JPG": "/static/media/gallery-nasajpl.c521354f675425ec6e29.JPG",
     "static/media/gallery-climbing.jpg": "/static/media/gallery-climbing.3cccdf5e118654c2164b.jpg",
     "static/media/gallery-marilyn.JPG": "/static/media/gallery-marilyn.5a87a9184ad47d6e8bd8.JPG",
@@ -94,10 +95,10 @@
     "index.html": "/index.html",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.f544dbe6cbb2b1ca606fb91fc9d395ec.svg",
     "main.c64c0a95.css.map": "/static/css/main.c64c0a95.css.map",
-    "main.a5860b33.js.map": "/static/js/main.a5860b33.js.map"
+    "main.b65f1224.js.map": "/static/js/main.b65f1224.js.map"
   },
   "entrypoints": [
     "static/css/main.c64c0a95.css",
-    "static/js/main.a5860b33.js"
+    "static/js/main.b65f1224.js"
   ]
 }
