@@ -8,14 +8,16 @@ const Carlos  = require('./../Pictures/collaborators-Carlos.jpg'),
       Divya   = require('./../Pictures/collaborators-Divya.jpg'),
       Aakash  = require('./../Pictures/collaborators-Aakash.jpg'),
       Anirban = require('./../Pictures/collaborators-Anirban.jpg'),
-      Aaron   = require('./../Pictures/collaborators-Aaron.jpg');
+      Aaron   = require('./../Pictures/collaborators-Aaron.jpg'),
+      Killian = require('./../Pictures/collaborators-Killian.jpg');
 
 const collaborators = [
     [Carlos, 'Carlos Carrasquillo', 'Graduate Student'],
     [Aakash, 'Aakash Bajpai', 'Graduate Student'],
     [Divya, 'Divya Iyengar', 'Graduate Student'],
+    [Killian, 'Killian Collins', 'Undergraduate Website'],
     [Anirban, 'Dr. Anirban Mazumdar', 'Assistant Professor'],
-    [Aaron, 'Dr. Aaron Young', 'Associate Professor'],
+    [Aaron, 'Dr. Aaron Young', 'Associate Professor']
 ]
 
 class HowItsMade extends React.Component {
