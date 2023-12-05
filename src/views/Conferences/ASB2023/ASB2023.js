@@ -2,7 +2,8 @@ import React from 'react';
 import {Button} from 'antd';
 import './ASB2023.css';
 import ASBLogo from './ASB_Logo.png';
-import Poster from './ASB2023_poster.pdf';
+// import Poster from './ASB2023_poster.pdf';
+const Poster = ""
 
 const Carlos  = require('./../Pictures/collaborators-Carlos.jpg'),
       Divya   = require('./../Pictures/collaborators-Divya.jpg'),
