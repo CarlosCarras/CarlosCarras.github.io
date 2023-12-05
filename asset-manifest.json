@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c64c0a95.css",
-    "main.js": "/static/js/main.480dc1e1.js",
+    "main.js": "/static/js/main.e4965966.js",
     "static/media/project-rtrescue1.png": "/static/media/project-rtrescue1.70334d5f9f8c9cdaf796.png",
     "static/media/gallery-football.PNG": "/static/media/gallery-football.5bcc03660611971b94bf.PNG",
     "static/media/project-MAX-battery.png": "/static/media/project-MAX-battery.f8a615ec9e18daff5ab7.png",
@@ -24,7 +24,6 @@
     "static/media/GTAudition_tenorscentered.png": "/static/media/GTAudition_tenorscentered.7b729b141e7aa532af19.png",
     "static/media/project-MAX-print.jpg": "/static/media/project-MAX-print.8dda28852e85e8edc248.jpg",
     "static/media/project-MAX-pcb.jpg": "/static/media/project-MAX-pcb.9ecb1813eda31d80ebbf.jpg",
-    "static/media/ASB2023_poster.pdf": "/static/media/ASB2023_poster.d10e803be00e9aaf8970.pdf",
     "static/media/gallery-gardenofthegods.JPG": "/static/media/gallery-gardenofthegods.d75712e56169595e9be5.JPG",
     "static/media/gallery-flying.jpg": "/static/media/gallery-flying.68c4de70e2e008e3ab67.jpg",
     "static/media/gallery-caving.jpg": "/static/media/gallery-caving.95f4a8fb514137e94456.jpg",
@@ -95,10 +94,10 @@
     "index.html": "/index.html",
     "static/media/logo-linkedin.svg": "/static/media/logo-linkedin.f544dbe6cbb2b1ca606fb91fc9d395ec.svg",
     "main.c64c0a95.css.map": "/static/css/main.c64c0a95.css.map",
-    "main.480dc1e1.js.map": "/static/js/main.480dc1e1.js.map"
+    "main.e4965966.js.map": "/static/js/main.e4965966.js.map"
   },
   "entrypoints": [
     "static/css/main.c64c0a95.css",
-    "static/js/main.480dc1e1.js"
+    "static/js/main.e4965966.js"
   ]
 }
