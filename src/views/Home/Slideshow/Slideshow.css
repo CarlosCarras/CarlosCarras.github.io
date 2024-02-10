@@ -1,0 +1,10 @@
+.slideshow-container {
+    color: white;
+    width: 300px;
+    border-radius: 0.5rem;
+}
+
+.slideshow-container img {
+    width: 100%;
+    border-radius: 0.5rem;
+}

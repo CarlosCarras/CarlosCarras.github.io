@@ -1,0 +1,42 @@
+.textarea-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.textarea-container .entry {
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.textarea-container .entry .prompt {
+    padding-right: 0.5rem;
+}
+
+.textarea-container .entry input{
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    outline: none;
+}
+
+.textarea-container .entry input::placeholder {
+    opacity: 0;
+}
+
+.textarea-container .entry input:focus::placeholder {
+    opacity: 1;
+}
+
+.textarea-container .entry .response {
+    text-wrap: wrap;
+    overflow: auto;
+}
