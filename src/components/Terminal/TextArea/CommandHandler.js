@@ -12,30 +12,35 @@ const COMMANDS = [
     {name: "help", callback: _help},
 ]
 
-const DIRECTORY = ["home", "about", "contact"]
+export const DIRECTORY = ["home", "about", "hmmm", "contact"]
 
 let ALIASES = []
 
 let IS_SUDO = false;
 
+
 function parseTokens(entry) {
-    const tokens = [];
-    let currentToken = '';
+    let substitutedTokens = [];
+    let tokens = [];
 
-    // Regular expression to match items in double quotes
-    const regex = /"([^"]+)"/g;
-
-    // Replace items in double quotes with a placeholder
-    entry = entry.replace(regex, (match, p1) => `{${tokens.length}}`);
+    // Replace items in double quotes with a placeholder and store them in tokens array
+    // e.g., Welcome to this "beautiful world" "of ours!" >>>> Welcome to this {1} {2}
+    const regex = /"([^"]*)"/g;
+    entry = entry.replace(regex, (match, p1) => {
+        const placeholder = `{${substitutedTokens.length}}`;
+        substitutedTokens.push(p1);
+        return placeholder;
+    });
 
     // Split the modified entry by spaces
-    const splitBySpace = entry.trim().split(' ');
+    const splitBySpace = entry.trim().split(/\s+/);
 
+    // Iterate through the split tokens
     splitBySpace.forEach(token => {
         if (token.startsWith('{') && token.endsWith('}')) {
             // Restore items from double quotes by replacing placeholders with original value
             const index = parseInt(token.slice(1, -1));
-            tokens.push(tokens[index]);
+            tokens.push(substitutedTokens[index]);
         } else {
             tokens.push(token);
         }
@@ -43,7 +48,6 @@ function parseTokens(entry) {
 
     return tokens;
 }
-
 
 export default function handleCommand(entry) {
     let tokens = parseTokens(entry);
@@ -99,6 +103,49 @@ function generateNotEnoughArguementsRes(cmdName) {
     return cmdName + ": not enough arguments"
 }
 
+export function handleTab(entry, cursorPosition) {
+    let candidateSubstring = "";
+    let startOfToken = -1;
+    let endOfToken = -1;
+
+    /* identifying the current token */
+    for (let i=0; i < entry.length; i++) {
+        if (!/\s/.test(entry[i])) {
+            if (i < cursorPosition) {
+                candidateSubstring += entry[i];
+            }
+        } else {
+            if (i < cursorPosition) {
+                candidateSubstring = ""
+                startOfToken = i+1;
+            } else {
+                endOfToken = i-1;
+                break;
+            }
+        }
+    }
+
+    if (endOfToken < 0) {
+        endOfToken = entry.length - 1;
+    }
+
+    /* identifying the possible replacements */
+    let suggestions = []
+
+    for (let i=0; i < DIRECTORY.length; i++) {
+        if (DIRECTORY[i].startsWith(candidateSubstring)) {
+            suggestions.push(DIRECTORY[i]);
+        }
+    }   
+
+    if (suggestions.length === 1) {
+        const autocomplete = entry.substring(0, startOfToken) + suggestions[0] + entry.substring(endOfToken+1, entry.length);
+        return autocomplete;
+    } else if (suggestions.length > 1) {
+        return suggestions;
+    }
+}
+
 function checkIfTokenIsAlias(token) {
     let value = token;
 
@@ -135,10 +182,10 @@ function _alias(args, sudo) {
     if (args.length > 2) {
         return generateTooManyArguementsRes("alias");
     } 
-    else if (args.length == 1) {
+    else if (args.length === 1) {
         return generateNotEnoughArguementsRes("alias");
     }
-    else if (args.length == 0) {
+    else if (args.length === 0) {
         return ALIASES.map(({ alias, value }) => `${alias}=${value}`).join('\n');
     }
 

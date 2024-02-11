@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./TextArea.css";
-import handleCommand from "./CommandHandler";
+import handleCommand, {handleTab} from "./CommandHandler";
 
 const PROMPT = "user@carloscarras.tech~$";
 
@@ -18,9 +18,9 @@ function TextArea() {
         }
     }, [entries]);
 
-    const createNewInputEntry = (entryId) => {
+    const createNewInputEntry = (entryId, value) => {
         setEntries(prevEntries => {
-            const newEntry = { id: entryId, value: "", disabled: false, isUserInput: true };
+            const newEntry = { id: entryId, value: value, disabled: false, isUserInput: true };
             return [...prevEntries, newEntry];
         });
     }
@@ -35,8 +35,8 @@ function TextArea() {
     const handleKeyDown = (event, entryId) => {
         switch (event.key) {
             case "Enter":
-                const input = entries[entryId].value;
-                const res = handleCommand(input);
+                const userInput = entries[entryId].value;
+                const res = handleCommand(userInput);
                 let nextEntryId = entryId + 1;
                 if (res) {
                     if (res === -1) {
@@ -51,13 +51,13 @@ function TextArea() {
                 }
                 
                 /* adding command to history */
-                if (input.trim()) {
-                    setCommandHistory([commandHistory[0], input, ...commandHistory.splice(1)]);
+                if (userInput.trim()) {
+                    setCommandHistory([commandHistory[0], userInput, ...commandHistory.splice(1)]);
                 }
                 
                 /* create new line */
                 entries[entryId].disabled = true;
-                createNewInputEntry(nextEntryId);
+                createNewInputEntry(nextEntryId, "");
 
                 break;
 
@@ -65,7 +65,7 @@ function TextArea() {
                 if (event.ctrlKey) {
                     entries[entryId].value += "^" + "C";
                     entries[entryId].disabled = true;
-                    createNewInputEntry(entryId + 1);
+                    createNewInputEntry(entryId + 1, "");
                 }
                 break;
 
@@ -84,6 +84,24 @@ function TextArea() {
                     const nextCommand = commandHistory[commandHistoryPointer - 1];
                     setCommandHistoryPointer(commandHistoryPointer - 1);
                     entries[entryId].value = nextCommand;
+                }
+                break;
+            
+            case "Tab":
+                event.preventDefault();
+                const userInput2 = entries[entryId].value;
+                const autocomplete = handleTab(userInput2, event.target.selectionStart)
+                if (typeof(autocomplete) === 'string') {
+                    /* autocomplete */
+                    entries[entryId].value = autocomplete;
+                    setEntries([...entries]);
+                } 
+                else if (Array.isArray(autocomplete)) {
+                    /* displaying options */
+                    let nextEntryId = entryId + 1;
+                    createNewResponseEntry(nextEntryId, autocomplete.join("\n"));
+                    nextEntryId += 1;
+                    createNewInputEntry(nextEntryId, userInput2);
                 }
                 break;
 
@@ -126,6 +144,7 @@ function TextArea() {
                         <input
                             type="text"
                             placeholder="type help"
+                            autoComplete="off"
                             ref={(input) => { inputRefs.current[entry.id] = input; }}
                             value={entry.value}
                             disabled={entry.disabled}
