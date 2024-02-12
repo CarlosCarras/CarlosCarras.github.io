@@ -1,0 +1,17 @@
+.gear {
+    position: absolute;
+
+    filter: invert(62%) sepia(0%) saturate(1177%) hue-rotate(152deg) brightness(100%) contrast(85%)     /* credit: https://isotropic.co/tool/hex-color-to-css-filter/ */
+            drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);;                           /* credit: https://stackoverflow.com/questions/12690444/css-border-on-png-image-with-transparent-parts */
+}
+
+#gear1 {
+    cursor: pointer;
+}
+
+.geartrain-arrow {
+    position: absolute;
+    height: 50px;
+    transform: rotate(230deg);
+    filter: invert(15%) sepia(39%) saturate(4018%) hue-rotate(360deg) brightness(103%) contrast(106%);
+}

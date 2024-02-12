@@ -1,12 +1,11 @@
 .App {
     text-align: center;
-    height: 200vh;
 }
 
 .row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }

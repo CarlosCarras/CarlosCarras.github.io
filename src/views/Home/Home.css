@@ -1,47 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
 .home-container {
-    background-color: #323445;
-    min-height: 80vh;
+    background-image: linear-gradient(#1B2D3A, #243e50);
+    padding-top: 80px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 80px;
+    width: 100vw;
+    overflow: hidden;
+
+    --shuttleRight: -40px
 }
 
 .home-container .row {
-    gap: 100px;
     font-size: calc(20px + 2vmin);
+    margin: 0;
     color: white;
+    gap: 50px;
     z-index: 1;
 }
 
-.home-container .name-card {
-    margin: 2rem;
-    width: min(90vw, 600px);
-    max-width: 100%;
-    height: min(400px, 80vh);
+.home-container .row .row-entry {
+    padding-bottom: 10vh;
+}
+
+.home-container .title-container {
+    margin: 5vw 5vw 0 5vw;
+    min-width: calc(6.5* (15px + 7vw));
     text-align: left;
-    padding: 40px 40px;
     line-height: 1;
+    position: relative;
 }
 
-.home-container .name-card h1 {
-    font-size: calc(30px + 6vw);
-    margin: 0;
+.home-container .title-container .greeting {
+    font-size: calc(10px + 2vw);
+    color: #d1d1d1;
+    padding-bottom: 1rem;
 }
 
-.home-container .slideshow {
-    display: block;
+.home-container .title-container h1 {
+    font-family: "Cabin", sans-serif;
+    font-size: calc(15px + 7vw);
+    letter-spacing: .2rem;
+    margin: 0 0 0.2em;
+    height: calc(2*(20px + 6vw));
+    width: 100%;
+    padding: 0 0 0.4em;
+}
+
+.home-container .title ::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: calc(1px + 0.5vh);
+    border-radius: 2rem;
+    background-color: #FFC000;
+}
+
+.home-container .subtitle-container {
+    padding: 3vh 0 0 5vw;
+    text-align: left;
+    font-size: calc(10px + 1vw);
+    color: white;
     opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-    animation-delay: 2.5s;
+    animation: fadeIn forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.home-container .subtitle-container .grad-year {
+    color: #FFC000;
+}
+
+.home-container .shuttle {
+    position: absolute;
+    height: calc(50px + 5vw);
+    right: var(--shuttleRight);
+    bottom: 0;
+    transform: translateY(50%);
+    animation: flyInFromLeft 2s forwards;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.home-container .summary {
+    min-width: 20vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.home-container .summary .summary-box {
+    background-color: #172632;
+    font-size: 1rem;
+    color: black;
+    padding: 1em 1em;
+    width: calc(200px + 5vw);
+    height: 100px;
+    justify-content: left;
+    text-align: start;
+    text-wrap: wrap;
+    color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home-container .summary .summary-box-title {
+    color: #FFC000;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.home-container .skills-container {
+    background-color: #172632;
+    padding: 1em 5vw;
+    width: 90vw;
+    gap: 0;
+}
+
+.home-container .aboutme {
+    height: 300px;
+}
+
+.home-container .terminal {
+    background-color: #172632;
+    width: 100vw;
+    height: 600px;
+    justify-content: space-between;
+}
+
+.home-container .terminal .terminal-space {
+    width: max(45vw, 400px);
+    height: 100%;
+    position: relative;
+}
+
+.home-container .terminal .terminal-desription-container {
+    width: max(45vw, 400px);
+    text-align: left;
+    padding: 1em;
+}
+
+.home-container .terminal .terminal-desription-container p {
+    font-size: 1.2rem;
+}
+
+
+.home-container .geartrain-container {
+    position: absolute;
+    top: -2vh;
+    right: -4vh;
+    user-select: none;
+}
+
+
+@media (min-width: 1400px) {
+    .home-container .summary {
+        flex-direction: column;
+    }
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0; 
+    from {
+        opacity: 0;
     }
-
-    100% {
+    to {
         opacity: 1;
     }
+}
+
+/* shuttle flying */
+
+@keyframes flyInFromLeft {
+    from {
+        right: 100vw;
+    }
+    to {
+        right: var(--shuttleRight);
+    }
+}
+
+@keyframes flyOutToRight {
+    from {
+        right: var(--shuttleRight);
+    }
+    to {
+        right: -100vw;
+    }
+}
+
+.home-container .shuttle.flying-out {
+    animation: flyOutToRight 2s forwards;
+}
+
+.home-container .shuttle.flying-in {
+    animation: flyInFromLeft 2s forwards;
 }

@@ -11,7 +11,7 @@ function Terminal(props) {
     const [isDragging, setIsDragging] = useState(false);
     const [offset, setOffset] = useState({ x: 0, y: 0 });
     const [position, setPosition] = useState({ x: props.left, y: props.top });
-    const [textContainerDims, setTextContainerDims] = useState({width: 720, height: 350});
+    const [textContainerDims, setTextContainerDims] = useState({width: props.width, height: props.height});
 
     const textContainerRef = useRef(null);
 
@@ -22,15 +22,15 @@ function Terminal(props) {
 
     /* Functions that enable dragging the terminal around the website */
     const handleMouseMove = useCallback((event) => {
+        // console.log(Math.max(event.clientY, 80))
         if (!isDragging) return;
         
-        let newX = event.clientX - offset.x;
-        let newY = event.clientY - offset.y;
-        newY = Math.max(30, newY);
+        let cursorX = event.clientX;
+        let cursorY = Math.min(Math.max(event.clientY, 80), window.innerHeight-30);
 
         setPosition({
-            x: newX,
-            y: newY
+            x: cursorX - offset.x,
+            y: cursorY - offset.y
         });
     }, [isDragging, offset]);
 
@@ -51,11 +51,35 @@ function Terminal(props) {
         setIsDragging(false);
     };
 
+    const handleTouchStart = (event) => {
+        event.preventDefault();
+        setIsDragging(true);
+        setOffset({
+            x: event.touches[0].clientX - position.x,
+            y: event.touches[0].clientY - position.y
+        });
+    };
+    
+    const handleTouchMove = (event) => {
+        event.preventDefault();
+        if (isDragging) {
+            setPosition({
+                x: event.touches[0].clientX - offset.x,
+                y: event.touches[0].clientY - offset.y
+            });
+        }
+    };
+    
+    const handleTouchEnd = (event) => {
+        event.preventDefault();
+        setIsDragging(false);
+    };
+
     const handleResize = (entries) => {
         for (let entry of entries) {
             if (entry.target.className === "text-container") {
-                const w = entry.contentRect.width;
-                const h = entry.contentRect.height;
+                const w = parseInt(entry.contentRect.width);
+                const h = parseInt(entry.contentRect.height);
                 setTextContainerDims({width: w, height: h});
             }
         }
@@ -90,9 +114,27 @@ function Terminal(props) {
         };
     }, []);
 
+    useEffect(() => {
+        const w = parseInt(props.width);
+        const h = parseInt(props.height);
+        setTextContainerDims({width: w, height: h});
+    }, [props.width, props.height])
+
+    useEffect(() => {
+        const container = textContainerRef.current;
+        if (container) {
+            container.style.width = `${textContainerDims.width}px`;
+            container.style.height = `${textContainerDims.height}px`;
+        }
+    }, [textContainerDims]);
+
     return (
         <div className={"terminal-container " + theme} style={{top: position.y, left: position.x}}>
-            <div className="header" onMouseDown={handleMouseDown} onMouseUp={handleMouseUp}>
+            <div className="header" onMouseDown={handleMouseDown} 
+                                    onMouseUp={handleMouseUp} 
+                                    onTouchStart={handleTouchStart}
+                                    onTouchMove={handleTouchMove}
+                                    onTouchEnd={handleTouchEnd}>
                 <span>carloscarras.tech</span>
                 <span>bash - {textContainerDims.width + "x" + textContainerDims.height}</span>
                 <span>{timeString}</span>
