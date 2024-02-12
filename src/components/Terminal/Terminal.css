@@ -5,7 +5,7 @@
     margin: 20px;
     color: white;
     z-index: 3;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--default-shadow);
 }
 
 .terminal-container.disabled {

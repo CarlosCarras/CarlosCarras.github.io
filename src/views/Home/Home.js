@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect"
 import "./Home.css"
 
-import Slideshow from "./Slideshow/Slideshow"
 import Terminal from "./../../components/Terminal/Terminal"
 import GearTrain from "./../../components/GearTrain/GearTrain"
 import SkillEntry from "../../components/SkillEntry/SkillEntry";
+import AboutMe from "../../components/AboutMe/AboutMe"
 
 
 const SHUTTLE = require('./../../assets/shuttle.png');
@@ -99,7 +99,7 @@ function Home() {
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, []);
+    }, [terminalWidth]);
 
     return(
         <div className="home-container">
@@ -175,9 +175,7 @@ function Home() {
                 ))}
             </div>
             <div className="row aboutme">
-                <div className="row-entry">
-                    Test!
-                </div>  
+                <AboutMe/>
             </div>
             <div className="row terminal">
                 <div className={"row-entry terminal-desription-container " + (isNarrow ? "narrow" : "")}>
