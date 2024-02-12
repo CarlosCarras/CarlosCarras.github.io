@@ -45,6 +45,7 @@ const SKILLS_DATA = [
 
 const colorPallete = ["#1ecbe1", "#e0e300", "#1ee196", "#ff598f", "#d300dd"];
 
+const TERMINAL_MAXDIMS = {w: 800, h: 400}
 
 function Home() {
     const [isShuttleFlyingOut, setIsShuttleFlyingOut] = useState(false);
@@ -74,19 +75,26 @@ function Home() {
     }, []);
 
     /* manage terminal width and height */
-    const [terminalWidth, setTerminalWidth] = useState(
-        Math.min(90 * window.innerWidth / 100, 500)
-    );
-    const [terminalHeight, setTerminalHeight] = useState(
-        Math.min(80 * window.innerHeight / 100, 500)
-    );
+    const [terminalWidth, setTerminalWidth] = useState(300);
+    const [terminalHeight, setTerminalHeight] = useState(300);
+    const [isNarrow, setIsNarrow] = useState(false);
+    const [terminalPos, setTerminalPos] = useState({x: Math.max((0.4*window.innerWidth-400)/2, 0), y: 50});
     useEffect(() => {
         const handleResize = () => {
-            setTerminalWidth(Math.min(80 * window.innerWidth / 100, 500));
-            setTerminalHeight(Math.min(80 * window.innerHeight / 100, 500));
+            const _isNarrow = window.innerWidth < 950;
+            const posMultiplier = _isNarrow ? 0.9 : 0.45;
+            const widthMultiplier = _isNarrow ? 0.8 : 0.4;
+            const heightMultiplier = 0.8;
+
+            setTerminalPos({x: posMultiplier*window.innerWidth-terminalWidth/2, y: 50});
+            setTerminalWidth(Math.min(widthMultiplier*window.innerWidth, TERMINAL_MAXDIMS.w));
+            setTerminalHeight(Math.min(heightMultiplier*window.innerHeight, TERMINAL_MAXDIMS.h));
+            setIsNarrow(_isNarrow);
         };
 
         window.addEventListener("resize", handleResize);
+
+        handleResize();
 
         return () => {
             window.removeEventListener("resize", handleResize);
@@ -172,14 +180,12 @@ function Home() {
                 </div>  
             </div>
             <div className="row terminal">
-                <div className="row-entry terminal-space">
-                    <Terminal top={0} left={100} width={terminalWidth} height={terminalHeight}/>
-                </div> 
-                <div className="row-entry terminal-desription-container">
+                <div className={"row-entry terminal-desription-container " + (isNarrow ? "narrow" : "")}>
                     <h2>Terminal</h2>
                     <p>An interactive terminal.</p>
                     <p>An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal.</p>
                 </div>   
+                <Terminal top={terminalPos.y} left={terminalPos.x} width={terminalWidth} height={terminalHeight}/>
             </div>
         </div>
     )

@@ -52,7 +52,6 @@ function Terminal(props) {
     };
 
     const handleTouchStart = (event) => {
-        event.preventDefault();
         setIsDragging(true);
         setOffset({
             x: event.touches[0].clientX - position.x,
@@ -61,7 +60,6 @@ function Terminal(props) {
     };
     
     const handleTouchMove = (event) => {
-        event.preventDefault();
         if (isDragging) {
             setPosition({
                 x: event.touches[0].clientX - offset.x,
@@ -71,7 +69,6 @@ function Terminal(props) {
     };
     
     const handleTouchEnd = (event) => {
-        event.preventDefault();
         setIsDragging(false);
     };
 
@@ -97,9 +94,16 @@ function Terminal(props) {
         window.addEventListener("mousemove", handleMouseMove);
         window.addEventListener("mouseout", handleMouseOut);
 
+        const preventDefaultTouchScroll = (e) => {
+            e.preventDefault();
+        };
+        window.addEventListener("touchmove", preventDefaultTouchScroll, { passive: false });
+        
+
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("mouseout", handleMouseOut);
+            window.removeEventListener("touchmove", preventDefaultTouchScroll);
         };
     }, [handleMouseMove]);
 
