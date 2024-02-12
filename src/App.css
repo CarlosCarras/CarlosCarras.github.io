@@ -1,7 +1,29 @@
 .App {
     text-align: center;
-    --accent-color: #FFC000;
+    
     --default-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+    --bg-gradient: linear-gradient(#1B2D3A, #243e50);
+    --bg-color-light: #172632;
+    --bg-color-dark: #172632;
+    --text-color: white;
+    --text-color-2: #d1d1d1;
+    --accent-color: #FFC000;
+    --accent-color-2: #FFC000;
+    --accent-color-filter: invert(15%) sepia(39%) saturate(4018%) hue-rotate(360deg) brightness(103%) contrast(106%);   /* credit: https://isotropic.co/tool/hex-color-to-css-filter/ */
+    --link-color: #a9cdeb;
+}
+
+.App.light {
+    --bg-gradient: linear-gradient(#eeeeee, #bfbfbf);
+    --bg-color-light: #bcbcbc;
+    --bg-color-dark: #3e3e3e;
+    --text-color: black;
+    --text-color-2: #2e2e2e;
+    --accent-color: #00C0ff;
+    --accent-color-2: #0080ff;
+    --accent-color-filter: invert(55%) sepia(25%) saturate(3336%) hue-rotate(159deg) brightness(103%) contrast(104%);   /* credit: https://isotropic.co/tool/hex-color-to-css-filter/ */
+    --link-color: #f1d207;
 }
 
 .row {
@@ -10,4 +32,10 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--link-color);
 }

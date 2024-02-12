@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
 .home-container {
-    background-image: linear-gradient(#1B2D3A, #243e50);
+    background-image: var(--bg-gradient);
+    color: var(--text-color);
     padding-top: 80px;
     display: flex;
     align-items: center;
@@ -15,7 +16,6 @@
 .home-container .row {
     /* font-size: calc(20px + 2vmin); */
     margin: 0;
-    color: white;
     gap: 50px;
     z-index: 1;
 }
@@ -34,7 +34,7 @@
 
 .home-container .title-container .greeting {
     font-size: calc(10px + 2vw);
-    color: #d1d1d1;
+    color: var(--text-color-2);
     padding-bottom: 1rem;
 }
 
@@ -63,7 +63,7 @@
     padding: 3vh 0 0 5vw;
     text-align: left;
     font-size: calc(10px + 1vw);
-    color: white;
+    color: var(--text-color);
     opacity: 0;
     animation: fadeIn forwards;
     animation-duration: 2s;
@@ -72,6 +72,7 @@
 
 .home-container .subtitle-container .grad-year {
     color: var(--accent-color);
+    font-weight: 600;
 }
 
 .home-container .shuttle {
@@ -98,27 +99,25 @@
 }
 
 .home-container .summary .summary-box {
-    background-color: #172632;
+    background-color: var(--bg-color-light);
     font-size: 1rem;
-    color: black;
     padding: 1em 1em;
     width: calc(200px + 5vw);
     height: 100px;
     justify-content: left;
     text-align: start;
     text-wrap: wrap;
-    color: white;
     box-shadow: var(--default-shadow);
 }
 
 .home-container .summary .summary-box-title {
-    color: var(--accent-color);
+    color: var(--accent-color-2);
     font-weight: 700;
     font-size: 1.5rem;
 }
 
 .home-container .skills-container {
-    background-color: #172632;
+    background-color: var(--bg-color-dark);
     padding: 1em 5vw;
     width: 90vw;
     gap: 0;
@@ -130,7 +129,7 @@
 }
 
 .home-container .terminal {
-    background-color: #172632;
+    background-color: var(--bg-color-light);
     width: 100vw;
     justify-content:space-around;
     gap: 100px;
