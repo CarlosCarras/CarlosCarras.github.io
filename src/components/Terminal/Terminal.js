@@ -5,7 +5,7 @@ import TextArea from './TextArea/TextArea'
 
 
 function Terminal(props) {
-    const [theme, setTheme] = useState("homebrew")
+    const [theme, setTheme] = useState(props.theme)
     const [date, setDate] = useState(new Date());
 
     const [isDragging, setIsDragging] = useState(false);
@@ -122,7 +122,8 @@ function Terminal(props) {
         const w = parseInt(props.width);
         const h = parseInt(props.height);
         setTextContainerDims({width: w, height: h});
-    }, [props.width, props.height])
+        setTheme(props.theme);
+    }, [props.width, props.height, props.theme])
 
     useEffect(() => {
         const container = textContainerRef.current;

@@ -12,11 +12,12 @@ function TextArea() {
     const inputRefs = useRef({});
 
     useEffect(() => {
-        if (entries.length > 0) {
+        /* focus on input, only if the user has already entered a command. prevents autofocus on load*/
+        if (entries.length > 0 && commandHistory.length > 1) { 
             const lastEntryId = entries[entries.length - 1].id;
             inputRefs.current[lastEntryId].focus();
         }
-    }, [entries]);
+    }, [entries, commandHistory]);
 
     const createNewInputEntry = (entryId, value) => {
         setEntries(prevEntries => {
@@ -63,7 +64,7 @@ function TextArea() {
 
             case "c":
                 if (event.ctrlKey) {
-                    entries[entryId].value += "^" + "C";
+                    entries[entryId].value += "^C";
                     entries[entryId].disabled = true;
                     createNewInputEntry(entryId + 1, "");
                 }

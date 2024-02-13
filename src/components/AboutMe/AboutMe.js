@@ -20,7 +20,7 @@ function AboutMe() {
                 </p>
             </div>
             <div className="aboutme-col picture">
-                <img src={PROFILE} alt="Profile picture" draggable={false}/>
+                <img src={PROFILE} alt="profile" draggable={false}/>
             </div>
         </div>
     )

@@ -108,12 +108,19 @@
     text-align: start;
     text-wrap: wrap;
     box-shadow: var(--default-shadow);
+    position: relative;
 }
 
 .home-container .summary .summary-box-title {
     color: var(--accent-color-2);
     font-weight: 700;
     font-size: 1.5rem;
+}
+
+.home-container .summary .summary-box a {
+    position: absolute;
+    right: 1em;
+    bottom: 0.75em;
 }
 
 .home-container .skills-container {
@@ -156,6 +163,19 @@
     margin: 500px 2em 0;
 }
 
+.home-container .terminal .terminal-theme-selector {
+    width: 10em;
+    font-size: 1em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.25em 0.5em;
+}
+
+.home-container .terminal .input-caption {
+    font-weight: 800;
+    font-size: 1.2em;
+    padding-right: 0.5em;
+}
 
 .home-container .geartrain-container {
     position: absolute;
@@ -163,6 +183,8 @@
     right: -4vh;
     user-select: none;
 }
+
+/* media queries */
 
 @media (max-width: 1200px) {
     .home-container .aboutme {
@@ -176,6 +198,8 @@
         flex-direction: column;
     }
 }
+
+/* animations */
 
 @keyframes fadeIn {
     from {

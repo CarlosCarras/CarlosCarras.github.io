@@ -5,18 +5,39 @@
     padding: 1rem 2rem;
     background-color: rgba(255,255,255,0);
     color: black;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
     position: fixed;
     left: 0;
 	right: 0;
     z-index: 1000;
 }
 
-.navbar a {
-    text-decoration: none;
-    cursor: pointer;
+.navbar.bg-active {
+    background-color: rgba(0,0,0,0.6);
 }
 
-.bg-active {
-    background-color: rgba(0,0,0,0.2);
+.navbar .logo {
+    height: 3em;
+}
+
+.nav-links-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: right;
+    gap: 50px;
+}
+
+.navbar .nav-links-container a {
+    font-size: 1.5em;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+}
+
+.navbar.bg-active .nav-links-container a {
+    color: white;
+}
+
+.navbar .nav-links-container a:hover {
+    color: var(--accent-color);
 }

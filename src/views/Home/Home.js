@@ -45,9 +45,19 @@ const SKILLS_DATA = [
 
 const colorPallete = ["#1ecbe1", "#e0e300", "#1ee196", "#ff598f", "#d300dd"];
 
-const TERMINAL_MAXDIMS = {w: 800, h: 400}
+const TERMINAL_MAXDIMS = {w: 800, h: 400},
+      TERMINAL_THEMES = [
+        "Basic",
+        "Florida",
+        "Homebrew",
+        "Navy",
+        "Tech"
+      ];
 
-function Home() {
+function Home(props) {
+    const [isDarkmode, setDarkMode] = useState(props.darkmode);
+    const defaultTerminalIdx = isDarkmode ? 2 : 0;
+    const [terminalTheme, setTerminalTheme] = useState(TERMINAL_THEMES[defaultTerminalIdx].toLocaleLowerCase());
     const [isShuttleFlyingOut, setIsShuttleFlyingOut] = useState(false);
     const [isLoaded, setIsLoaded] = useState(
         typeof window !== "undefined"
@@ -59,6 +69,10 @@ function Home() {
         setIsShuttleFlyingOut(true);
         setTimeout(() => setIsShuttleFlyingOut(false), 2000);
     };
+
+    const handleThemeChange = (event) => {
+        setTerminalTheme(event.target.value);
+    }
 
     /* update gears when window resized */
     const [gearTrainScale, setGearTrainScale] = useState(0.1 + 0.00025 * window.innerWidth);
@@ -100,6 +114,10 @@ function Home() {
             window.removeEventListener("resize", handleResize);
         };
     }, [terminalWidth]);
+
+    useEffect(() => {
+        setDarkMode(props.darkmode)
+    }, [props.darkmode]);
 
     return(
         <div className="home-container">
@@ -158,14 +176,17 @@ function Home() {
                     <div className="summary-box">
                         <span className="summary-box-title"> Researcher </span>
                         <p>I like to rigorously and methodically find answers to questions.</p>
+                        <a href="/" target="_blank" rel="noopener noreferrer"> Google Scholar </a>
                     </div>
                     <div className="summary-box">
                         <span className="summary-box-title"> Developer </span>
                         <p>I like to write software to solve problems.</p>
+                        <a href="/" target="_blank" rel="noopener noreferrer"> GitHub </a>
                     </div>
                     <div className="summary-box">
                         <span className="summary-box-title"> Engineer </span>
-                         <p>I like to build things to solve problems.</p>
+                        <p>I like to build things to solve problems.</p>
+                        <a href="/" target="_blank" rel="noopener noreferrer"> Design Portfolio </a>
                     </div>
                 </div>
             </div>
@@ -182,8 +203,21 @@ function Home() {
                     <h2>Terminal</h2>
                     <p>An interactive terminal.</p>
                     <p>An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal. An interactive terminal.</p>
+                    
+                    <span className="input-caption"> Theme </span>
+                    <select name="theme-selector" 
+                            className="terminal-theme-selector" 
+                            onChange={handleThemeChange}>
+                        {TERMINAL_THEMES.map((entry, index) => (
+                            <option value={entry.toLocaleLowerCase()} 
+                                    key={index} 
+                                    defaultValue={terminalTheme === entry.toLocaleLowerCase()}>
+                                {entry}
+                            </option>
+                        ))}
+                    </select>
                 </div>   
-                <Terminal top={terminalPos.y} left={terminalPos.x} width={terminalWidth} height={terminalHeight}/>
+                <Terminal top={terminalPos.y} left={terminalPos.x} width={terminalWidth} height={terminalHeight} theme={terminalTheme}/>
             </div>
         </div>
     )
