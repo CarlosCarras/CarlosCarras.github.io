@@ -96,13 +96,13 @@ function Terminal(props) {
         const preventDefaultTouchScroll = (e) => {
             e.preventDefault();
         };
-        window.addEventListener("touchmove", preventDefaultTouchScroll, { passive: false });
+        // window.addEventListener("touchmove", preventDefaultTouchScroll, { passive: false });
         
 
         return () => {
             window.removeEventListener("mousemove", handleMouseMove);
             window.removeEventListener("mouseout", handleMouseOut);
-            window.removeEventListener("touchmove", preventDefaultTouchScroll);
+            // window.removeEventListener("touchmove", preventDefaultTouchScroll);
         };
     }, [handleMouseMove]);
 
@@ -136,9 +136,10 @@ function Terminal(props) {
         <div className={"terminal-container " + theme} style={{top: position.y, left: position.x}}>
             <div className="header" onMouseDown={handleMouseDown} 
                                     onMouseUp={handleMouseUp} 
-                                    onTouchStart={handleTouchStart}
-                                    onTouchMove={handleTouchMove}
-                                    onTouchEnd={handleTouchEnd}>
+                                    // onTouchStart={handleTouchStart}
+                                    // onTouchMove={handleTouchMove}
+                                    // onTouchEnd={handleTouchEnd}
+            >
                 <span>carloscarras.tech</span>
                 <span>bash - {textContainerDims.width + "x" + textContainerDims.height}</span>
                 <span>{timeString}</span>

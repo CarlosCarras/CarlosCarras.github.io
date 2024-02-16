@@ -90,16 +90,16 @@ function GearTrain(props) {
       
         window.addEventListener('mousemove', handleMouseMove);
         window.addEventListener('mouseup', handleMouseUp);
-        // window.addEventListener('touchmove', handleTouchMove);
-        // window.addEventListener('touchend', handleTouchEnd);
-        // window.addEventListener('touchcancel', handleTouchEnd);
+        window.addEventListener('touchmove', handleTouchMove);
+        window.addEventListener('touchend', handleTouchEnd);
+        window.addEventListener('touchcancel', handleTouchEnd);
       
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
             window.removeEventListener('mouseup', handleMouseUp);
-            // window.removeEventListener('touchmove', handleTouchMove);
-            // window.removeEventListener('touchend', handleTouchEnd);
-            // window.removeEventListener('touchcancel', handleTouchEnd);
+            window.removeEventListener('touchmove', handleTouchMove);
+            window.removeEventListener('touchend', handleTouchEnd);
+            window.removeEventListener('touchcancel', handleTouchEnd);
         };
     }, [manualControl]);
     
@@ -129,7 +129,7 @@ function GearTrain(props) {
             <img id="gear1" className="gear" src={GEARS[0].src} alt="gear 1" draggable={false} 
                  style={{"top": pos1.y, "right": pos1.x, "height": 2*r1, "transform": "rotate("+angle1+"deg)"}}
                  onMouseDown={handleMouseDown}
-                //  onTouchStart={handleMouseDown}
+                 onTouchStart={handleMouseDown}
                  ref={gear1Ref}/>
             <img id="gear2" className="gear" src={GEARS[1].src} alt="gear 2" draggable={false} 
                  style={{"top": pos2.y, "right": pos2.x, "height": 2*r2, "transform": "rotate("+angle2+"deg)"}}/>
