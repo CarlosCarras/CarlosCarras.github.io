@@ -53,7 +53,7 @@ const GRAD_COURSEWORK = [
                 {course: "CS8750: Multidisciplinary Robotics Research I", credits: 3},
         ],
     },
-]
+].reverse()
 
 const UNDERGRAD_COURSEWORK = [
     {
@@ -160,7 +160,7 @@ const UNDERGRAD_COURSEWORK = [
                 {course: "COP4600: Operating Systems", credits: 3},
         ],
     },
-]
+].reverse()
 
 
 function Coursework() {
