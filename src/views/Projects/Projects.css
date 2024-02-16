@@ -1,0 +1,33 @@
+.projects-container {
+    background-image: var(--bg-gradient-shallow);
+    padding: 20vh 0 10vh;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-thumbnail-container {
+    width: 55%;
+}
+
+.robot-container {
+    width: 40%;
+}
+
+@media (max-width: 1000px) {
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-thumbnail-container {
+        width: 100%
+    }
+
+    .robot-container {
+        width: 100%;
+    }
+}

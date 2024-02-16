@@ -1,0 +1,14 @@
+.skill-container {
+    background-color: transparent;
+    border: 2px solid;
+    height: 20px;
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 0.2rem 1rem;
+    margin: 0.4rem;
+    cursor: default;
+}
+
+.skill-container:hover {
+    box-shadow: 0 0 8px 2px;
+}

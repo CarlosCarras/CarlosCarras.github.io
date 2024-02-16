@@ -1,0 +1,63 @@
+.App {
+    text-align: center;
+    
+    --default-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    --code-green: #00ff00;
+
+    --bg-gradient: linear-gradient(#1B2D3A, #365870, #ffd558, #FFC000);
+    --bg-gradient-shallow: linear-gradient(#1B2D3A, #365870);   /* 7e7c5b */
+    --bg-default: #000000;
+    --bg-color-light: #172632;
+    --bg-color-dark: #172632;
+    --bg-color-glass: rgba(23, 38, 50, 0.2);
+    --bg-textarea: #3b6281;
+    --text-color: white;
+    --text-color-2: #d1d1d1;
+    --accent-color: #FFC000;
+    --accent-color-2: #FFC000;
+    --accent-color-filter: invert(15%) sepia(39%) saturate(4018%) hue-rotate(360deg) brightness(103%) contrast(106%);   /* credit: https://isotropic.co/tool/hex-color-to-css-filter/ */
+    --link-color: #a9cdeb;
+    --list-even-color: rgba(255, 255, 255, 0.1);
+    --resume-page-color: rgba(255,255,255,0.8);
+    --not-found-gradient: -webkit-linear-gradient(left, #FFC000, #ffa989);
+}
+
+.App.light {
+    --bg-gradient: linear-gradient(#eeeeee, #9ffcff);
+    --bg-gradient-shallow: linear-gradient(#eeeeee, #d4feff);
+    --bg-default: #ffffff;
+    --bg-color-light: #d6d6d6;
+    --bg-color-dark: #3e3e3e;
+    --bg-color-glass: rgba(62, 62, 62, 0.2);
+    --bg-textarea: #e0e0e0;
+    --text-color: black;
+    --text-color-2: #2e2e2e;
+    --accent-color: #00C0ff;
+    --accent-color-2: black;
+    --accent-color-filter: invert(55%) sepia(25%) saturate(3336%) hue-rotate(159deg) brightness(103%) contrast(104%);   /* credit: https://isotropic.co/tool/hex-color-to-css-filter/ */
+    --link-color: #0080ff;
+    --list-even-color: rgba(255, 255, 255, 0.4);
+    --resume-page-color: rgba(255,255,255,0.8);
+    --not-found-gradient: -webkit-linear-gradient(left, #8689f0, #3bedb8);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    font-weight: 800;
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

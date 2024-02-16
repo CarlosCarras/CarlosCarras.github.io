@@ -1,0 +1,64 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgba(255,255,255,0);
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    position: fixed;
+    left: 0;
+	right: 0;
+    z-index: 1000;
+}
+
+.navbar.bg-active {
+    background-color: rgba(0,0,0,0.6);
+}
+
+.navbar .logo {
+    height: 3em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.navbar .menu > * {
+    font-size: 1.5em;
+    color: var(--text-color);
+    transition: color 0.2s ease;
+    cursor: pointer;
+}
+
+.navbar.bg-active > .menu > * {
+    color: white;
+}
+
+.navbar > .menu > *:hover {
+    color: var(--accent-color);
+}
+
+.navbar .menu .hambuerger-menu {
+    display: none;
+    font-size: 2em;
+    margin: 0;
+    padding: 0 0.2em 0.1em;
+    /* border: 2px solid transparent; */
+}
+
+@media (max-width: 970px) {
+    .navbar > .menu a {
+        display: none;
+    }
+
+    .navbar > .menu .hambuerger-menu {
+        display: block;
+    }
+} 

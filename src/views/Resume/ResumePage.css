@@ -1,0 +1,107 @@
+.resume-view-container .resume-page {
+    background: var(--resume-page-color);
+    opacity: 0.9;
+    padding: 20px 50px 0;
+    box-shadow: 0px 0px 5px 0px #888;
+    width: 90vw;
+    max-width: 1024px;
+    font-size: calc(1px + 1vw);
+}
+
+.resume-page .contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: calc(2px + 1vw);
+    font-weight: 600;
+}
+
+.resume-page .divider-line {
+    border-bottom: 2px solid navy;
+}
+
+.resume-page .section {
+    padding-top: 20px;
+}
+
+.resume-page .section-header {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.resume-page .section-content {
+    padding: 20px 20px 0 20px;
+}
+
+.resume-page .resume-entry {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.15em;
+}
+
+.resume-page .resume-entry.entry-title {
+    font-weight: 800;
+}
+
+.resume-page .resume-entry-supplement {
+    text-align: left;
+    padding: 0.15em 0.15em 0.15em 2em;
+}
+
+.resume-page .resume-bullet div {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.resume-page .resume-bullet div:first-child::before {
+    display: inline-block;
+    margin-left: -1em;
+    width: 1em;
+    font-weight: 800;
+    content: "\2013";
+}
+
+.resume-page .dotted-bullet {
+    background: black;
+    border-radius: 50%;
+    height: 0.25rem;
+    width: 0.25rem;
+    margin: 0 1rem;
+    transform: translate(0, 200%);
+}
+
+.resume-page .resume-bullet.skill-list {
+    justify-content: left;
+}
+
+/* references */
+.resume-page .reference-list {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.resume-page .reference-list li {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em 0;
+}
+
+.resume-page .reference-list li .reference-number {
+    display: inline-block;
+    width: 30px;
+}
+
+.resume-page .reference-list li div {
+    padding-left: 20px;
+}
+
+.resume-page .reference-list .author-callout {
+    font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    background-color: var(--bg-default);
+    padding: 4rem 2rem;
+    width: 65vw;
+    max-width: 300px;
+    transition: left 0.5s ease;
+    z-index: 1001;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar > img  {
+    height: 3em;
+}
+
+.sidebar .menu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 2rem 0rem;
+    gap: 1.5em;
+}
+
+.sidebar .menu a {
+    padding: 0rem;
+    font-size: 2em;
+}

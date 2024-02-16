@@ -1,0 +1,67 @@
+.thumbnail-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--text-color);
+    --thumbnail-img-width: 260px;
+    --thumbnail-img-height: 180px;
+    --box-height: 320px;
+    --box-width: var(--thumbnail-img-width);
+}
+
+.thumbnail-list-container .thumbnail-container {
+    background-color: var(--bg-color-glass);
+    box-shadow: var(--default-shadow);
+    height: var(--box-height);
+    width: var(--thumbnail-img-width);
+    border-radius: 0.5em;
+    margin: 1em 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+.thumbnail-list-container .thumbnail-container .image-container {
+    height: var(--thumbnail-img-height);
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-list-container .thumbnail-container .image-container img {
+    width: 100%;
+}
+
+.thumbnail-list-container .thumbnail-container .thumbnail-description {
+    position: absolute;
+    top: var(--thumbnail-img-height);
+    left: 0;
+    padding: 1em;
+    width: calc(100% - 2*1em);
+    height: calc(100% - var(--thumbnail-img-height) - 2*1em);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+.thumbnail-list-container .thumbnail-container .thumbnail-description h4 {
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 0.8em;
+    margin: 0 0 0.4em;
+}
+
+.thumbnail-list-container .thumbnail-container .thumbnail-description h3 {
+    color: var(--accent-color-2);
+    margin: 0 0 0.4em;
+}
+
+.thumbnail-list-container .thumbnail-container .thumbnail-description a {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}

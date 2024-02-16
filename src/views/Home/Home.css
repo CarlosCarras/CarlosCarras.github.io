@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+.home-container {
+    background-image: var(--bg-gradient);
+    color: var(--text-color);
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    overflow: hidden;
+
+    --shuttleRight: -40px
+}
+
+.home-container .row {
+    /* font-size: calc(20px + 2vmin); */
+    margin: 0;
+    gap: 50px;
+    z-index: 1;
+}
+
+.home-container .row .row-entry {
+    padding-bottom: 10vh;
+}
+
+.home-container .title-container {
+    margin: 5vw 5vw 0 5vw;
+    min-width: calc(6.5* (15px + 7vw));
+    text-align: left;
+    line-height: 1;
+    position: relative;
+}
+
+.home-container .title-container .greeting {
+    font-size: calc(10px + 2vw);
+    color: var(--text-color-2);
+    padding-bottom: 1rem;
+}
+
+.home-container .title-container h1 {
+    font-family: "Cabin", sans-serif;
+    font-size: calc(15px + 7vw);
+    letter-spacing: .2rem;
+    margin: 0 0 0.2em;
+    height: calc(2*(20px + 6vw));
+    width: 100%;
+    padding: 0 0 0.4em;
+}
+
+.home-container .title ::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: calc(1px + 0.5vh);
+    border-radius: 2rem;
+    background-color: var(--accent-color);
+}
+
+.home-container .subtitle-container {
+    padding: 3vh 0 0 5vw;
+    text-align: left;
+    font-size: calc(10px + 1vw);
+    color: var(--text-color);
+    opacity: 0;
+    animation: fadeIn forwards;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.home-container .subtitle-container .grad-year {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.home-container .shuttle {
+    position: absolute;
+    height: calc(50px + 5vw);
+    right: var(--shuttleRight);
+    bottom: 0;
+    transform: translateY(50%);
+    animation: flyInFromLeft 2s forwards;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+
+.home-container .summary {
+    min-width: 20vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+.home-container .summary .summary-box {
+    background-color: var(--bg-color-light);
+    font-size: 1rem;
+    padding: 1em 1em;
+    width: calc(200px + 5vw);
+    height: 100px;
+    justify-content: left;
+    text-align: start;
+    text-wrap: wrap;
+    box-shadow: var(--default-shadow);
+    position: relative;
+}
+
+.home-container .summary .summary-box-title {
+    color: var(--accent-color-2);
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.home-container .summary .summary-box a {
+    position: absolute;
+    right: 1em;
+    bottom: 0.75em;
+}
+
+.home-container .skills-container {
+    background-color: var(--bg-color-dark);
+    padding: 1em 5vw;
+    width: 90vw;
+    gap: 0;
+}
+
+.home-container .aboutme {
+    margin: 7vh 0;
+    width: 90vw;
+    max-width: 1400px;
+}
+
+.home-container .terminal {
+    background-color: var(--bg-color-light);
+    width: 100vw;
+    justify-content:space-around;
+    gap: 100px;
+    position: relative;
+}
+
+.home-container .terminal .terminal-desription-container {
+    margin: 1em 2em 0 55vw;
+    width: 100%;
+    min-height: 500px;
+    text-align: left;
+    padding: 1em;
+}
+
+.home-container .terminal .terminal-desription-container h2 {
+    font-size: 3rem;
+}
+
+.home-container .terminal .terminal-desription-container p {
+    font-size: calc(12px + 0.4vw);
+}
+
+.home-container .terminal .terminal-desription-container.narrow {
+    margin: 500px 2em 0;
+}
+
+.home-container .terminal .terminal-theme-selector {
+    width: 10em;
+    font-size: 1em;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0.25em 0.5em;
+}
+
+.home-container .terminal .input-caption {
+    font-weight: 800;
+    font-size: 1.2em;
+    padding-right: 0.5em;
+}
+
+.home-container .geartrain-container {
+    position: absolute;
+    top: -2vh;
+    right: -4vh;
+    user-select: none;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+    .home-container .row .row-entry:first-child {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-container .summary {
+        flex-direction: column;
+    }
+}
+
+/* animations */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* shuttle flying */
+
+@keyframes flyInFromLeft {
+    from {
+        right: 100vw;
+    }
+    to {
+        right: var(--shuttleRight);
+    }
+}
+
+@keyframes flyOutToRight {
+    from {
+        right: var(--shuttleRight);
+    }
+    to {
+        right: -100vw;
+    }
+}
+
+.home-container .shuttle.flying-out {
+    animation: flyOutToRight 2s forwards;
+}
+
+.home-container .shuttle.flying-in {
+    animation: flyInFromLeft 2s forwards;
+}

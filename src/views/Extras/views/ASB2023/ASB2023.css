@@ -1,0 +1,100 @@
+.conference-container {
+    background-image: var(--bg-gradient-shallow);
+    padding: 20vh 0 10vh;
+    width: 100vw;
+    height: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.conference-container .title-block {
+    background-color: #084185;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 300px;
+    max-width: 350px;
+    text-align: left;
+    margin: 0 3em 0 0;
+    padding: 40px 1em 0;
+}
+
+.conference-container .title-block > h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.9em;
+    margin: 0;
+}
+
+.conference-container .title-block .asb2023-details {
+    font-size: 1.2em;
+}
+
+.conference-container .title-block .asb2023-details h3 {
+    color: goldenrod;
+    font-weight: 800;
+    margin: 0;
+    padding: 1em 0 0;
+}
+
+.conference-container .button-container {
+    margin: 2em 0;
+}
+
+.conference-container .asb-logo-container img {
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.conference-container h2 {
+    color: var(--accent-color-2);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.conference-container .conference-collaborators-images {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 0;
+}
+
+.conference-container .conference-collaborator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.conference-container .conference-collaborator img {
+    height: 240px;
+    padding: 30px;
+}
+
+.conference-container .conference-collabrator-titleblock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.conference-container .conference-collabrator-titleblock h3 {
+    font-size: 1.2em;
+    color: var(--accent-color-2);
+    margin: 0;
+}
+
+.conference-container .conference-collaborator-titleblock  span {
+    font-size: 0.6em;
+}

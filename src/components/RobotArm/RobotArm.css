@@ -1,0 +1,19 @@
+.robot-arm {
+    height: 700px;
+    position: relative;
+    --link-color: #666666;
+    --link-border: 2px solid black;
+}
+
+.robot-arm .armlink {
+    background-color: var(--link-color);
+    border: var(--link-border);
+}
+
+.robot-arm .robot-base  {
+    background-color: var(--link-color);
+    border: var(--link-border);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}

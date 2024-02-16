@@ -1,0 +1,72 @@
+.project-entry-page-container {
+    background-image: var(--bg-gradient-shallow);
+    min-height: 800px;
+    width: 100%;
+    padding: 20vh 0 10vh 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.project-entry-page-container > .back {
+    text-align: left;
+    width: 90%;
+    max-width: 1400px;
+    padding: 1em 0;
+}
+
+.project-entry-container {
+    background-color: var(--bg-color-glass);
+    border-radius: 0.5em;
+    width: 90%;
+    max-width: 1400px;
+    min-height: min(70vh, 800px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.project-entry-container .summary {
+    width: 30%;
+    padding: 2em 0;
+}
+
+.project-entry-container .summary h1 {
+    color: var(--accent-color-2);
+}
+
+.project-entry-container .summary .summary-caption {
+    padding: 1em 2em;
+    text-align: center;
+}
+
+.project-entry-container .summary > img {
+    width: 100%;
+    max-height: 50%;
+    overflow: hidden;
+    background-color: #cccccc;
+}
+
+
+.project-entry-container .description {
+    width: 60%;
+    padding: 2em;
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+    .project-entry-container {
+        flex-direction: column;
+    }
+
+    .project-entry-container .summary {
+        width: 100%;
+    }
+
+    .project-entry-container .description {
+        width: calc(100% - 2*2em);
+    }
+}

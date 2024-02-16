@@ -1,0 +1,59 @@
+.coursework-container {
+    background-image: var(--bg-gradient-shallow);
+    padding: 20vh 5vw 10vh;
+    height: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.coursework-container h2 {
+    color: var(--accent-color);
+    font-size: 2.5em;
+}
+
+.coursework-container h3 {
+    color: var(--accent-color-2);
+    margin: 5px 0;
+}
+
+.semester-entry {
+    background-color: var(--bg-color-glass);
+    box-shadow: var(--default-shadow);
+    border-radius: 0.5em;
+    width: 80%;
+    padding: 1.5em;
+    margin: 1em 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 1000px;
+}
+
+.semester-entry ul {
+    justify-content: left;
+    margin: 0;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+.semester-entry ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.25em 1em;
+    gap: 30px;
+}
+
+.semester-entry ul li:nth-child(even) {
+    background-color: var(--list-even-color);
+}
