@@ -49,7 +49,7 @@ function App() {
                     <Route exact path="/extras" element={<Extras/>} />
                     <Route exact path="/extras/gtaudition" element={<GTAudition/>} />  
                     <Route exact path="/extras/asb2023" element={<ASB2023/>} />  
-                    <Route exact path={Max.hred} element={<ProjectEntryTemplate data={Max}/>}/>  
+                    <Route exact path={Max.href} element={<ProjectEntryTemplate data={Max}/>}/>  
                     <Route exact path={PC1.href} element={<ProjectEntryTemplate data={PC1}/>}/>  
                     <Route exact path={Swamphacks.href} element={<ProjectEntryTemplate data={Swamphacks}/>}/> 
                     <Route exact path={MoutingBracket.href} element={<ProjectEntryTemplate data={MoutingBracket}/>}/>  
