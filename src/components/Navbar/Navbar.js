@@ -11,14 +11,17 @@ const LOGO = require('./../../assets/logo.png'),
 function Navbar(props) {
     const [isDarkmode, setDarkMode] = useState(props.darkmode);
     const [logo, setLogo] = useState(isDarkmode ? LOGO_DARKMODE : LOGO);
+    const [sidebarLogo, setSidebarLogo] = useState(isDarkmode ? LOGO_DARKMODE : LOGO);
     const [backgroundActive, setBackgroundActive] = useState(false);
     const [isSidebarOpen, setSidebarOpen] = useState(false);
 
     /* toggle darkmode */
     const toggleDarkMode = () => {
         props.toggleDarkMode();
-        setDarkMode(!isDarkmode)
-        setLogo(!isDarkmode ? LOGO_DARKMODE : LOGO);
+        const newIsDarkMode = !isDarkmode;
+        setDarkMode(newIsDarkMode)
+        setLogo(newIsDarkMode ? LOGO_DARKMODE : LOGO);
+        setSidebarLogo(newIsDarkMode ? LOGO_DARKMODE : LOGO);
     }
 
     /* the menu is toggled when */
@@ -31,14 +34,16 @@ function Navbar(props) {
     /* navigation bar turns black when you scroll down */
     useEffect(() => {
         const updateNavbarBackgroundStatus = () => {
-            setBackgroundActive(window.scrollY >= 90)
+            const newIsBackgroundActive = window.scrollY >= 90;
+            setBackgroundActive(newIsBackgroundActive)
+            setLogo((newIsBackgroundActive || isDarkmode) ? LOGO_DARKMODE : LOGO);
         }
 
         window.addEventListener('scroll', updateNavbarBackgroundStatus);
         return () => {
             window.removeEventListener('scroll', updateNavbarBackgroundStatus);
         };
-    }, []);
+    }, [isDarkmode]);
 
     /* sidebar disappears when the user clicks outside of it */
     useEffect(() => {
@@ -83,7 +88,7 @@ function Navbar(props) {
                 </a>
             </div>
             { menu }
-            <Sidebar src={logo} menu={menu} active={isSidebarOpen}/>
+            <Sidebar src={sidebarLogo} menu={menu} active={isSidebarOpen}/>
         </nav>
     )
 }

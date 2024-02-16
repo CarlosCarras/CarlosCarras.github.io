@@ -14,10 +14,10 @@ function ProjectEntryTemplate(props) {
             <div className="project-entry-container">
                 <div className="summary">
                     <h1>{props.data.title}</h1>
-                    <Slideshow data={props.data.images}/> 
                     <div className="summary-caption">
                         <p>{props.data.date}</p>
                     </div>
+                    <Slideshow data={props.data.images}/> 
                 </div>
                 <div className="description">
                     {props.data.description}
