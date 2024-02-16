@@ -5,7 +5,7 @@ import './Sidebar.css';
 function Sidebar(props) {
     return (
         <div className={`sidebar ${props.active ? 'active' : ''}`}>
-            <img src={props.src} alt='logo'/>
+            <a href="/"><img src={props.src} alt='logo'/></a>
             {props.menu}
         </div>
     )
