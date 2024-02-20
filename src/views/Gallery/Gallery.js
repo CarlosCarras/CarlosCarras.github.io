@@ -172,6 +172,12 @@ const IMAGE_DATA = [
             src: require('./../../assets/gallery/ta_dinner.jpg')
         },
         {   
+            name: "Sunset with Marilyn @ Paynes Prairie 🌅", 
+            caption: "I'm very lucky to call her my girlfriend.", 
+            link: "",
+            src: require('./../../assets/gallery/marilyn.JPG')
+        },
+        {   
             name: "Garita", 
             caption: "One of my island's most recognizable symbols.", 
             link: "",
