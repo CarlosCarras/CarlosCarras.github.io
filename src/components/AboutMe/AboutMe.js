@@ -16,7 +16,7 @@ function AboutMe() {
                     I am currently working on the control of <span>active wearable exoskeletons</span> for safe human operation.
                 </p>
                 <p>
-                    Feel free to <a href='/contact'>reach out</a> if you have any questions about what I do, or even if you just want to chat!
+                    Feel free to <a href='/contact'>reach out</a> if you have any questions, or even if you just want to chat!
                 </p>
             </div>
             <div className="aboutme-col picture">

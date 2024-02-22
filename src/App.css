@@ -8,6 +8,7 @@
     --bg-gradient: linear-gradient(#1B2D3A, #365870, #ffd558, #FFC000);
     --bg-gradient-shallow: linear-gradient(#1B2D3A, #365870);   /* 7e7c5b */
     --bg-default: #000000;
+    --bg-color-extralight: #20374a;
     --bg-color-light: #172632;
     --bg-color-dark: #172632;
     --bg-color-glass: rgba(23, 38, 50, 0.2);
@@ -27,7 +28,8 @@
     --bg-gradient: linear-gradient(#eeeeee, #9ffcff);
     --bg-gradient-shallow: linear-gradient(#eeeeee, #d4feff);
     --bg-default: #ffffff;
-    --bg-color-light: #d6d6d6;
+    --bg-color-extralight: #efefef;
+    --bg-color-light: #dcdcdc;
     --bg-color-dark: #3e3e3e;
     --bg-color-glass: rgba(62, 62, 62, 0.2);
     --bg-textarea: #e0e0e0;
