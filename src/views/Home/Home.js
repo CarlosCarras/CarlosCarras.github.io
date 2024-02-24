@@ -172,7 +172,7 @@ function Home(props) {
                     </div>
                     <div className="summary-box">
                         <span className="summary-box-title"> Developer </span>
-                        <p>I like to write automate... pretty much everything.</p>
+                        <p>I like to write code to automate... pretty much everything.</p>
                         <a href="https://github.com/CarlosCarras" target="_blank" rel="noopener noreferrer"> GitHub </a>
                     </div>
                     <div className="summary-box">
