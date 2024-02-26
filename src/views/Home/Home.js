@@ -159,7 +159,7 @@ function Home(props) {
                         <span> Student Pilot @ Skybound Aviation </span>
                         <br/>
                         <br/>
-                        <span> BS, Mechanical Engineering @ UF</span> <span className="grad-year">2021</span>
+                        <span> BS, Computer Engineering @ UF</span> <span className="grad-year">2021</span>
                         <br/>
                         <span> BS, Mechanical Engineering @ UF</span> <span className="grad-year">2021</span>
                     </div> 
@@ -167,17 +167,17 @@ function Home(props) {
                 <div className="row-entry summary">
                     <div className="summary-box">
                         <span className="summary-box-title"> Researcher </span>
-                        <p>I like to methodically answer hard questions. </p>
+                        <p>I like to methodically tackle hard questions. </p>
                         <a href="https://scholar.google.com/citations?user=E7dTLUkAAAAJ" target="_blank" rel="noopener noreferrer"> Google Scholar </a>
                     </div>
                     <div className="summary-box">
                         <span className="summary-box-title"> Developer </span>
-                        <p>I like to write code to automate... pretty much everything.</p>
+                        <p>I enjoy writing code to automate... pretty much everything.</p>
                         <a href="https://github.com/CarlosCarras" target="_blank" rel="noopener noreferrer"> GitHub </a>
                     </div>
                     <div className="summary-box">
                         <span className="summary-box-title"> Engineer </span>
-                        <p>I like to build things to solve problems.</p>
+                        <p>I design things to solve problems.</p>
                         <a href="/projects" target="_blank"> Design Portfolio </a>
                     </div>
                 </div>
