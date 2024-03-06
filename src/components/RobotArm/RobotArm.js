@@ -18,6 +18,14 @@ const LINKS = [
 const ENDEFFECTOR = { x: 0, y: 410, angle: 0, width: 80 };
 const BASE = {width: 150, height: 50};
 
+
+const wrapAngle = (ang) => {
+    while (ang <= -180) ang += 360;
+    while (ang > 180) ang -= 360;
+
+    return ang;
+}
+
 function RobotArm() {
     const [links, setLinks] = useState(LINKS);
     const [endEffector, setEndEffector] = useState(ENDEFFECTOR);
@@ -103,9 +111,9 @@ function RobotArm() {
             <EndEffector className="gripper" x={endEffector.x} y={endEffector.y} angle={endEffector.angle} width={endEffector.width}/>
             <DRO className='dro' x={endEffector.x} 
                                  y={endEffector.y} 
-                                 angle0={links[0].angle} 
-                                 angle1={links[1].angle - links[0].angle} 
-                                 angle2={links[2].angle}/>
+                                 angle0={wrapAngle(links[0].angle)} 
+                                 angle1={wrapAngle(links[1].angle - links[0].angle)} 
+                                 angle2={wrapAngle(links[2].angle - links[1].angle)}/>
         </div>
     );
 }

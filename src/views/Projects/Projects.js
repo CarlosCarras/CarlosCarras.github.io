@@ -47,7 +47,6 @@ function Projects() {
                 jsDate: new Date(PROJECT_DATA[i].date).getTime(),
             }
         )
-        console.log(projectData[i].jsDate)
     }
 
     projectData.sort((a, b) => b.jsDate - a.jsDate); // descending order
