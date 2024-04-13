@@ -41,8 +41,29 @@
     color: white;
 }
 
-.navbar > .menu > *:hover {
+.navbar .menu > *:hover {
     color: var(--accent-color);
+}
+
+.navbar .menu > a {
+    position: relative;
+}
+
+.navbar .menu > a.active {
+    color: var(--accent-color);
+}
+
+.navbar .menu > a.active::after {
+    content: "";
+    display: block;
+    background-color: var(--accent-color);
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1.3em;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 .navbar .menu .hambuerger-menu {
@@ -50,7 +71,6 @@
     font-size: 2em;
     margin: 0;
     padding: 0 0.2em 0.1em;
-    /* border: 2px solid transparent; */
 }
 
 @media (max-width: 970px) {

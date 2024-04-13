@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css"
 
 import Sidebar from './Sidebar/Sidebar';
@@ -14,6 +15,7 @@ function Navbar(props) {
     const [sidebarLogo, setSidebarLogo] = useState(isDarkmode ? LOGO_DARKMODE : LOGO);
     const [backgroundActive, setBackgroundActive] = useState(false);
     const [isSidebarOpen, setSidebarOpen] = useState(false);
+    const location = useLocation();
 
     /* toggle darkmode */
     const toggleDarkMode = () => {
@@ -70,12 +72,12 @@ function Navbar(props) {
     const menu = (
         <div className="menu">
             <DarkmodeToggle darkmode={props.darkmode} toggleDarkMode={toggleDarkMode}/>
-            <a href="/">Home</a>
-            <a href="/resume">Resume</a>
-            <a href="/projects">Projects</a>
-            <a href="/contact">Contact</a>
-            <a href="/gallery">Gallery</a>
-            <a href="/extras">Extras</a>
+            <Link to="/" className={location.pathname === "/" ? "active" : ""}>Home</Link>
+            <Link to="/resume" className={location.pathname === "/resume" ? "active" : ""}>Resume</Link>
+            <Link to="/projects" className={location.pathname === "/projects" ? "active" : ""}>Projects</Link>
+            <Link to="/contact" className={location.pathname === "/contact" ? "active" : ""}>Contact</Link>
+            <Link to="/gallery" className={location.pathname === "/gallery" ? "active" : ""}>Gallery</Link>
+            <Link to="/extras" className={location.pathname === "/extras" ? "active" : ""}>Extras</Link>
             <div className="hambuerger-menu" onClick={toggleSidebar}>&#9776;</div>
         </div>
     )
