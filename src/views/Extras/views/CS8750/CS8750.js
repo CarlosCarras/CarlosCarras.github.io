@@ -35,7 +35,7 @@ function CS8750() {
                 
                 <Button name="View Poster" href={POSTER} target="_blank"/>
 
-                <div className="asb-logo-container">
+                <div className="irim-logo-container">
                     <img src={IRIMLOGO} alt='ASB Logo'/>
                 </div>  
 

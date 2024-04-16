@@ -14,15 +14,14 @@
 .conference-container .irim-title-block {
     box-sizing: border-box;
     height: 100%;
-    text-align: left;
-    margin: 0 3em 0 0;
+    text-align: center;
     padding: 40px 1em 0;
 }
 
 .conference-container .irim-title-block > h1 {
-    color: #ffffff;
+    color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 4em;
+    font-size: 3.5em;
     margin: 0;
 }
 
@@ -31,7 +30,7 @@
 }
 
 .conference-container .irim-logo-container img {
-    height: 100px;
+    height: 70px;
     margin-bottom: 30px;
 }
 
