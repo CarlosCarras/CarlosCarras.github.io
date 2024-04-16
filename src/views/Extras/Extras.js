@@ -6,6 +6,13 @@ import ThumbnailList from "../../components/ThumbnailList/ThumbnailList";
 
 const EXTRAS_DATA = [
     {
+        date: "April 17, 2024", 
+        title: "CS8750 Showcase",
+        caption: "IRIM robotics research showcase, spring 2024.",
+        thumbnail: require("./../../assets/extras/irim/cs8750_thumbnail.png"),
+        href: "/extras/cs8750",
+    },
+    {
         date: "August 8, 2023", 
         title: "Drumline Audition",
         caption: "2023 GT Drumline snare & tenor audition.",
