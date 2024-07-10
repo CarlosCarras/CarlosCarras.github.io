@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.a66ee527.css",
-    "main.js": "/static/js/main.47445f74.js",
+    "main.css": "/static/css/main.b02526b5.css",
+    "main.js": "/static/js/main.bead65d5.js",
     "static/js/453.ce3f01ed.chunk.js": "/static/js/453.ce3f01ed.chunk.js",
+    "static/media/ndseg2024_ppt.pdf": "/static/media/ndseg2024_ppt.b35601909cf4f907377e.pdf",
     "static/media/rtrescue2.png": "/static/media/rtrescue2.70334d5f9f8c9cdaf796.png",
-    "static/media/asb2023_thumbnail.png": "/static/media/asb2023_thumbnail.a6d0cf433e144637c444.png",
     "static/media/swamp.PNG": "/static/media/swamp.e572fe0766a16d4230fb.PNG",
+    "static/media/ndseg2024_poster.pdf": "/static/media/ndseg2024_poster.eabe5d538640e203f5d4.pdf",
     "static/media/rtrescue1.png": "/static/media/rtrescue1.5dcd215c55f9e905d0af.png",
-    "static/media/audition_thumbnail.png": "/static/media/audition_thumbnail.45c6a731e6519343bf10.png",
+    "static/media/asb2023_thumbnail.png": "/static/media/asb2023_thumbnail.7091674700a549947691.png",
     "static/media/overhead_closed.jpg": "/static/media/overhead_closed.dad8b46236d3fe24e7e7.jpg",
     "static/media/cs8750_poster.pdf": "/static/media/cs8750_poster.45be402b6de783589a42.pdf",
     "static/media/website1.png": "/static/media/website1.325cc3e48aa9a911325c.png",
     "static/media/guns4roses.png": "/static/media/guns4roses.72a245bae12ecc0d65ca.png",
     "static/media/transfer_board.png": "/static/media/transfer_board.63cb0e8c9371d9874bf1.png",
     "static/media/GTAudition_snare.png": "/static/media/GTAudition_snare.e928cd9657ddcf45bf96.png",
+    "static/media/audition_thumbnail.png": "/static/media/audition_thumbnail.71d04a52a95e86a43f0d.png",
     "static/media/overhead_open1.jpg": "/static/media/overhead_open1.913149b262cd8b984dfd.jpg",
     "static/media/overhead_open2.jpg": "/static/media/overhead_open2.0b35a71846008bc22f17.jpg",
     "static/media/overhead_open3.jpg": "/static/media/overhead_open3.c859b2b627f1e6ea8301.jpg",
@@ -45,6 +47,8 @@
     "static/media/killian.jpg": "/static/media/killian.c7249e127a627b84108d.jpg",
     "static/media/rtrescue3.png": "/static/media/rtrescue3.5cb8913496143d4075c1.png",
     "static/media/pc_build3.JPG": "/static/media/pc_build3.0a0a181f1b5429c29f26.JPG",
+    "static/media/diving_buddy.png": "/static/media/diving_buddy.03c9cc5f2dbf5545f022.png",
+    "static/media/ndseg2024_thumbnail.png": "/static/media/ndseg2024_thumbnail.2760b49531d05738e1ef.png",
     "static/media/pc_build0.JPG": "/static/media/pc_build0.ab77be54e7f78e928d71.JPG",
     "static/media/basketball.png": "/static/media/basketball.ece87a27e0863d844b36.png",
     "static/media/d3.png": "/static/media/d3.5bb9c8c7db2da9e6189d.png",
@@ -64,6 +68,7 @@
     "static/media/jpl.JPG": "/static/media/jpl.b46f3ddc103cfcb479ee.JPG",
     "static/media/skiing.JPG": "/static/media/skiing.c0f01e7c4dc02427ddae.JPG",
     "static/media/resume.pdf": "/static/media/resume.c51a7e94eb71fb9b4ef7.pdf",
+    "static/media/diving_nursesharks.JPG": "/static/media/diving_nursesharks.095a724c865dd2c8745a.JPG",
     "static/media/marilyn.JPG": "/static/media/marilyn.b45066e100d9a99ac6e7.JPG",
     "static/media/family.jpg": "/static/media/family.95719f54707e98a656f7.jpg",
     "static/media/drumset.jpg": "/static/media/drumset.c93b476e77f66ed1e8b5.jpg",
@@ -78,6 +83,7 @@
     "static/media/endeffector.png": "/static/media/endeffector.3575d292337078a56e9b.png",
     "static/media/flying.jpg": "/static/media/flying.a4d1706989e5adcedf12.jpg",
     "static/media/logo.png": "/static/media/logo.d2dcd6f173e7ed2da51a.png",
+    "static/media/kpdk_solo.jpg": "/static/media/kpdk_solo.24955b1e1e333a259608.jpg",
     "static/media/dml_8B.JPG": "/static/media/dml_8B.fe599a81c46105c99c37.JPG",
     "static/media/lathe1.png": "/static/media/lathe1.4bf7cb05f0b996c4f652.png",
     "static/media/carlos.jpg": "/static/media/carlos.4ec2573c3ce05be27cd9.jpg",
@@ -98,12 +104,12 @@
     "static/media/anirban.jpg": "/static/media/anirban.d0d8143f2daa71f13619.jpg",
     "static/media/aakash.jpg": "/static/media/aakash.7d3219d77668d20c9a1e.jpg",
     "index.html": "/index.html",
-    "main.a66ee527.css.map": "/static/css/main.a66ee527.css.map",
-    "main.47445f74.js.map": "/static/js/main.47445f74.js.map",
+    "main.b02526b5.css.map": "/static/css/main.b02526b5.css.map",
+    "main.bead65d5.js.map": "/static/js/main.bead65d5.js.map",
     "453.ce3f01ed.chunk.js.map": "/static/js/453.ce3f01ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a66ee527.css",
-    "static/js/main.47445f74.js"
+    "static/css/main.b02526b5.css",
+    "static/js/main.bead65d5.js"
   ]
 }
