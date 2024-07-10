@@ -183,6 +183,24 @@ const IMAGE_DATA = [
             link: "",
             src: require('./../../assets/gallery/garita.jpg')
         },
+        {   
+            name: "Solo Flight @ KPDK ✈️", 
+            caption: "Touch-and-go landings.", 
+            link: "",
+            src: require('./../../assets/gallery/kpdk_solo.jpg')
+        },
+        {   
+            name: "Diving @ Key Largo 🤿", 
+            caption: "Dive buddy:  Ilias. Instructor: Ben Perry @ Peachy Diving. Image Credit: Shuhan", 
+            link: "",
+            src: require('./../../assets/gallery/diving_buddy.png')
+        },
+        {   
+            name: "Nurse Sharks @ Key Largo 🤿", 
+            caption: "Shark nursery @ Davie Crocker Reef, Key Largo. Dive buddy:  Ilias. Instructor: Ben Perry @ Peachy Diving. Image Credit: Shuhan", 
+            link: "",
+            src: require('./../../assets/gallery/diving_nursesharks.JPG')
+        },
 ]
 
 
