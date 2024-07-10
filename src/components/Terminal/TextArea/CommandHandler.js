@@ -14,10 +14,10 @@ const COMMANDS = [
 
 const DIRECTORY_STRUCTURE = {
     "resume": {},
-    "projects": {},
+    "projects": {"pump-controller": {}, "max": {}, "bioprinter": {}, "rtrescue": {}, "bracket": {}, "custom-pc": {}},
     "contact": {},
     "gallery": {},
-    "extras": {"gtaudition": {}, "asb2023": {}}
+    "extras": {"ndseg2024": {}, "cs8750": {}, "gtaudition": {}, "asb2023": {}}
 }
 
 let ALIASES = []

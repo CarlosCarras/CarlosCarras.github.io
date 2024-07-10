@@ -28,7 +28,7 @@ const COLLABORATORS = [
 function CS8750() {
 
     return (
-            <div className="conference-container">
+            <div className="cs8750-container">
                 <div className='irim-title-block'>
                     <h1>Welcome IRIM 2024!</h1>
                 </div>
@@ -39,15 +39,15 @@ function CS8750() {
                     <img src={IRIMLOGO} alt='ASB Logo'/>
                 </div>  
 
-                <div className="conference-collaborators-container">
+                <div className="cs8750-collaborators-container">
                     <h2>Advisors</h2>
-                    <div className='conference-collaborators-images'>
+                    <div className='cs8750-collaborators-images'>
                         {COLLABORATORS.map((collaborator, index) => (
-                            <div className='conference-collaborator' key={index}>
+                            <div className='cs8750-collaborator' key={index}>
                                 <img src={collaborator.src} key={index} alt={collaborator.name}/>
-                                <div className='conference-collabrator-titleblock'>
+                                <div className='cs8750-collabrator-titleblock'>
                                     <h3>{collaborator.name}</h3>
-                                    <span className='conference-collaborator-occupation'>{collaborator.title}</span>
+                                    <span className='cs8750-collaborator-occupation'>{collaborator.title}</span>
                                 </div>
                             </div>
                         ))}

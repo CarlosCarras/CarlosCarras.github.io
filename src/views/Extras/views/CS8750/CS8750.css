@@ -1,4 +1,4 @@
-.conference-container {
+.cs8750-container {
     background-image: var(--bg-gradient-shallow);
     padding: 20vh 0 10vh;
     width: 100vw;
@@ -11,36 +11,36 @@
     color: var(--text-color);
 }
 
-.conference-container .irim-title-block {
+.cs8750-container .irim-title-block {
     box-sizing: border-box;
     height: 100%;
     text-align: center;
     padding: 40px 1em 0;
 }
 
-.conference-container .irim-title-block > h1 {
+.cs8750-container .irim-title-block > h1 {
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5em;
     margin: 0;
 }
 
-.conference-container .button-container {
+.cs8750-container .button-container {
     margin: 2em 0;
 }
 
-.conference-container .irim-logo-container img {
+.cs8750-container .irim-logo-container img {
     height: 70px;
     margin-bottom: 30px;
 }
 
-.conference-container h2 {
+.cs8750-container h2 {
     color: var(--accent-color-2);
     font-size: 2.5em;
     font-weight: 700;
 }
 
-.conference-container .conference-collaborators-images {
+.cs8750-container .cs8750-collaborators-images {
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -49,7 +49,7 @@
     padding: 30px 0;
 }
 
-.conference-container .conference-collaborator {
+.cs8750-container .cs8750-collaborator {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -59,12 +59,12 @@
     margin: 0;
 }
 
-.conference-container .conference-collaborator img {
+.cs8750-container .cs8750-collaborator img {
     height: 240px;
     padding: 30px;
 }
 
-.conference-container .conference-collabrator-titleblock {
+.cs8750-container .cs8750-collabrator-titleblock {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -74,12 +74,12 @@
     margin: 0;
 }
 
-.conference-container .conference-collabrator-titleblock h3 {
+.cs8750-container .cs8750-collabrator-titleblock h3 {
     font-size: 1.2em;
     color: var(--accent-color-2);
     margin: 0;
 }
 
-.conference-container .conference-collaborator-titleblock  span {
+.cs8750-container .cs8750-collaborator-titleblock  span {
     font-size: 0.6em;
 }

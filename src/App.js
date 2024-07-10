@@ -14,6 +14,7 @@ import Extras from './views/Extras/Extras';
 import GTAudition from './views/Extras/views/GTAudition/GTAudition';
 import ASB2023 from './views/Extras/views/ASB2023/ASB2023';
 import CS8750 from './views/Extras/views/CS8750/CS8750';
+import NDSEG2024 from './views/Extras/views/NDSEG2024/NDSEG2024';
 import Projects from './views/Projects/Projects';
 import ProjectEntryTemplate from './views/Projects/ProjectEntryTemplate/ProjectEntryTemplate';
 import Max from './views/Projects/ProjectEntries/Max';
@@ -51,6 +52,7 @@ function App() {
                     <Route exact path="/extras/gtaudition" element={<GTAudition/>} />  
                     <Route exact path="/extras/asb2023" element={<ASB2023/>} />  
                     <Route exact path="/extras/cs8750" element={<CS8750/>} />  
+                    <Route exact path='/extras/ndseg2024' element={<NDSEG2024/>} />
                     <Route exact path={Max.href} element={<ProjectEntryTemplate data={Max}/>}/>  
                     <Route exact path={PC1.href} element={<ProjectEntryTemplate data={PC1}/>}/>  
                     <Route exact path={Swamphacks.href} element={<ProjectEntryTemplate data={Swamphacks}/>}/> 

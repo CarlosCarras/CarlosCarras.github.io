@@ -42,7 +42,7 @@ const COLLABORATORS = [
 function ASB2023() {
 
     return (
-            <div className="conference-container">
+            <div className="asb2023-container">
                 <div className="row">
                     <div className='title-block'>
                         <h1>Welcome ASB 2023!</h1>
@@ -63,15 +63,15 @@ function ASB2023() {
                     <img src={ASBLOGO} alt='ASB Logo'/>
                 </div>  
 
-                <div className="conference-collaborators-container">
+                <div className="asb2023-collaborators-container">
                     <h2>Collaborators</h2>
-                    <div className='conference-collaborators-images'>
+                    <div className='asb2023-collaborators-images'>
                         {COLLABORATORS.map((collaborator, index) => (
-                            <div className='conference-collaborator' key={index}>
+                            <div className='asb2023-collaborator' key={index}>
                                 <img src={collaborator.src} key={index} alt={collaborator.name}/>
-                                <div className='conference-collabrator-titleblock'>
+                                <div className='asb2023-collabrator-titleblock'>
                                     <h3>{collaborator.name}</h3>
-                                    <span className='conference-collaborator-occupation'>{collaborator.title}</span>
+                                    <span className='asb2023-collaborator-occupation'>{collaborator.title}</span>
                                 </div>
                             </div>
                         ))}

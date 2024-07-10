@@ -1,0 +1,93 @@
+.ndseg2024-container {
+    background-image: var(--bg-gradient-shallow);
+    padding: 20vh 0 10vh;
+    width: 100vw;
+    height: 100%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.ndseg2024-container .ndseg2024-title-block {
+    box-sizing: border-box;
+    height: 100%;
+    text-align: center;
+    padding: 40px 1em 0;
+}
+
+.ndseg2024-container .ndseg2024-title-block > h1 {
+    color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.ndseg2024-container .ndseg2024-button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.ndseg2024-container .ndseg2024-button-container > * {
+    margin: 1em;
+}
+
+.ndseg2024-container .ndseg2024-logo-container img {
+    height: 70px;
+    margin-bottom: 30px;
+}
+
+.ndseg2024-container h2 {
+    color: var(--accent-color-2);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.ndseg2024-container .ndseg2024-collaborators-images {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 0;
+}
+
+.ndseg2024-container .ndseg2024-collaborator {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+}
+
+.ndseg2024-container .ndseg2024-collaborator img {
+    height: 240px;
+    padding: 30px;
+}
+
+.ndseg2024-container .ndseg2024-collabrator-titleblock {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+.ndseg2024-container .ndseg2024-collabrator-titleblock h3 {
+    font-size: 1.2em;
+    color: var(--accent-color-2);
+    margin: 0;
+}
+
+.ndseg2024-container .ndseg2024-collaborator-titleblock  span {
+    font-size: 0.6em;
+}
