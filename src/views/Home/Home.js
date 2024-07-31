@@ -90,8 +90,8 @@ function Home(props) {
         const heightMultiplier = 0.8;
 
         setTerminalPos({x: posMultiplier * window.innerWidth - terminalWidth / 2, y: 50});
-        setTerminalWidth(Math.min(widthMultiplier * window.innerWidth, TERMINAL_MAXDIMS.w));
-        setTerminalHeight(Math.min(heightMultiplier * window.innerHeight, TERMINAL_MAXDIMS.h));
+        setTerminalWidth(Math.min(Math.floor(widthMultiplier * window.innerWidth), TERMINAL_MAXDIMS.w));
+        setTerminalHeight(Math.min(Math.floor(heightMultiplier * window.innerHeight), TERMINAL_MAXDIMS.h));
         setIsNarrow(_isNarrow);
         setGearTrainScale(0.1 + 0.00025 * window.innerWidth);
     }, [terminalWidth]);
