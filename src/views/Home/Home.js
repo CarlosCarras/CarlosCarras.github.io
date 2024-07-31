@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import Typewriter from "typewriter-effect"
 import "./Home.css"
 
@@ -82,27 +82,28 @@ function Home(props) {
     const [terminalHeight, setTerminalHeight] = useState(300);
     const [isNarrow, setIsNarrow] = useState(false);
     const [terminalPos, setTerminalPos] = useState({x: Math.max((0.4*window.innerWidth-400)/2, 0), y: 50});
-
-    const handleResize = useCallback(() => {
-        const _isNarrow = window.innerWidth < 950;
-        const posMultiplier = _isNarrow ? 0.9 : 0.45;
-        const widthMultiplier = _isNarrow ? 0.8 : 0.4;
-        const heightMultiplier = 0.8;
-
-        setTerminalPos({x: posMultiplier * window.innerWidth - terminalWidth / 2, y: 50});
-        setTerminalWidth(Math.min(Math.floor(widthMultiplier * window.innerWidth), TERMINAL_MAXDIMS.w));
-        setTerminalHeight(Math.min(Math.floor(heightMultiplier * window.innerHeight), TERMINAL_MAXDIMS.h));
-        setIsNarrow(_isNarrow);
-        setGearTrainScale(0.1 + 0.00025 * window.innerWidth);
-    }, [terminalWidth]);
-
     useEffect(() => {
+        const handleResize = () => {
+            const _isNarrow = window.innerWidth < 950;
+            const posMultiplier = _isNarrow ? 0.9 : 0.45;
+            const widthMultiplier = _isNarrow ? 0.8 : 0.4;
+            const heightMultiplier = 0.8;
+            
+            setTerminalPos({x: posMultiplier*window.innerWidth-terminalWidth/2, y: 50});
+            setTerminalWidth(Math.min(widthMultiplier*window.innerWidth, TERMINAL_MAXDIMS.w));
+            setTerminalHeight(Math.min(heightMultiplier*window.innerHeight, TERMINAL_MAXDIMS.h));
+            setIsNarrow(_isNarrow);
+            setGearTrainScale(0.1 + 0.00025 * window.innerWidth);
+        };
+
         window.addEventListener("resize", handleResize);
-        handleResize(); // Initial resize on component mount
+
+        handleResize();
+
         return () => {
             window.removeEventListener("resize", handleResize);
         };
-    }, [handleResize]);
+    }, [terminalWidth]);
 
     useEffect(() => {
         setDarkMode(props.darkmode)
