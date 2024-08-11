@@ -22,7 +22,9 @@ const GRAD_COURSEWORK = [
         semester: "Fall 2022", 
         coursework: [
                 {course: "CS7641: Machine Learning", credits: 3},
-                {course: "ME 8843: Biomechanics of Wearable Robotic Systems", credits: 3},
+                {course: "ME8843: Biomechanics of Wearable Robotic Systems", credits: 3},
+                {course: "MUSI3018: Marching Band", credits: 2},
+                {course: "MUSI3511: Percussion Ensemble", credits: 1},
         ],
     },
     {
@@ -47,10 +49,16 @@ const GRAD_COURSEWORK = [
         ],
     },
     {
-        semester: "Spring 2023", 
+        semester: "Spring 2024", 
         coursework: [
                 {course: "AE6505: Random Processes and Kalman Filters", credits: 3},
                 {course: "CS8750: Multidisciplinary Robotics Research I", credits: 3},
+        ],
+    },
+    {
+        semester: "Summer 2024", 
+        coursework: [
+                {course: "MATH6701: Math Methods of Applied Sciences", credits: 3},
         ],
     },
 ].reverse()

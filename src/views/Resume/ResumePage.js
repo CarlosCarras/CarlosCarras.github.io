@@ -285,7 +285,7 @@ function ResumeContent() {
             </div>
 
             <div className="section">
-                <div className="section-header">Student Organization Participation</div>
+                <div className="section-header">Awards</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
                     
@@ -305,6 +305,14 @@ function ResumeContent() {
                         <div>Aug 2022 – Current</div>
                     </div>
 
+                    {/* SmallSat Best Paper Honorable Mention */}
+                    <div className="resume-entry entry-title">
+                        <div>
+                            SmallSat 2021 Student Competition Best Paper Honorable Mention
+                        </div>
+                        <div>July 2021</div>
+                    </div>
+
                     {/* Florida Academic Scholars */}
                     <div className="resume-entry entry-title">
                         <div>
@@ -313,6 +321,7 @@ function ResumeContent() {
                         <div>Aug 2017 – May 2021</div>
                     </div>
 
+                    {/* SwampHacks */}
                     <div className="resume-entry entry-title">
                         <div>
                             SwampHacks VI Infinite Energy's Best Hack Award Recipient
@@ -364,7 +373,7 @@ function ResumeContent() {
                             <span className='reference-number'>[4]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>
-                                . “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021. (Student Competition Best Paper Honorable Mention)
+                                . “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021.
                             </div>
                         </li>
                         <li>
