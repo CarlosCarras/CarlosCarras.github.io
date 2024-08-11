@@ -7,7 +7,7 @@
     padding: 4rem 2rem;
     width: 65vw;
     max-width: 300px;
-    transition: left 0.5s ease;
+    transition: left 0.25s ease;
     z-index: 1001;
 }
 
