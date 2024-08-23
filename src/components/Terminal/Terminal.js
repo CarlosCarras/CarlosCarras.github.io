@@ -106,16 +106,16 @@ function Terminal(props) {
         };
     }, [handleMouseMove]);
 
-    useEffect(() => {
-        const observer = new ResizeObserver(handleResize);
-        if (textContainerRef.current) {
-            observer.observe(textContainerRef.current);
-        }
+    // useEffect(() => {
+    //     const observer = new ResizeObserver(handleResize);
+    //     if (textContainerRef.current) {
+    //         observer.observe(textContainerRef.current);
+    //     }
 
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
+    //     return () => {
+    //         observer.disconnect();
+    //     };
+    // }, []);
 
     useEffect(() => {
         const w = parseInt(props.width);
