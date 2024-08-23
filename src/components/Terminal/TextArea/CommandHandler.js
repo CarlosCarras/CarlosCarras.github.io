@@ -326,7 +326,9 @@ function _whoami(args, sudo) {
         return generateTooManyArguementsRes("whoami");
     }
 
-    return "I may not known who you are, but thank you for visiting my site!"
+    return "Hi, I'm Carlos, and welcome to my personal website! \
+            \n\
+            Please reach out to me if you have any questions about what I do, or if you ever want to collaborate."
 }
 
 function _su(args, sudo) {

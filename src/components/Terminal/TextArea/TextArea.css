@@ -16,6 +16,7 @@
 
 .textarea-container .entry .prompt {
     padding-right: 0.5rem;
+    font-weight: 800;
 }
 
 .textarea-container .entry input{
@@ -37,7 +38,8 @@
     opacity: 1;
 }
 
-.textarea-container .entry .response {
+.textarea-container .entry.response {
+    margin-left: 0.5em;
     text-wrap: wrap;
     overflow: auto;
 }
