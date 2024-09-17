@@ -61,6 +61,14 @@ const GRAD_COURSEWORK = [
                 {course: "MATH6701: Math Methods of Applied Sciences", credits: 3},
         ],
     },
+    {
+        semester: "Fall 2024", 
+        coursework: [
+                {course: "CS6516: Intro to Graduate Algorithms", credits: 3},
+                {course: "AE8803: Optimization-Based Learning Control and Games", credits: 3},
+                {course: "MGT6753: Business Fundamentals for Analytics", credits: 3},
+        ],
+    },
 ].reverse()
 
 const UNDERGRAD_COURSEWORK = [

@@ -288,11 +288,19 @@ function ResumeContent() {
                 <div className="section-header">Awards</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
-                    
-                    {/* UCEM */}
+
+                    {/* Grad REACH */}
                     <div className="resume-entry entry-title">
                         <div>
-                            University Center of Exemplary Mentoring (UCEM) Fellow
+                        GT Grad REACH Fellow and Mentor
+                        </div>
+                        <div>Aug 2024 – Current</div>
+                    </div>
+
+                    {/* Pathbreakers */}
+                    <div className="resume-entry entry-title">
+                        <div>
+                            GT Pathbreakers Fellow
                         </div>
                         <div>Aug 2023 – Current</div>
                     </div>
@@ -303,6 +311,14 @@ function ResumeContent() {
                             National Defense Science and Engineering Graduate (NDSEG) Fellow
                         </div>
                         <div>Aug 2022 – Current</div>
+                    </div>
+
+                    {/* UCEM */}
+                    <div className="resume-entry entry-title">
+                        <div>
+                            University Center of Exemplary Mentoring (UCEM) Fellow
+                        </div>
+                        <div>Aug 2023 – Aug 2024</div>
                     </div>
 
                     {/* SmallSat Best Paper Honorable Mention */}
@@ -342,15 +358,22 @@ function ResumeContent() {
                             <span className='reference-number'>[1]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
-                                A. Bajpai, D. Iyengar, K. Collins, A. Mazumdar, A. Young. “Enhancing Human Navigation Ability Using Active Wearable Exoskeletons”. IEEE Transactions on Robotics. 2024. (Submitted)
+                                C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (In Prep)
                             </div>
                         </li>
                         <li>
                             <span className='reference-number'>[2]</span>
                             <div>
+                                <span className='author-callout'>C. Carrasquillo</span>,
+                                A. Bajpai, D. Iyengar, K. Collins, A. Mazumdar, A. Young. “Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton”. IEEE Transactions on Haptics. 2024. (Submitted)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[3]</span>
+                            <div>
                                 A. Bajpai,&nbsp;
                                 <span className='author-callout'>C. Carrasquillo</span>,
-                                J. Carlson, J. Park, D. Iyengar, K. Herrin, A. Young, A. Mazumdar. “Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton”. IEEE Transactions on Mechatronics. 2023. (Submitted)
+                                J. Carlson, J. Park, D. Iyengar, K. Herrin, A. Young, A. Mazumdar. “Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton”. IEEE Transactions on Mechatronics. 2023.
                             </div>
                         </li>
                     </ol>
@@ -366,14 +389,14 @@ function ResumeContent() {
                             <span className='reference-number'>[3]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,&nbsp;
-                                A. Bajpai, D. Iyengar, K. Collins, A. Young, A. Mazumdar. “Enhancing Human Navigation Ability Using an Active Wearable Exoskeleton”. American Society of Biomechanics. 2023.
+                                A. Young, A. Mazumdar. “Intuitive Steering Assistance from a Wearable Robotic Assistive System for Visually Impaired Navigation”. IEEE International Conference on Robotics and Automation. 2025. (Submitted)
                             </div>
                         </li>
                         <li>
                             <span className='reference-number'>[4]</span>
                             <div>
-                                <span className='author-callout'>C. Carrasquillo</span>
-                                . “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021.
+                                <span className='author-callout'>C. Carrasquillo</span>.&nbsp;
+                                “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021.
                             </div>
                         </li>
                         <li>
