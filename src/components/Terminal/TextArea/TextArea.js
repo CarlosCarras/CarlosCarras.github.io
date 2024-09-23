@@ -149,6 +149,8 @@ function TextArea() {
                             type="text"
                             placeholder="type help"
                             autoComplete="off"
+                            autoCorrect="off" 
+                            autoCapitalize="none"
                             ref={(input) => { inputRefs.current[entry.id] = input; }}
                             value={entry.value}
                             disabled={entry.disabled}
