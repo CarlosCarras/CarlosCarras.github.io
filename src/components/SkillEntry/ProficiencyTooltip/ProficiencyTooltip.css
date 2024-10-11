@@ -1,0 +1,45 @@
+.proficiency-tooltip-container {
+    display: none;
+    flex-direction: column;
+    background-color: var(--bg-color-glass-tinted);
+    position: absolute;
+    transform: translate(0%, 0%);
+    padding: 0.25em 0.5em;
+    width: 100px;
+    height: 40px;
+    text-align: start;
+    border-radius: 0.5em;
+    box-shadow: var(--default-shadow);
+    border: 1px solid var(--text-color);
+}
+
+.proficiency-tooltip-container.active {
+    display: flex;
+}
+
+.proficiency-tooltip-container h5 {
+    color: var(--text-color);
+    margin: 0.2em;
+}
+
+.proficiency-tooltip-container .proficiency-indicator {
+    display: flex;
+    flex-direction: row;
+    margin: 0.25em 0;
+}
+
+.proficiency-tooltip-container .proficiency-bar {
+    background-color: black;
+    height: 8px;
+    width: 15px;
+    margin: 0 1px;
+    border: 1px solid black;
+}
+
+.proficiency-tooltip-container .proficiency-bar:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.proficiency-tooltip-container .proficiency-bar:nth-child(5) {
+    border-radius: 0 20px 20px 0;
+}

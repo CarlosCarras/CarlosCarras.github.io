@@ -12,6 +12,7 @@
     --bg-color-light: #172632;
     --bg-color-dark: #172632;
     --bg-color-glass: rgba(23, 38, 50, 0.2);
+    --bg-color-glass-tinted: rgba(23, 38, 50, 0.8);
     --bg-textarea: #3b6281;
     --text-color: white;
     --text-color-2: #d1d1d1;
@@ -32,6 +33,7 @@
     --bg-color-light: #dcdcdc;
     --bg-color-dark: #3e3e3e;
     --bg-color-glass: rgba(62, 62, 62, 0.2);
+    --bg-color-glass-tinted: rgba(220, 220, 220, 0.8);
     --bg-textarea: #e0e0e0;
     --text-color: black;
     --text-color-2: #2e2e2e;

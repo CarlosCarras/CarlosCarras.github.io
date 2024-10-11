@@ -6,41 +6,42 @@ import Terminal from "./../../components/Terminal/Terminal"
 import GearTrain from "./../../components/GearTrain/GearTrain"
 import SkillEntry from "../../components/SkillEntry/SkillEntry";
 import AboutMe from "../../components/AboutMe/AboutMe"
+import ExpandableArrow from "../../components/ExpandableArrow/ExpandableArrow";
 
 
 const SHUTTLE = require('./../../assets/shuttle.png');
 
 const SKILLS_DATA = [
-    "Python",
-    "C/C++",
-    "C#",
-    "MATLAB",
-    "Simulink",
-    "Java",
-    "JavaScript",
-    "VBA",
-    "LabVIEW",
-    "VHDL",
-    "PyTorch",
-    "Arduino",
-    "SolidWorks",
-    "Fusion 360",
-    "Autodesk Inventor",
-    "Altium Designer",
-    "LaTeX",
-    "Linux",
-    "LTSpice",
-    "React.js",
-    "MERN Stack",
-    "OpenMDAO",
-    "OpenSim",
-    "ROS",
-    "Splunk",
-    "Unity",
-    "Vicon",
-    "manual machining",
-    "CNC",
-    "3D printing"
+    {"name": "Python", "proficiency": 5},
+    {"name": "C/C++", "proficiency": 4},
+    {"name": "C#", "proficiency": 4},
+    {"name": "MATLAB", "proficiency": 5},
+    {"name": "Simulink", "proficiency": 4},
+    {"name": "Java", "proficiency": 3},
+    {"name": "JavaScript", "proficiency": 5},
+    {"name": "VBA", "proficiency": 3},
+    {"name": "LabVIEW", "proficiency": 2},
+    {"name": "VHDL", "proficiency": 2},
+    {"name": "PyTorch", "proficiency": 5},
+    {"name": "Arduino", "proficiency": 4},
+    {"name": "SolidWorks", "proficiency": 5},
+    {"name": "Fusion 360", "proficiency": 2},
+    {"name": "Autodesk Inventor", "proficiency": 2},
+    {"name": "Altium Designer", "proficiency": 5},
+    {"name": "LaTeX", "proficiency": 4},
+    {"name": "Linux", "proficiency": 4},
+    {"name": "LTSpice", "proficiency": 2},
+    {"name": "React.js", "proficiency": 4},
+    {"name": "MERN Stack", "proficiency": 4},
+    {"name": "OpenMDAO", "proficiency": 3},
+    {"name": "OpenSim", "proficiency": 2},
+    {"name": "ROS", "proficiency": 4},
+    {"name": "Splunk", "proficiency": 3},
+    {"name": "Unity", "proficiency": 4},
+    {"name": "Vicon", "proficiency": 2},
+    {"name": "manual machining", "proficiency": 4},
+    {"name": "CNC", "proficiency": 3},
+    {"name": "3D printing", "proficiency": 5},
 ]
 
 const colorPallete = ["#1ecbe1", "#e0e300", "#1ee196", "#ff598f", "#d300dd"];
@@ -64,6 +65,12 @@ function Home(props) {
             ? sessionStorage.getItem("isLoaded") || false
             : false
     )
+    const [gearTrainScale, setGearTrainScale] = useState(0.1 + 0.00025 * window.innerWidth);
+    const [terminalWidth, setTerminalWidth] = useState(300);
+    const [terminalHeight, setTerminalHeight] = useState(300);
+    const [isNarrow, setIsNarrow] = useState(false);
+    const [terminalPos, setTerminalPos] = useState({x: Math.max((0.4*window.innerWidth-400)/2, 0), y: 50});
+    const [skillsExpanded, setSkillsExpanded] = useState(true);
 
     const handleShuttleClick = () => {
         setIsShuttleFlyingOut(true);
@@ -73,17 +80,10 @@ function Home(props) {
     const handleThemeChange = (event) => {
         setTerminalTheme(event.target.value);
     }
-
-    /* update gears when window resized */
-    const [gearTrainScale, setGearTrainScale] = useState(0.1 + 0.00025 * window.innerWidth);
-
-    /* manage terminal width and height */
-    const [terminalWidth, setTerminalWidth] = useState(300);
-    const [terminalHeight, setTerminalHeight] = useState(300);
-    const [isNarrow, setIsNarrow] = useState(false);
-    const [terminalPos, setTerminalPos] = useState({x: Math.max((0.4*window.innerWidth-400)/2, 0), y: 50});
+    
     useEffect(() => {
         const handleResize = () => {
+            /* manage terminal width and height */
             const _isNarrow = window.innerWidth < 950;
             const posMultiplier = _isNarrow ? 0.9 : 0.45;
             const widthMultiplier = _isNarrow ? 0.8 : 0.4;
@@ -94,6 +94,9 @@ function Home(props) {
             setTerminalHeight(Math.min(heightMultiplier*window.innerHeight, TERMINAL_MAXDIMS.h));
             setIsNarrow(_isNarrow);
             setGearTrainScale(0.1 + 0.00025 * window.innerWidth);
+
+            /* manage skills container */
+            setSkillsExpanded(!_isNarrow);
         };
 
         window.addEventListener("resize", handleResize);
@@ -182,10 +185,18 @@ function Home(props) {
                     </div>
                 </div>
             </div>
-            <div className="row skills-container">
-                {SKILLS_DATA.map((skill, index) => (
-                    <SkillEntry name={skill} color={colorPallete[index%colorPallete.length]} key={index}/>
-                ))}
+            <div className="row skills">
+                <div className={`skills-container ${skillsExpanded ? '' : 'abbreviated'}`}>
+                    {SKILLS_DATA.map((skill, index) => (
+                        <SkillEntry name={skill['name']} proficiency={skill['proficiency']} color={colorPallete[index%colorPallete.length]} key={index}/>
+                    ))}
+                </div>
+                {
+                    isNarrow ?
+                    <ExpandableArrow active={skillsExpanded} onClick={() => setSkillsExpanded(!skillsExpanded)}/>   
+                    :
+                    <></>
+                }
             </div>
             <div className="row aboutme">
                 <AboutMe/>

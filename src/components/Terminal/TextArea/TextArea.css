@@ -27,7 +27,7 @@
     border: none;
     color: inherit;
     outline: none;
-    padding:0
+    padding:0;
 }
 
 .textarea-container .entry input::placeholder {

@@ -128,11 +128,26 @@
     bottom: 0.75em;
 }
 
-.home-container .skills-container {
+.home-container .skills {
     background-color: var(--bg-color-dark);
     padding: 1em 5vw;
+    gap: 0;
+}
+
+.home-container .skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 90vw;
     gap: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.home-container .skills-container.abbreviated {
+   height: 260px;
 }
 
 .home-container .aboutme {
