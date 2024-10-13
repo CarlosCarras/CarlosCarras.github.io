@@ -193,7 +193,7 @@ function Home(props) {
                 </div>
                 {
                     isNarrow ?
-                    <ExpandableArrow active={skillsExpanded} onClick={() => setSkillsExpanded(!skillsExpanded)}/>   
+                    <ExpandableArrow initState={false} onClick={() => setSkillsExpanded(!skillsExpanded)}/>   
                     :
                     <></>
                 }

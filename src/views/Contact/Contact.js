@@ -20,7 +20,7 @@ function Contact() {
                 <div className="contact-container-division">
                     <div>
                         <h2>Contact Info</h2>
-                        <p><b>Phone</b>:&nbsp; {PHONE}</p>
+                        <p><b>Phone</b>:&nbsp; █████████ </p>
                         <p><b>Email</b>:&nbsp; <a href={"mailto:"+EMAIL}>{EMAIL}</a></p>
                     </div>
                     <br/>

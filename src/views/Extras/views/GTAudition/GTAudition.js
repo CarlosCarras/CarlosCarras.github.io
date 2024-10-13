@@ -42,8 +42,7 @@ function GTAudition() {
             </div>
 
             <div className='gt-audition-text'>
-                <p> Please reach out to me at&nbsp;
-                    <a href={"mailto:"+EMAIL}>{EMAIL}</a> or text/call <b>{PHONE}</b> if you have any questions.
+                <p> Please <a href="/contact">contact</a> me if you have any questions.
                     Thank you for your time!
                 </p>
                 <p>

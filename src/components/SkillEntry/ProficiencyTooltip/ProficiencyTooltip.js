@@ -18,7 +18,8 @@ function ProficiencyTooltip(props) {
                 {
                     COLORS.map((color, index) => (
                         <div className="proficiency-bar" 
-                             style={{'backgroundColor': `rgba(${color}, ${props.value > index ? 1 : 0})`}}/>
+                             style={{'backgroundColor': `rgba(${color}, ${props.value > index ? 1 : 0})`}}
+                             key={index}/>
                     ))
                 }
             </div>
