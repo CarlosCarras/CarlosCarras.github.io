@@ -5,7 +5,7 @@ import TextArea from './TextArea/TextArea'
 
 
 function Terminal(props) {
-    const [theme, setTheme] = useState(props.theme)
+    const [theme, setTheme] = useState(props.theme);
     const [date, setDate] = useState(new Date());
 
     const [isDragging, setIsDragging] = useState(false);

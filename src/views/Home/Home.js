@@ -107,6 +107,8 @@ function Home(props) {
 
     useEffect(() => {
         setDarkMode(props.darkmode)
+        const newTerminalIdx = props.darkmode ? 2 : 0;
+        setTerminalTheme(TERMINAL_THEMES[newTerminalIdx].toLocaleLowerCase());
     }, [props.darkmode]);
 
     return(
