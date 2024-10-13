@@ -70,7 +70,7 @@ function Home(props) {
     const [terminalHeight, setTerminalHeight] = useState(300);
     const [isNarrow, setIsNarrow] = useState(false);
     const [terminalPos, setTerminalPos] = useState({x: Math.max((0.4*window.innerWidth-400)/2, 0), y: 50});
-    const [skillsExpanded, setSkillsExpanded] = useState(true);
+    const [skillsExpanded, setSkillsExpanded] = useState(false);
 
     const handleShuttleClick = () => {
         setIsShuttleFlyingOut(true);
@@ -94,9 +94,6 @@ function Home(props) {
             setTerminalHeight(Math.min(heightMultiplier*window.innerHeight, TERMINAL_MAXDIMS.h));
             setIsNarrow(_isNarrow);
             setGearTrainScale(0.1 + 0.00025 * window.innerWidth);
-
-            /* manage skills container */
-            setSkillsExpanded(!_isNarrow);
         };
 
         window.addEventListener("resize", handleResize);
@@ -186,7 +183,7 @@ function Home(props) {
                 </div>
             </div>
             <div className="row skills">
-                <div className={`skills-container ${skillsExpanded ? '' : 'abbreviated'}`}>
+                <div className={`skills-container ${skillsExpanded || !isNarrow ? '' : 'abbreviated'}`}>
                     {SKILLS_DATA.map((skill, index) => (
                         <SkillEntry name={skill['name']} proficiency={skill['proficiency']} color={colorPallete[index%colorPallete.length]} key={index}/>
                     ))}
