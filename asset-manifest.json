@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.74aa0d14.css",
-    "main.js": "/static/js/main.a6cafc75.js",
+    "main.js": "/static/js/main.ae81d597.js",
     "static/js/453.ce3f01ed.chunk.js": "/static/js/453.ce3f01ed.chunk.js",
     "static/media/ndseg2024_ppt.pdf": "/static/media/ndseg2024_ppt.b35601909cf4f907377e.pdf",
     "static/media/rtrescue2.png": "/static/media/rtrescue2.70334d5f9f8c9cdaf796.png",
@@ -105,11 +105,11 @@
     "static/media/aakash.jpg": "/static/media/aakash.7d3219d77668d20c9a1e.jpg",
     "index.html": "/index.html",
     "main.74aa0d14.css.map": "/static/css/main.74aa0d14.css.map",
-    "main.a6cafc75.js.map": "/static/js/main.a6cafc75.js.map",
+    "main.ae81d597.js.map": "/static/js/main.ae81d597.js.map",
     "453.ce3f01ed.chunk.js.map": "/static/js/453.ce3f01ed.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.74aa0d14.css",
-    "static/js/main.a6cafc75.js"
+    "static/js/main.ae81d597.js"
   ]
 }
