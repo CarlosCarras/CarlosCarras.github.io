@@ -69,6 +69,7 @@ function Home(props) {
     const [terminalWidth, setTerminalWidth] = useState(300);
     const [terminalHeight, setTerminalHeight] = useState(300);
     const [isNarrow, setIsNarrow] = useState(false);
+    const [isNarrowSkills, setIsNarrowSkills] = useState(false);
     const [terminalPos, setTerminalPos] = useState({x: Math.max((0.4*window.innerWidth-400)/2, 0), y: 50});
     const [skillsExpanded, setSkillsExpanded] = useState(false);
 
@@ -85,6 +86,7 @@ function Home(props) {
         const handleResize = () => {
             /* manage terminal width and height */
             const _isNarrow = window.innerWidth < 950;
+            const _isNarrowSkills = window.innerWidth < 630;
             const posMultiplier = _isNarrow ? 0.9 : 0.45;
             const widthMultiplier = _isNarrow ? 0.8 : 0.4;
             const heightMultiplier = 0.8;
@@ -93,6 +95,7 @@ function Home(props) {
             setTerminalWidth(Math.min(widthMultiplier*window.innerWidth, TERMINAL_MAXDIMS.w));
             setTerminalHeight(Math.min(heightMultiplier*window.innerHeight, TERMINAL_MAXDIMS.h));
             setIsNarrow(_isNarrow);
+            setIsNarrowSkills(_isNarrowSkills);
             setGearTrainScale(0.1 + 0.00025 * window.innerWidth);
         };
 
@@ -185,13 +188,13 @@ function Home(props) {
                 </div>
             </div>
             <div className="row skills">
-                <div className={`skills-container ${skillsExpanded || !isNarrow ? '' : 'abbreviated'}`}>
+                <div className={`skills-container ${skillsExpanded || !isNarrowSkills ? '' : 'abbreviated'}`}>
                     {SKILLS_DATA.map((skill, index) => (
                         <SkillEntry name={skill['name']} proficiency={skill['proficiency']} color={colorPallete[index%colorPallete.length]} key={index}/>
                     ))}
                 </div>
                 {
-                    isNarrow ?
+                    isNarrowSkills ?
                     <ExpandableArrow initState={false} onClick={() => setSkillsExpanded(!skillsExpanded)}/>   
                     :
                     <></>
