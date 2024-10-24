@@ -41,6 +41,7 @@ const SKILLS = [
             {name: "OpenSim", years: 5},
             {name: "ROS", years: 5},
             {name: "Splunk", years: 5},
+            {name: "SPSS", years: 1},
             {name: "Unity", years: 5},
             {name: "Vicon", years: 5},
         ]
@@ -166,12 +167,12 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Exoskeleton Navigation</em> Designed exoskeleton controller to help humans navigate around obstacles in low visibility environments.
+                            <em>Exoskeleton Navigation</em> Designed exoskeleton controller to help humans avoid obstacles in low visibility environments [J2], [C3].
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Classical Exoskeleton Control</em>: Designed hip exoskeleton impedance controllers for everyday tasks. Validated using metabolics [2].
+                            <em>Classical Exoskeleton Control</em>: Designed hip exoskeleton impedance controllers for everyday tasks. Validated using metabolics [J1].
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
@@ -219,12 +220,12 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Embedded Programming</em>: Wrote custom C++ libraries for the D3 CubeSat’s IMU, antenna, radio, and GPS aboard a BeagleBone [4].
+                            <em>Embedded Programming</em>: Wrote custom C++ libraries for the D3 CubeSat’s IMU, antenna, radio, and GPS aboard a BeagleBone [C1].
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                           <em>OS Design</em>: Developed a C++ radio framework to enable data uplink/downlink and implemented command & data handling logic [5].
+                           <em>OS Design</em>: Developed a C++ radio framework to enable data uplink/downlink and implemented command & data handling logic [C2].
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
@@ -350,26 +351,26 @@ function ResumeContent() {
             </div>
 
             <div className="section">
-                <div className="section-header">Jounral Papers</div>
+                <div className="section-header">Journal Papers</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
                     <ol className='reference-list'>
                         <li>
-                            <span className='reference-number'>[1]</span>
+                            <span className='reference-number'>[J3]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
                                 C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (In Prep)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[2]</span>
+                            <span className='reference-number'>[J2]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
                                 A. Bajpai, D. Iyengar, K. Collins, A. Mazumdar, A. Young. “Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton”. IEEE Transactions on Haptics. 2024. (Submitted)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[3]</span>
+                            <span className='reference-number'>[J1]</span>
                             <div>
                                 A. Bajpai,&nbsp;
                                 <span className='author-callout'>C. Carrasquillo</span>,
@@ -386,21 +387,21 @@ function ResumeContent() {
                 <div className="section-content">
                     <ol className='reference-list'>
                         <li>
-                            <span className='reference-number'>[3]</span>
+                            <span className='reference-number'>[C3]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,&nbsp;
                                 A. Young, A. Mazumdar. “Intuitive Steering Assistance from a Wearable Robotic Assistive System for Visually Impaired Navigation”. IEEE International Conference on Robotics and Automation. 2025. (Submitted)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[4]</span>
+                            <span className='reference-number'>[C2]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>.&nbsp;
                                 “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021.
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[5]</span>
+                            <span className='reference-number'>[C1]</span>
                             <div>
                                 S. Buckner,&nbsp;
                                 <span className='author-callout'>C. Carrasquillo</span>, 

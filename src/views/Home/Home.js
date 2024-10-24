@@ -37,6 +37,7 @@ const SKILLS_DATA = [
     {"name": "OpenSim", "proficiency": 2},
     {"name": "ROS", "proficiency": 4},
     {"name": "Splunk", "proficiency": 3},
+    {"name": "SPSS", "proficiency": 3},
     {"name": "Unity", "proficiency": 4},
     {"name": "Vicon", "proficiency": 2},
     {"name": "manual machining", "proficiency": 4},
