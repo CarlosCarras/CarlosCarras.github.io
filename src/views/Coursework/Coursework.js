@@ -23,8 +23,6 @@ const GRAD_COURSEWORK = [
         coursework: [
                 {course: "CS7641: Machine Learning", credits: 3},
                 {course: "ME8843: Biomechanics of Wearable Robotic Systems", credits: 3},
-                {course: "MUSI3018: Marching Band", credits: 2},
-                {course: "MUSI3511: Percussion Ensemble", credits: 1},
         ],
     },
     {
@@ -45,7 +43,8 @@ const GRAD_COURSEWORK = [
         coursework: [
                 {course: "CS6476: Introduction to Computer Vision", credits: 3},
                 {course: "AE8803: Mathematical Principles of Planning and Decision-Making for Autonomy", credits: 3},
-                {course: "MUSI3018: Marching Band", credits: 3},
+                {course: "MUSI3018: Marching Band", credits: 2},
+                {course: "MUSI3511: Percussion Ensemble", credits: 1},
         ],
     },
     {
