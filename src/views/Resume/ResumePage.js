@@ -66,9 +66,9 @@ const SKILLS = [
     { 
         category: "Personal Projects", 
         contents: [
-            {name: "Student Pilot", years: 5},
-            {name: "Amateur Radio Technician (KN4ZUC)", years: 5},
-            {name: "SOLIDWORKS Associate", years: 5},
+            {name: "Student Pilot (60+ hours)", years: 5},
+            {name: "Amateur Radio Technician (2019, KN4ZUC)", years: 5},
+            {name: "SOLIDWORKS Associate (2019)", years: 5},
         ]
     },
     { 
@@ -291,39 +291,31 @@ function ResumeContent() {
                 <div className="section-content">
 
                     {/* Grad REACH */}
-                    <div className="resume-entry entry-title">
+                    <div className="resume-entry">
                         <div>
-                        GT Grad REACH Fellow and Mentor
+                        Grad REACH Fellow and Mentor
                         </div>
                         <div>Aug 2024 – Current</div>
                     </div>
 
                     {/* Pathbreakers */}
-                    <div className="resume-entry entry-title">
+                    <div className="resume-entry">
                         <div>
-                            GT Pathbreakers Fellow
+                            Pathbreakers Fellow (formerly University Center for Exemplary Menotring)
                         </div>
                         <div>Aug 2023 – Current</div>
                     </div>
 
                     {/* NDSEG */}
-                    <div className="resume-entry entry-title">
+                    <div className="resume-entry">
                         <div>
                             National Defense Science and Engineering Graduate (NDSEG) Fellow
                         </div>
                         <div>Aug 2022 – Current</div>
                     </div>
 
-                    {/* UCEM */}
-                    <div className="resume-entry entry-title">
-                        <div>
-                            University Center of Exemplary Mentoring (UCEM) Fellow
-                        </div>
-                        <div>Aug 2023 – Aug 2024</div>
-                    </div>
-
                     {/* SmallSat Best Paper Honorable Mention */}
-                    <div className="resume-entry entry-title">
+                    <div className="resume-entry">
                         <div>
                             SmallSat 2021 Student Competition Best Paper Honorable Mention
                         </div>
@@ -331,7 +323,7 @@ function ResumeContent() {
                     </div>
 
                     {/* Florida Academic Scholars */}
-                    <div className="resume-entry entry-title">
+                    <div className="resume-entry">
                         <div>
                             Florida Academic Scholars Award
                         </div>
@@ -339,7 +331,7 @@ function ResumeContent() {
                     </div>
 
                     {/* SwampHacks */}
-                    <div className="resume-entry entry-title">
+                    <div className="resume-entry">
                         <div>
                             SwampHacks VI Infinite Energy's Best Hack Award Recipient
                         </div>
@@ -359,7 +351,7 @@ function ResumeContent() {
                             <span className='reference-number'>[J3]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
-                                C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (In Prep)
+                                C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (Submitted)
                             </div>
                         </li>
                         <li>
@@ -374,7 +366,10 @@ function ResumeContent() {
                             <div>
                                 A. Bajpai,&nbsp;
                                 <span className='author-callout'>C. Carrasquillo</span>,
-                                J. Carlson, J. Park, D. Iyengar, K. Herrin, A. Young, A. Mazumdar. “Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton”. IEEE Transactions on Mechatronics. 2023.
+                                J. Carlson, J. Park, D. Iyengar, K. Herrin, A. Young, A. Mazumdar.
+                                “<a href="https://ieeexplore.ieee.org/document/10342739" alt="Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton" target="_blank"> 
+                                    Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton
+                                </a>”. IEEE Transactions on Mechatronics. 2023.
                             </div>
                         </li>
                     </ol>
@@ -396,8 +391,10 @@ function ResumeContent() {
                         <li>
                             <span className='reference-number'>[C2]</span>
                             <div>
-                                <span className='author-callout'>C. Carrasquillo</span>.&nbsp;
-                                “A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission”. Small Satellite Conference. 2021.
+                                <span className='author-callout'>C. Carrasquillo</span>.
+                                “<a href="https://digitalcommons.usu.edu/smallsat/2021/all2021/269/" alt="A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission" target="_blank">
+                                    A Versatile and Open-Source Radio Framework for the D3 CubeSat Mission
+                                </a>”. Small Satellite Conference. 2021. Student Competition Best Paper Honorable Mention.
                             </div>
                         </li>
                         <li>
@@ -405,7 +402,10 @@ function ResumeContent() {
                             <div>
                                 S. Buckner,&nbsp;
                                 <span className='author-callout'>C. Carrasquillo</span>, 
-                                M. Elosegui, R. Bevilacqua. “A Novel Approach to CubeSat Flight Software Development Using Robot Operating System (ROS)”. Small Satellite Conference. 2021.
+                                M. Elosegui, R. Bevilacqua. 
+                                “<a href="https://digitalcommons.usu.edu/smallsat/2020/all2020/241/" alt="A Novel Approach to CubeSat Flight Software Development Using Robot Operating System (ROS)" target="_blank">
+                                    A Novel Approach to CubeSat Flight Software Development Using Robot Operating System (ROS)
+                                </a>”. Small Satellite Conference. 2020. Technical Poster Presentation.
                             </div>
                         </li>
                     </ol>

@@ -93,6 +93,13 @@
     padding: 0.5em 0;
 }
 
+.resume-page .reference-list li a {
+    font-size: 1em;
+    font-weight: 500;
+    color: #165da4;
+}
+
+
 .resume-page .reference-list li .reference-number {
     display: inline-block;
     width: 20px;
