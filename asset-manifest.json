@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.74aa0d14.css",
-    "main.js": "/static/js/main.b72bbf38.js",
+    "main.css": "/static/css/main.3c7977cf.css",
+    "main.js": "/static/js/main.1bcc944b.js",
     "static/js/453.ce3f01ed.chunk.js": "/static/js/453.ce3f01ed.chunk.js",
     "static/media/ndseg2024_ppt.pdf": "/static/media/ndseg2024_ppt.b35601909cf4f907377e.pdf",
     "static/media/rtrescue2.png": "/static/media/rtrescue2.70334d5f9f8c9cdaf796.png",
@@ -65,7 +65,7 @@
     "static/media/longboard.jpg": "/static/media/longboard.311dece5244c1c1d34a9.jpg",
     "static/media/cs8750_thumbnail.png": "/static/media/cs8750_thumbnail.8c498d2479d2c2087e0b.png",
     "static/media/welding.JPG": "/static/media/welding.a4d44d3c3187eae68d52.JPG",
-    "static/media/resume.pdf": "/static/media/resume.4c2bff1bc594731468bf.pdf",
+    "static/media/resume.pdf": "/static/media/resume.3bf617e93c3ee05a8b3c.pdf",
     "static/media/jpl.JPG": "/static/media/jpl.b46f3ddc103cfcb479ee.JPG",
     "static/media/skiing.JPG": "/static/media/skiing.c0f01e7c4dc02427ddae.JPG",
     "static/media/diving_nursesharks.JPG": "/static/media/diving_nursesharks.095a724c865dd2c8745a.JPG",
@@ -104,12 +104,12 @@
     "static/media/anirban.jpg": "/static/media/anirban.d0d8143f2daa71f13619.jpg",
     "static/media/aakash.jpg": "/static/media/aakash.7d3219d77668d20c9a1e.jpg",
     "index.html": "/index.html",
-    "main.74aa0d14.css.map": "/static/css/main.74aa0d14.css.map",
-    "main.b72bbf38.js.map": "/static/js/main.b72bbf38.js.map",
+    "main.3c7977cf.css.map": "/static/css/main.3c7977cf.css.map",
+    "main.1bcc944b.js.map": "/static/js/main.1bcc944b.js.map",
     "453.ce3f01ed.chunk.js.map": "/static/js/453.ce3f01ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74aa0d14.css",
-    "static/js/main.b72bbf38.js"
+    "static/css/main.3c7977cf.css",
+    "static/js/main.1bcc944b.js"
   ]
 }
