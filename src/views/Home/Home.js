@@ -165,6 +165,10 @@ function Home(props) {
                         <span> Student Pilot @ Skybound Aviation </span>
                         <br/>
                         <br/>
+                        <span> MS, Computer Science @ GT</span> <span className="grad-year">2025</span>
+                        <br/>
+                        <span> MS, Aerospace Engineering @ GT</span> <span className="grad-year">2025</span>
+                        <br/>
                         <span> BS, Computer Engineering @ UF</span> <span className="grad-year">2021</span>
                         <br/>
                         <span> BS, Mechanical Engineering @ UF</span> <span className="grad-year">2021</span>

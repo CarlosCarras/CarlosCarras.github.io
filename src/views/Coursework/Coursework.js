@@ -9,6 +9,7 @@ const GRAD_COURSEWORK = [
                 {course: "CS7642: Artificial Intelligence", credits: 3},
                 {course: "CS7785: Intro to Robotics", credits: 3},
                 {course: "PHIL6000: Responsible Conduct of Research", credits: 1},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
@@ -16,6 +17,7 @@ const GRAD_COURSEWORK = [
         coursework: [
                 {course: "CS7643: Deep Learning", credits: 3},
                 {course: "ME6407: Robotics", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
@@ -23,6 +25,7 @@ const GRAD_COURSEWORK = [
         coursework: [
                 {course: "CS7641: Machine Learning", credits: 3},
                 {course: "ME8843: Biomechanics of Wearable Robotic Systems", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
@@ -30,12 +33,14 @@ const GRAD_COURSEWORK = [
         coursework: [
                 {course: "BMED8813: Interfacing Engineering, Technology, and Rehabilitation", credits: 3},
                 {course: "AE6310: Optimization for the Design of Engineered Systems", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
         semester: "Summer 2023", 
         coursework: [
                 {course: "APPH6225: Biostatistics", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
@@ -45,6 +50,7 @@ const GRAD_COURSEWORK = [
                 {course: "AE8803: Mathematical Principles of Planning and Decision-Making for Autonomy", credits: 3},
                 {course: "MUSI3018: Marching Band", credits: 2},
                 {course: "MUSI3511: Percussion Ensemble", credits: 1},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
@@ -52,12 +58,14 @@ const GRAD_COURSEWORK = [
         coursework: [
                 {course: "AE6505: Random Processes and Kalman Filters", credits: 3},
                 {course: "CS8750: Multidisciplinary Robotics Research I", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
         semester: "Summer 2024", 
         coursework: [
                 {course: "MATH6701: Math Methods of Applied Sciences", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
     {
@@ -66,6 +74,14 @@ const GRAD_COURSEWORK = [
                 {course: "CS6516: Intro to Graduate Algorithms", credits: 3},
                 {course: "AE8803: Optimization-Based Learning Control and Games", credits: 3},
                 {course: "MGT6753: Business Fundamentals for Analytics", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
+        ],
+    },
+    {
+        semester: "Spring 2025", 
+        coursework: [
+                {course: "AE8751: Multidisciplinary Robotics Research II", credits: 3},
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
 ].reverse()

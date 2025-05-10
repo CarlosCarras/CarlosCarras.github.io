@@ -106,7 +106,7 @@ function ResumeContent() {
                     <div className="resume-entry entry-title">
                         <div>
                             Georgia Institute of Technology
-                            <span> &nbsp;&nbsp;|&nbsp; GPA: 4.00/4.00 </span>
+                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.90/4.00 </span>
                         </div>
                         <div>Aug 2021 - Present</div>
                     </div>
@@ -116,11 +116,11 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>MS, <em>Computer Science, </em> Machine Learning Specialization</div>
-                        <div>Expected May 2025</div>
+                        <div>May 2025</div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>MS, <em>Aerospace Engineering</em> </div>
-                        <div>Expected May 2025</div>
+                        <div>May 2025</div>
                     </div>
                 </div>
 
@@ -358,7 +358,10 @@ function ResumeContent() {
                             <span className='reference-number'>[J2]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
-                                A. Bajpai, D. Iyengar, K. Collins, A. Mazumdar, A. Young. “Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton”. IEEE Transactions on Haptics. 2024. (Submitted)
+                                A. Bajpai, D. Iyengar, K. Collins, A. Mazumdar, A. Young. 
+                                “<a href="https://ieeexplore.ieee.org/abstract/document/10854900" alt="Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton" target="_blank">
+                                Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton
+                                </a>”. IEEE Transactions on Haptics. 2025.
                             </div>
                         </li>
                         <li>
