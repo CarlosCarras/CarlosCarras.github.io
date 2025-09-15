@@ -1,74 +1,51 @@
 import React from 'react';
 import './ResumePage.css'
 
-const NAME = "Carlos Carrasquillo", 
+const NAME = "Carlos A. Carrasquillo Torres", 
       PHONE = "(787) 668-8096",
       EMAIL = "ccarrasquillo3@gatech.edu",
       DOMAIN = "http://www.carloscarras.tech";
 
 const SKILLS = [
     { 
-        category: "CAD", 
+        category: "Design & Manufacturing", 
         contents: [
             {name: "SolidWorks (CAD/FEA)", years: 5},
             {name: "Fusion 360 (CAD/CAM)", years: 5},
-            {name: "Autodesk Inventor (CAD)", years: 5},
+            {name: "Machine Shop Equipment", years: 5},
+            {name: "Rapid Prototyping", years: 5},
         ]
     }, 
     { 
         category: "Programming", 
         contents: [
-            {name: "C/C++", years: 5},
-            {name: "Java", years: 5},
-            {name: "JavaScript", years: 5},
-            {name: "LabVIEW", years: 5},
-            {name: "MATLAB", years: 5},
             {name: "Python", years: 5},
+            {name: "C/C++", years: 5},
+            {name: "JavaScript", years: 5},
+            {name: "MATLAB", years: 5},
             {name: "Simulink", years: 5},
+            {name: "LabVIEW", years: 5},
             {name: "VBA", years: 5},
             {name: "VHDL", years: 5},
         ]
     },
     { 
-        category: "Technical Software", 
-        contents: [
-            {name: "Altium Designer", years: 5},
-            {name: "LaTeX", years: 5},
-            {name: "Linux", years: 5},
-            {name: "LTSpice", years: 5},
-            {name: "MERN Stack", years: 5},
-            {name: "OpenMDAO", years: 5},
-            {name: "OpenSim", years: 5},
-            {name: "ROS", years: 5},
-            {name: "Splunk", years: 5},
-            {name: "SPSS", years: 1},
-            {name: "Unity", years: 5},
-            {name: "Vicon", years: 5},
-        ]
-    },
-    { 
-        category: "Technical Hardware", 
-        contents: [
-            {name: "Shop (Lathes, Mills, Waterjets, Welding, etc.)", years: 5},
-            {name: "Electronics (oscilloscopes, microscopes, etc.)", years: 5},
-            {name: "3D Printing", years: 5},
-        ]
-    },
-    { 
         category: "Certifications", 
         contents: [
-            {name: "Student Pilot", years: 5},
             {name: "Amateur Radio Technician (KN4ZUC)", years: 5},
-            {name: "Nvidia Computer Vision Certificate", years: 5},
             {name: "SOLIDWORKS Associate", years: 5},
+            {name: "Student Pilot (90+ hours)", years: 5},
+            {name: "PADI Open Water Diver", years: 5},
         ]
     },
     { 
         category: "Personal Projects", 
         contents: [
-            {name: "Student Pilot (60+ hours)", years: 5},
-            {name: "Amateur Radio Technician (2019, KN4ZUC)", years: 5},
-            {name: "SOLIDWORKS Associate (2019)", years: 5},
+            {name: "12-DOF quadruped robot", years: 5},
+            {name: "3D bioprinter", years: 5},
+            {name: "desktop lathe", years: 5},
+            {name: "MIPS CPU", years: 5},
+            {name: "5+ websites", years: 5},
         ]
     },
     { 
@@ -106,7 +83,7 @@ function ResumeContent() {
                     <div className="resume-entry entry-title">
                         <div>
                             Georgia Institute of Technology
-                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.90/4.00 </span>
+                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.9/4.0 </span>
                         </div>
                         <div>Aug 2021 - Present</div>
                     </div>
@@ -129,7 +106,7 @@ function ResumeContent() {
                     <div className="resume-entry entry-title">
                         <div>
                             University of Florida
-                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.68/4.00 </span>
+                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.7/4.0 </span>
                         </div>
                         <div>Aug 2017 - May 2021</div>
                     </div>
@@ -162,22 +139,12 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Generalized Exoskeleton Control</em>: Creating a metabolically optimal exoskeleton torque controller that generalizes across tasks.
+                            Led the design and development, of exoskeleton controllers and mechatronic systems for human navigation, mobility, and injury reduction.
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Exoskeleton Navigation</em> Designed exoskeleton controller to help humans avoid obstacles in low visibility environments [J2], [C3].
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Classical Exoskeleton Control</em>: Designed hip exoskeleton impedance controllers for everyday tasks. Validated using metabolics [J1].
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Mechatronics</em>: Developed software libraries and PCBs to interface with exoskeleton motor controllers, sensors, and master computer.
+                            Performed human-subject experiments to validate exoskeleton hardware and controllers. 
                         </div>
                     </div>
                     <br/>
@@ -192,17 +159,12 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Web App Development</em>: Fully developed a web application to find components on a PCB by search and mouseover. MERN Stack.
+                            Developed a MERN stack web application to help engineers find components on printed circuit boards by search and mouseover. 
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Database Management</em>: Created five Splunk dashboards and ~10 process programs for production-grade machinery.
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Local App Development</em>: Wrote a desktop application to log and track material tests using VBA.
+                            Engineered a VBA-based desktop application to automate the logging and tracking of material testing data, replacing a manual process.
                         </div>
                     </div>
                     <br/>
@@ -220,17 +182,12 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Embedded Programming</em>: Wrote custom C++ libraries for the D3 CubeSat’s IMU, antenna, radio, and GPS aboard a BeagleBone [C1].
+                        Developed embedded C++ avionics software for the D3 CubeSat, creating custom libraries to interface with the satellite's sensors [C1, C2].
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                           <em>OS Design</em>: Developed a C++ radio framework to enable data uplink/downlink and implemented command & data handling logic [C2].
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Mission Operations</em>: Created a ground station Python application to transmit telecommands and receive downlinked data.
+                            Engineered a ground station application in Python to transmit telecommands and receiving downlinked data from the satellite.
                         </div>
                     </div>
                     <br/>
@@ -245,26 +202,26 @@ function ResumeContent() {
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Dynamics and Controls Lab</em>: 
-                            Led 6 lab sessions to assist students with LabVIEW programming and controller design.
+                            <em>Design and Manufacturing Lab (6X)</em>: 
+                            Taught &gt;30 students on design for manufacturing principles and usage of machine shop equipment.
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Thermal Systems and Design Lab</em>: 
-                            Taught ~70 students about the principles of IC engines in lectures, office hours, and exam reviews.
+                            <em>Dynamics and Controls Lab (1X)</em>: 
+                            Lectured to &gt;50 students on applying classical control theory to real-world systems.
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Design and Manufacturing Lab</em>: 
-                            Taught students to design robots in SOLIDWORKS and build them using machine shop equipment.
+                            <em>Thermal Systems and Design Lab (1X)</em>: 
+                            Guided student teams in designing mathematical models for internal combustion engines.
                         </div>
                     </div>
                     <div className="resume-entry resume-bullet">
                         <div>
-                            <em>Numerical Methods</em>: 
-                            Held lectures, office hours, and exam reviews; wrote the homework solutions in MATLAB.
+                            <em>Numerical Methods (2X)</em>: 
+                            Lectured on iterative algorithms, linear algebra, Fourier analysis and held routine office hours.
                         </div>
                     </div>
                     <br/>
@@ -291,7 +248,7 @@ function ResumeContent() {
                 <div className="section-content">
 
                     {/* Grad REACH */}
-                    <div className="resume-entry">
+                    <div className="resume-entry resume-bullet">
                         <div>
                         Grad REACH Fellow and Mentor
                         </div>
@@ -299,7 +256,7 @@ function ResumeContent() {
                     </div>
 
                     {/* Pathbreakers */}
-                    <div className="resume-entry">
+                    <div className="resume-entry resume-bullet">
                         <div>
                             Pathbreakers Fellow (formerly University Center for Exemplary Menotring)
                         </div>
@@ -307,7 +264,7 @@ function ResumeContent() {
                     </div>
 
                     {/* NDSEG */}
-                    <div className="resume-entry">
+                    <div className="resume-entry resume-bullet">
                         <div>
                             National Defense Science and Engineering Graduate (NDSEG) Fellow
                         </div>
@@ -315,7 +272,7 @@ function ResumeContent() {
                     </div>
 
                     {/* SmallSat Best Paper Honorable Mention */}
-                    <div className="resume-entry">
+                    <div className="resume-entry resume-bullet">
                         <div>
                             SmallSat 2021 Student Competition Best Paper Honorable Mention
                         </div>
@@ -323,7 +280,7 @@ function ResumeContent() {
                     </div>
 
                     {/* Florida Academic Scholars */}
-                    <div className="resume-entry">
+                    <div className="resume-entry resume-bullet">
                         <div>
                             Florida Academic Scholars Award
                         </div>
@@ -331,7 +288,7 @@ function ResumeContent() {
                     </div>
 
                     {/* SwampHacks */}
-                    <div className="resume-entry">
+                    <div className="resume-entry resume-bullet">
                         <div>
                             SwampHacks VI Infinite Energy's Best Hack Award Recipient
                         </div>
@@ -343,25 +300,32 @@ function ResumeContent() {
             </div>
 
             <div className="section">
-                <div className="section-header">Journal Papers</div>
+                <div className="section-header">Select Publications</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
                     <ol className='reference-list'>
                         <li>
-                            <span className='reference-number'>[J3]</span>
+                            <span className='reference-number'>[J4]</span>
                             <div>
-                                <span className='author-callout'>C. Carrasquillo</span>,
-                                C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (Submitted)
+                                K. L. Scherpereel, M. C. Gombolay, M. K. Shepherd, <span className='author-callout'>C. A. Carrasquillo</span>, O. T. Inan, A. J. Young. 
+                                Deep Domain Adaptation Eliminates Costly Data Required for Task-Agnostic Wearable Robotic Control". Science Robotics. 2025. (Submitted)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[J2]</span>
+                            <span className='reference-number'>[J3]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
                                 A. Bajpai, D. Iyengar, K. Collins, A. Mazumdar, A. Young. 
                                 “<a href="https://ieeexplore.ieee.org/abstract/document/10854900" alt="Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton" target="_blank">
                                 Enhancing Human Navigation Ability Using Force-Feedback from a Lower-Limb Exoskeleton
                                 </a>”. IEEE Transactions on Haptics. 2025.
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J2]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>,
+                                C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (Submitted)
                             </div>
                         </li>
                         <li>
@@ -373,22 +337,6 @@ function ResumeContent() {
                                 “<a href="https://ieeexplore.ieee.org/document/10342739" alt="Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton" target="_blank"> 
                                     Design and Validation of a Versatile High Torque Quasi‐Direct Drive Hip Exoskeleton
                                 </a>”. IEEE Transactions on Mechatronics. 2023.
-                            </div>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-
-            <div className="section">
-                <div className="section-header">Conference Papers</div>
-                <div className="divider-line"></div>
-                <div className="section-content">
-                    <ol className='reference-list'>
-                        <li>
-                            <span className='reference-number'>[C3]</span>
-                            <div>
-                                <span className='author-callout'>C. Carrasquillo</span>,&nbsp;
-                                A. Young, A. Mazumdar. “Intuitive Steering Assistance from a Wearable Robotic Assistive System for Visually Impaired Navigation”. IEEE International Conference on Robotics and Automation. 2025. (Submitted)
                             </div>
                         </li>
                         <li>
