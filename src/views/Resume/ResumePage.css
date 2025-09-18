@@ -35,11 +35,35 @@
     padding: 20px 20px 0 20px;
 }
 
+.resume-page .section-content .subsection-content {
+    padding-bottom: 0.5em;
+}
+
 .resume-page .resume-entry {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0.15em;
+}
+
+.resume-page ul.resume-list {
+    list-style-type: square;
+    list-style-position: outside;
+    margin: 0.5em 0 0 1.5em;
+    padding-left: 0;
+}
+
+.resume-page ul.resume-list li {
+    display: list-item;
+    text-align: left;
+    margin: 0.25em 0;
+    margin: 0.15em;
+}
+
+.resume-page ul.resume-list .li-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
 }
 
 .resume-page .resume-entry.entry-title {
@@ -51,20 +75,6 @@
     padding: 0.15em 0.15em 0.15em 2em;
 }
 
-.resume-page .resume-bullet div {
-    text-align: left;
-    padding-left: 30px;
-}
-
-.resume-page .resume-bullet div:first-child::before {
-    display: inline-block;
-    margin-left: -1em;
-    width: 1em;
-    font-size: 0.5em;
-    transform: translate(-50%, -25%);
-    content: "\25A0";
-}
-
 .resume-page .dotted-bullet {
     background: black;
     border-radius: 50%;
@@ -72,10 +82,6 @@
     width: 0.25rem;
     margin: 0 1rem;
     transform: translate(0, 200%);
-}
-
-.resume-page .resume-bullet.skill-list {
-    justify-content: left;
 }
 
 /* references */

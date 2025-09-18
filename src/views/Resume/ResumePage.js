@@ -10,23 +10,34 @@ const SKILLS = [
     { 
         category: "Design & Manufacturing", 
         contents: [
+            {name: "Altium Designer (PCB)", years: 5},
             {name: "SolidWorks (CAD/FEA)", years: 5},
             {name: "Fusion 360 (CAD/CAM)", years: 5},
-            {name: "Machine Shop Equipment", years: 5},
+            {name: "Machine Shop Equipment (Lathes, Mills, CNC, Welding)", years: 5},
             {name: "Rapid Prototyping", years: 5},
         ]
     }, 
     { 
         category: "Programming", 
         contents: [
-            {name: "Python", years: 5},
+            {name: "Python (NumPy, Pandas, OpenCV, PyTorch, TensorFlow, ROS, OpenMDAO)", years: 5},
             {name: "C/C++", years: 5},
-            {name: "JavaScript", years: 5},
+            {name: "C# (Unity)", years: 5},
+            {name: "JavaScript (React.js)", years: 5},
             {name: "MATLAB", years: 5},
             {name: "Simulink", years: 5},
-            {name: "LabVIEW", years: 5},
             {name: "VBA", years: 5},
             {name: "VHDL", years: 5},
+        ]
+    },
+    { 
+        category: "Experimentation", 
+        contents: [
+            {name: "AR/VR", years: 5},
+            {name: "Electromyography", years: 5},
+            {name: "Metabolics (COSMED, Parvo)", years: 5},
+            {name: "Motion Capture (Vicon)", years: 5},
+            {name: "OpenSim", years: 5},
         ]
     },
     { 
@@ -35,7 +46,7 @@ const SKILLS = [
             {name: "Amateur Radio Technician (KN4ZUC)", years: 5},
             {name: "SOLIDWORKS Associate", years: 5},
             {name: "Student Pilot (90+ hours)", years: 5},
-            {name: "PADI Open Water Diver", years: 5},
+            {name: "Adv. Open Water Diver", years: 5},
         ]
     },
     { 
@@ -78,46 +89,64 @@ function ResumeContent() {
                 <div className="section-header">Education &nbsp;</div>
                 <div className="divider-line"></div>
 
-                {/* Georgia Institute of Technology */}
                 <div className="section-content">
-                    <div className="resume-entry entry-title">
-                        <div>
-                            Georgia Institute of Technology
-                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.9/4.0 </span>
+                    
+                    {/* Georgia Institute of Technology */}
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                Georgia Institute of Technology
+                                <span> &nbsp;&nbsp;|&nbsp; GPA: 3.9/4.0 </span>
+                            </div>
+                            <div>Aug 2021 - Present</div>
                         </div>
-                        <div>Aug 2021 - Present</div>
+                        <ul className="resume-list">
+                            <li>
+                                <div className="li-content">
+                                    <div>PhD, <em>Robotics</em></div>
+                                    <div>Expected May 2026</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="li-content">
+                                    <div>MS, <em>Computer Science, </em> Machine Learning Specialization</div>
+                                    <div>May 2025</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="li-content">
+                                    <div>MS, <em>Aerospace Engineering</em> </div>
+                                    <div>May 2025</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>PhD, <em>Robotics</em></div>
-                        <div>Expected May 2026</div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>MS, <em>Computer Science, </em> Machine Learning Specialization</div>
-                        <div>May 2025</div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>MS, <em>Aerospace Engineering</em> </div>
-                        <div>May 2025</div>
-                    </div>
-                </div>
 
-                {/* University of Florida */}
-                <div className="section-content">
-                    <div className="resume-entry entry-title">
-                        <div>
-                            University of Florida
-                            <span> &nbsp;&nbsp;|&nbsp; GPA: 3.7/4.0 </span>
+                    {/* University of Florida */}
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                University of Florida
+                                <span> &nbsp;&nbsp;|&nbsp; GPA: 3.7/4.0 </span>
+                            </div>
+                            <div>Aug 2017 - May 2021</div>
                         </div>
-                        <div>Aug 2017 - May 2021</div>
+                        <ul className="resume-list">
+                            <li>
+                                <div className='li-content'>
+                                    <div>BS, <em>Mechanical Engineering</em>, Magna Cum Laude Honors</div>
+                                    <div>May 2021</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className='li-content'>
+                                    <div>BS, <em>Computer Engineering</em>, Magna Cum Laude Honors</div>
+                                    <div>May 2021</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>BS, <em>Mechanical Engineering</em>, Magna Cum Laude Honors</div>
-                        <div>May 2021</div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>BS, <em>Computer Engineering</em>, Magna Cum Laude Honors</div>
-                        <div>May 2021</div>
-                    </div>
+
                 </div>
             </div>
 
@@ -125,119 +154,115 @@ function ResumeContent() {
                 <div className="section-header">Experience </div>
                 <div className="divider-line"></div>
 
-                {/* Georgia Tech */}
                 <div className="section-content">
-                    <div className="resume-entry entry-title">
-                        <div>
-                            Graduate Research Assistant
-                            <span> &nbsp;&nbsp;|&nbsp; Georgia Institute of Technology, IRIM </span>
+
+                    {/* Georgia Institute of Technology */}
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                Graduate Research Assistant
+                                <span> &nbsp;&nbsp;|&nbsp; Georgia Institute of Technology, IRIM </span>
+                            </div>
+                            <div> August 2021 - Present </div>
                         </div>
-                        <div> August 2021 - Present </div>
-                    </div>
-                    <div className='resume-entry-supplement'>
-                        <em>Advisors</em>: Anirban Mazumdar, PhD, Aaron Young, PhD
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            Led the design and development, of exoskeleton controllers and mechatronic systems for human navigation, mobility, and injury reduction.
+                        <div className='resume-entry-supplement'>
+                            <em>Advisors</em>: Anirban Mazumdar, PhD, Aaron Young, PhD
                         </div>
+                        <ul className="resume-list">
+                            <li>
+                                Led the design and development, of exoskeleton controllers and mechatronic systems for human navigation, mobility, and injury reduction.
+                            </li>
+                            <li>
+                                Performed human-subject experiments to validate exoskeleton hardware and controllers. 
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            Performed human-subject experiments to validate exoskeleton hardware and controllers. 
-                        </div>
-                    </div>
-                    <br/>
 
                     {/* Raytheon */}
-                    <div className="resume-entry entry-title">
-                        <div>
-                            Computer Science / Mechanical Engineering Intern
-                            <span> &nbsp;&nbsp;|&nbsp; Raytheon Intelligence and Space </span>
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                Computer Science / Mechanical Engineering Intern
+                                <span> &nbsp;&nbsp;|&nbsp; Raytheon Intelligence and Space </span>
+                            </div>
+                            <div> May 2021 - May 2022 </div>
                         </div>
-                        <div> May 2021 - May 2022 </div>
+                        <ul className="resume-list">
+                            <li>
+                                Developed a MERN stack web application to help engineers find components on printed circuit boards by search and mouseover. 
+                            </li>
+                            <li>
+                                Engineered a VBA-based desktop application to automate the logging and tracking of material testing data, replacing a manual process.
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            Developed a MERN stack web application to help engineers find components on printed circuit boards by search and mouseover. 
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            Engineered a VBA-based desktop application to automate the logging and tracking of material testing data, replacing a manual process.
-                        </div>
-                    </div>
-                    <br/>
 
                     {/* ADAMUS */}
-                    <div className="resume-entry entry-title">
-                        <div>
-                            Undergraduate Research Assistant
-                            <span> &nbsp;&nbsp;|&nbsp; ADvanced Autonomous MUltiple Spacecraft Lab </span>
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                Undergraduate Research Assistant
+                                <span> &nbsp;&nbsp;|&nbsp; ADvanced Autonomous MUltiple Spacecraft Lab </span>
+                            </div>
+                            <div> Jan 2019 - Aug 2021 </div>
                         </div>
-                        <div> Jan 2019 - Aug 2021 </div>
-                    </div>
-                    <div className='resume-entry-supplement'>
-                        <em>Advisor</em>: Riccardo Bevilacqua, PhD
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                        Developed embedded C++ avionics software for the D3 CubeSat, creating custom libraries to interface with the satellite's sensors [C1, C2].
+                        <div className='resume-entry-supplement'>
+                            <em>Advisor</em>: Riccardo Bevilacqua, PhD
                         </div>
+                        <ul className="resume-list">
+                            <li>
+                                Developed embedded C++ avionics software for the D3 CubeSat, creating custom libraries to interface with the satellite's sensors [C1, C2].
+                            </li>
+                            <li>
+                                Engineered a ground station application in Python to transmit telecommands and receiving downlinked data from the satellite.
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            Engineered a ground station application in Python to transmit telecommands and receiving downlinked data from the satellite.
-                        </div>
-                    </div>
-                    <br/>
 
                     {/* University of Florida */}
-                    <div className="resume-entry entry-title">
-                        <div>
-                            Undergraduate Teaching Assistant
-                            <span> &nbsp;&nbsp;|&nbsp; University of Florida MAE Department  </span>
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                Undergraduate Teaching Assistant
+                                <span> &nbsp;&nbsp;|&nbsp; University of Florida MAE Department  </span>
+                            </div>
+                            <div> May 2019 - May 2021 </div>
                         </div>
-                        <div> May 2019 - May 2021 </div>
+                        <ul className="resume-list">
+                            <li>
+                                <em>Design and Manufacturing Lab (6X)</em>: 
+                                Taught &gt;30 students on design for manufacturing principles and usage of machine shop equipment.
+                            </li>
+                            <li>
+                                <em>Dynamics and Controls Lab (1X)</em>: 
+                                Lectured to &gt;50 students on applying classical control theory to real-world systems.
+                            </li>
+                            <li>
+                                <em>Thermal Systems and Design Lab (1X)</em>: 
+                                Guided student teams in designing mathematical models for internal combustion engines.
+                            </li>
+                            <li>
+                                <em>Numerical Methods (2X)</em>: 
+                                Lectured on iterative algorithms, linear algebra, Fourier analysis and held routine office hours.
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Design and Manufacturing Lab (6X)</em>: 
-                            Taught &gt;30 students on design for manufacturing principles and usage of machine shop equipment.
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Dynamics and Controls Lab (1X)</em>: 
-                            Lectured to &gt;50 students on applying classical control theory to real-world systems.
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Thermal Systems and Design Lab (1X)</em>: 
-                            Guided student teams in designing mathematical models for internal combustion engines.
-                        </div>
-                    </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            <em>Numerical Methods (2X)</em>: 
-                            Lectured on iterative algorithms, linear algebra, Fourier analysis and held routine office hours.
-                        </div>
-                    </div>
-                    <br/>
 
                     {/* Lowe's */}
-                    <div className="resume-entry entry-title">
-                        <div>
-                            Paint Department Associate
-                            <span> &nbsp;&nbsp;|&nbsp; Lowe's </span>
+                    <div className="subsection-content">
+                        <div className="resume-entry entry-title">
+                            <div>
+                                Paint Department Associate
+                                <span> &nbsp;&nbsp;|&nbsp; Lowe's </span>
+                            </div>
+                            <div> Apr 2018 – Aug 2018 </div>
                         </div>
-                        <div> Apr 2018 – Aug 2018 </div>
+                        <ul className="resume-list">
+                            <li>
+                                Handled inventory, gave DIY recommendations, mixed paint, assisted fellow associates in hardware.
+                            </li>
+                        </ul>
                     </div>
-                    <div className="resume-entry resume-bullet">
-                        <div>Handled inventory, gave DIY recommendations, mixed paint, assisted fellow associates in hardware.</div>
-                    </div>
-                    <br/>
 
                 </div>
             </div>
@@ -308,7 +333,7 @@ function ResumeContent() {
                             <span className='reference-number'>[J4]</span>
                             <div>
                                 K. L. Scherpereel, M. C. Gombolay, M. K. Shepherd, <span className='author-callout'>C. A. Carrasquillo</span>, O. T. Inan, A. J. Young. 
-                                Deep Domain Adaptation Eliminates Costly Data Required for Task-Agnostic Wearable Robotic Control". Science Robotics. 2025. (Submitted)
+                                "Deep Domain Adaptation Eliminates Costly Data Required for Task-Agnostic Wearable Robotic Control". Science Robotics. 2025. (Submitted)
                             </div>
                         </li>
                         <li>
@@ -368,25 +393,27 @@ function ResumeContent() {
                 <div className="section-header">Skills &nbsp;</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
-                    {
-                        SKILLS.map((data, i) => (
-                                <div className='resume-entry resume-bullet skill-list' key={i}>
-                                    <div>{data.category}:&nbsp;&nbsp;</div>
-                                    {
-                                        data.contents.map((entry, j) => (
-                                            <span key={j}>
-                                                {entry.name}
-                                                {j !== data.contents.length - 1 && ","}
-                                                &nbsp;
-                                            </span>
-                                        ))
-                                    }
-                                </div>
+                    <ul className="resume-list">
+                        {
+                            SKILLS.map((data, i) => (
+                                    <li key={i}>
+                                        <span><em>{data.category}:</em>&nbsp;</span>
+                                        {
+                                            data.contents.map((entry, j) => (
+                                                <span key={j}>
+                                                    {entry.name}
+                                                    {j !== data.contents.length - 1 && ","}
+                                                    &nbsp;
+                                                </span>
+                                            ))
+                                        }
+                                    </li>
+                                )
                             )
-                        )
-                    }
+                        }
+                    </ul>
                     <br/>
-                    <br/>
+
                 </div>
             </div>
 
