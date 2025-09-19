@@ -182,7 +182,7 @@ function ResumeContent() {
                     <div className="subsection-content">
                         <div className="resume-entry entry-title">
                             <div>
-                                Computer Science / Mechanical Engineering Intern
+                                Intern
                                 <span> &nbsp;&nbsp;|&nbsp; Raytheon Intelligence and Space </span>
                             </div>
                             <div> May 2021 - May 2022 </div>
@@ -230,40 +230,23 @@ function ResumeContent() {
                         </div>
                         <ul className="resume-list">
                             <li>
-                                <em>Design and Manufacturing Lab (6X)</em>: 
+                                <em>Design and Manufacturing Lab (6 semesters)</em>: 
                                 Taught &gt;30 students on design for manufacturing principles and usage of machine shop equipment.
                             </li>
                             <li>
-                                <em>Dynamics and Controls Lab (1X)</em>: 
+                                <em>Dynamics and Controls Lab (1 semester)</em>: 
                                 Lectured to &gt;50 students on applying classical control theory to real-world systems.
                             </li>
                             <li>
-                                <em>Thermal Systems and Design Lab (1X)</em>: 
-                                Guided student teams in designing mathematical models for internal combustion engines.
+                                <em>Thermal Systems and Design Lab (1 semester)</em>: 
+                                Guided student teams in designing models for internal combustion engines.
                             </li>
                             <li>
-                                <em>Numerical Methods (2X)</em>: 
+                                <em>Numerical Methods (2 semesters)</em>: 
                                 Lectured on iterative algorithms, linear algebra, Fourier analysis and held routine office hours.
                             </li>
                         </ul>
                     </div>
-
-                    {/* Lowe's */}
-                    <div className="subsection-content">
-                        <div className="resume-entry entry-title">
-                            <div>
-                                Paint Department Associate
-                                <span> &nbsp;&nbsp;|&nbsp; Lowe's </span>
-                            </div>
-                            <div> Apr 2018 – Aug 2018 </div>
-                        </div>
-                        <ul className="resume-list">
-                            <li>
-                                Handled inventory, gave DIY recommendations, mixed paint, assisted fellow associates in hardware.
-                            </li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
 
