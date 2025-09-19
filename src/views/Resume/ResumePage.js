@@ -170,7 +170,7 @@ function ResumeContent() {
                         </div>
                         <ul className="resume-list">
                             <li>
-                                Led the design and development, of exoskeleton controllers and mechatronic systems for human navigation, mobility, and injury reduction.
+                                Developed exoskeleton hardware and optimal learning-based controllers for human navigation, mobility, and injury reduction.
                             </li>
                             <li>
                                 Performed human-subject experiments to validate exoskeleton hardware and controllers. 
