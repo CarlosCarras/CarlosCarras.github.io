@@ -77,7 +77,7 @@ const IMAGE_DATA = [
         },
         {   
             name: "Flying  in San Juan ✈️", 
-            caption: "currently pursing my private pilot license.", 
+            caption: "on a C172", 
             link: "",
             src: require('./../../assets/gallery/flying.jpg')
         },
@@ -106,7 +106,7 @@ const IMAGE_DATA = [
             src: require('./../../assets/gallery/gardenofthegods.JPG')
         },
         {   
-            name: "My Exoskeleton Platform", 
+            name: "ARES Exoskeleton", 
             caption: "device design led by Aakash Bajpai", 
             link: "",
             src: require('./../../assets/gallery/exo.png')

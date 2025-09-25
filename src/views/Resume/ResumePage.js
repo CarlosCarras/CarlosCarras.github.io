@@ -45,7 +45,7 @@ const SKILLS = [
         contents: [
             {name: "Amateur Radio Technician (KN4ZUC)", years: 5},
             {name: "SOLIDWORKS Associate", years: 5},
-            {name: "Student Pilot (90+ hours)", years: 5},
+            {name: "Private Pilot (90+ hours)", years: 5},
             {name: "Adv. Open Water Diver", years: 5},
         ]
     },

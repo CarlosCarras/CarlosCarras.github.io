@@ -4,8 +4,7 @@ import './Contact.css'
 import ContactForm from "./ContactForm/ContactForm"
 
 
-const PHONE = "(787) 668-8096";
-const EMAIL = "carlos.carrasquillo99@gmail.com"
+const EMAIL = "ccarrasquillo3@gatech.edu"
 
 const LINK_DATA = [
     {name: "GitHub", link: "https://github.com/CarlosCarras", image: require("./../../assets/logos/github.png")},
@@ -20,7 +19,6 @@ function Contact() {
                 <div className="contact-container-division">
                     <div>
                         <h2>Contact Info</h2>
-                        <p><b>Phone</b>:&nbsp; █████████ </p>
                         <p><b>Email</b>:&nbsp; <a href={"mailto:"+EMAIL}>{EMAIL}</a></p>
                     </div>
                     <br/>

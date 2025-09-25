@@ -162,7 +162,7 @@ function Home(props) {
                     <div className="subtitle-container">
                         <span> Robotics PhD Student @ Georgia Tech </span>
                         <br/>
-                        <span> Student Pilot @ Skybound Aviation </span>
+                        <span> Private Pilot @ Skybound Aviation </span>
                         <br/>
                         <br/>
                         <span> MS, Computer Science @ GT</span> <span className="grad-year">2025</span>

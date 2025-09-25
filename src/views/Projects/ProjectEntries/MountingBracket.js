@@ -11,7 +11,6 @@ const Bracket = {
         {alt: "Image 2", src: require('./../../../assets/projects/bracket/mounting_bracket2.jpg')},
         {alt: "Image 1", src: require('./../../../assets/projects/bracket/mounting_bracket1.jpg')},
         {alt: "Image 3", src: require('./../../../assets/projects/bracket/mounting_bracket3.jpg')},
-        {alt: "Image 4", src: require('./../../../assets/gallery/swamphacks.jpg')},
     ],
 
     description: (
