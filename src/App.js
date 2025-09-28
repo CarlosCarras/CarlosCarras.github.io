@@ -26,7 +26,8 @@ import PumpController from './views/Projects/ProjectEntries/PumpController';
 
 function App() {
     const [isDarkMode, setDarkMode] = useState(() => {
-        return JSON.parse(localStorage.getItem('darkMode')) || false;
+        const stored = localStorage.getItem('darkMode');
+        return stored !== null ? JSON.parse(stored) : true;
     });
 
     useEffect(() => {

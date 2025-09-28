@@ -14,7 +14,7 @@ function SkillEntry(props) {
             
             {props.name}
 
-            <ProficiencyTooltip active={tooltipIsVisible} value={props.proficiency}/>
+            {/* <ProficiencyTooltip active={tooltipIsVisible} value={props.proficiency}/> */}
         </div>
     )
 }

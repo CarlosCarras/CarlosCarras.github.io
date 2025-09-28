@@ -70,9 +70,18 @@
     font-weight: 800;
 }
 
+.resume-page .resume-date {
+    font-weight: 800;
+}
+
 .resume-page .resume-entry-supplement {
     text-align: left;
     padding: 0.15em 0.15em 0.15em 2em;
+}
+
+.resume-page .resume-bolded {
+    font-weight: 600;
+    color: #172c69;
 }
 
 .resume-page .dotted-bullet {

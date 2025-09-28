@@ -5,7 +5,7 @@ import './Resume.css';
 import Button from '../../components/Button/Button';
 
 const RESUME = require('./../../assets/resume.pdf'),
-      CV = require('./../../assets/cv.pdf');
+      CV = require('./../../assets/curriculum_vitae.pdf');
 
 function Resume() {
     return (

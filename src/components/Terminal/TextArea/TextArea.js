@@ -1,26 +1,37 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, forwardRef, useImperativeHandle } from "react";
 import "./TextArea.css";
 import handleCommand, {handleTab} from "./CommandHandler";
 
 const PROMPT = "user@carloscarras.tech~$";
 
 
-function TextArea() {
+function TextArea(props, ref) {
     const [commandHistoryPointer, setCommandHistoryPointer] = useState(0);
     const [commandHistory, setCommandHistory] = useState([""]);
     const [hasKeyBeenEntered, setHasKeyBeenEntered] = useState(false);
     const [entries, setEntries] = useState([{id: 0, value: "", disabled: false, isUserInput: true}]);
     const inputRefs = useRef({});
 
+    const { focus } = props;
+
     useEffect(() => {
         /* focus on input, only if the user has already entered a command. prevents autofocus on load*/
-        if (entries.length > 0 && hasKeyBeenEntered) { 
+        if (entries.length > 0 && (hasKeyBeenEntered || focus)) {
             const lastEntry = entries[entries.length - 1];
             if (lastEntry.isUserInput && inputRefs.current[lastEntry.id]) {
                 inputRefs.current[lastEntry.id].focus();
             }
         }
-    }, [entries, hasKeyBeenEntered]);
+    }, [entries, hasKeyBeenEntered, focus]);
+
+    useImperativeHandle(ref, () => ({
+        focusLastInput: () => {
+            const lastEntry = entries[entries.length - 1];
+            if (lastEntry && lastEntry.isUserInput && inputRefs.current[lastEntry.id]) {
+                inputRefs.current[lastEntry.id].focus();
+            }
+        }
+    }));
 
     const createNewInputEntry = (entryId, value) => {
         setEntries(prevEntries => {
@@ -189,4 +200,4 @@ function TextArea() {
     );
 }
 
-export default TextArea;
+export default forwardRef(TextArea);

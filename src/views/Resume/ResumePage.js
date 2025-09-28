@@ -11,7 +11,7 @@ const SKILLS = [
         category: "Design & Manufacturing", 
         contents: [
             {name: "Altium Designer (PCB)", years: 5},
-            {name: "SolidWorks (CAD/FEA)", years: 5},
+            {name: "SolidWorks (CAD,FEA)", years: 5},
             {name: "Fusion 360 (CAD/CAM)", years: 5},
             {name: "Machine Shop Equipment (Lathes, Mills, CNC, Welding)", years: 5},
             {name: "Rapid Prototyping", years: 5},
@@ -20,10 +20,10 @@ const SKILLS = [
     { 
         category: "Programming", 
         contents: [
-            {name: "Python (NumPy, Pandas, OpenCV, PyTorch, TensorFlow, ROS, OpenMDAO)", years: 5},
+            {name: "Python (NumPy, Pandas, OpenCV, PyTorch, TensorFlow, ROS/ROS2, OpenMDAO)", years: 5},
             {name: "C/C++", years: 5},
             {name: "C# (Unity)", years: 5},
-            {name: "JavaScript (React.js)", years: 5},
+            {name: "JavaScript (React.js, MongoDB, Express.js, Node.js)", years: 5},
             {name: "MATLAB", years: 5},
             {name: "Simulink", years: 5},
             {name: "VBA", years: 5},
@@ -52,11 +52,14 @@ const SKILLS = [
     { 
         category: "Personal Projects", 
         contents: [
-            {name: "12-DOF quadruped robot", years: 5},
+            {name: "reinforcement learning-based aircraft landing autopilot", years: 5},
+            {name: "microprocessor knee recommendation algorithm", years: 5},
+            {name: "bioreactor pump controller", years: 5},
+            {name: "12-degree-of-freedom quadruped robot", years: 5},
             {name: "3D bioprinter", years: 5},
             {name: "desktop lathe", years: 5},
             {name: "MIPS CPU", years: 5},
-            {name: "5+ websites", years: 5},
+            {name: "assortment of websites", years: 5},
         ]
     },
     { 
@@ -166,33 +169,51 @@ function ResumeContent() {
                             <div> August 2021 - Present </div>
                         </div>
                         <div className='resume-entry-supplement'>
-                            <em>Advisors</em>: Anirban Mazumdar, PhD, Aaron Young, PhD
+                            <span className="resume-bolded">Advisors:</span> Anirban Mazumdar, PhD; Aaron Young, PhD
                         </div>
                         <ul className="resume-list">
                             <li>
-                                Developed exoskeleton hardware and optimal learning-based controllers for human navigation, mobility, and injury reduction.
+                                Developed and validated novel exoskeleton controllers, including impedance-based, primitive-based, uncertainty-aware, and end-to-end
+                                biological torque controllers.                           
                             </li>
                             <li>
-                                Performed human-subject experiments to validate exoskeleton hardware and controllers. 
+                                Designed mechatronics components, including PCBs, sensor drivers, and orthoses components for several exoskeletons.
+                            </li>
+                            <li>
+                                Applied deep learning techniques (TCNs, VAEs, CNNs, GANs, Transformers, PPO) to estimate human motion, biological
+                                moments, and other physiological states.
+                            </li>
+                            <li>
+                                Built real-time exoskeleton software, including multiprocessing controller frameworks, communication packages, and GUIs.
+                            </li>
+                            <li>
+                                Created VR/AR games in Unity to provide real-time biofeedback and simulate unstructured environments for human studies.
+                            </li>
+                            <li>
+                                Conducted human-subject experiments using Delsys EMG, Vicon motion capture, Parvo and COSMED metabolic systems, HTC Vive Pro
+                                and Meta Quest 3S headsets.
                             </li>
                         </ul>
                     </div>
 
-                    {/* Raytheon */}
+                    {/* RTX */}
                     <div className="subsection-content">
                         <div className="resume-entry entry-title">
                             <div>
-                                Intern
-                                <span> &nbsp;&nbsp;|&nbsp; Raytheon Intelligence and Space </span>
+                                Software & Mechanical Engineering Intern
+                                <span> &nbsp;&nbsp;|&nbsp; RTX </span>
                             </div>
-                            <div> May 2021 - May 2022 </div>
+                            <div> May 2021 - Apr 2023 </div>
                         </div>
                         <ul className="resume-list">
                             <li>
-                                Developed a MERN stack web application to help engineers find components on printed circuit boards by search and mouseover. 
+                                Developed a MERN stack web application that streamlined component discovery on printed circuit boards for engineers.
                             </li>
                             <li>
-                                Engineered a VBA-based desktop application to automate the logging and tracking of material testing data, replacing a manual process.
+                                Designed and deployed five process programs and Splunk dashboards to monitor and optimize production-grade machinery.
+                            </li>
+                            <li>
+                                Automated a manual material testing process by building a VBA-based application, improving data logging and tracking efficiency.
                             </li>
                         </ul>
                     </div>
@@ -207,14 +228,15 @@ function ResumeContent() {
                             <div> Jan 2019 - Aug 2021 </div>
                         </div>
                         <div className='resume-entry-supplement'>
-                            <em>Advisor</em>: Riccardo Bevilacqua, PhD
+                            <span className="resume-bolded">Advisors:</span> Riccardo Bevilacqua, PhD
                         </div>
                         <ul className="resume-list">
                             <li>
-                                Developed embedded C++ avionics software for the D3 CubeSat, creating custom libraries to interface with the satellite's sensors [C1, C2].
-                            </li>
+                                Developed embedded C++ avionics software for the D3 CubeSat, creating custom libraries to interface with the satellite's IMU, antenna,
+                                radio, and GPS on a BeagleBone Black microcomputer.                            </li>
                             <li>
-                                Engineered a ground station application in Python to transmit telecommands and receiving downlinked data from the satellite.
+                                Developed a Python-based ground station application to manage satellite mission operations, enabling reliable telecommand transmission
+                                and downlink data acquisition.
                             </li>
                         </ul>
                     </div>
@@ -230,19 +252,19 @@ function ResumeContent() {
                         </div>
                         <ul className="resume-list">
                             <li>
-                                <em>Design and Manufacturing Lab (6 semesters)</em>: 
+                                <span className="resume-bolded">Design and Manufacturing Lab (6 semesters):</span>
                                 Taught &gt;30 students on design for manufacturing principles and usage of machine shop equipment.
                             </li>
                             <li>
-                                <em>Dynamics and Controls Lab (1 semester)</em>: 
+                                <span className="resume-bolded">Dynamics and Controls Lab (1 semester)</span>: 
                                 Lectured to &gt;50 students on applying classical control theory to real-world systems.
                             </li>
                             <li>
-                                <em>Thermal Systems and Design Lab (1 semester)</em>: 
+                                <span className="resume-bolded">Thermal Systems and Design Lab (1 semester)</span>: 
                                 Guided student teams in designing models for internal combustion engines.
                             </li>
                             <li>
-                                <em>Numerical Methods (2 semesters)</em>: 
+                                <span className="resume-bolded">Numerical Methods (2 semesters)</span>: 
                                 Lectured on iterative algorithms, linear algebra, Fourier analysis and held routine office hours.
                             </li>
                         </ul>
@@ -251,7 +273,7 @@ function ResumeContent() {
             </div>
 
             <div className="section">
-                <div className="section-header">Awards</div>
+                <div className="section-header">Fellowships and Awards</div>
                 <div className="divider-line"></div>
                 <div className="section-content">
 
@@ -260,7 +282,7 @@ function ResumeContent() {
                         <div>
                         Grad REACH Fellow and Mentor
                         </div>
-                        <div>Aug 2024 – Current</div>
+                        <span className="resume-date">Aug 2024 – Current</span>
                     </div>
 
                     {/* Pathbreakers */}
@@ -268,7 +290,7 @@ function ResumeContent() {
                         <div>
                             Pathbreakers Fellow (formerly University Center for Exemplary Menotring)
                         </div>
-                        <div>Aug 2023 – Current</div>
+                        <div className="resume-date">Aug 2023 – Current</div>
                     </div>
 
                     {/* NDSEG */}
@@ -276,7 +298,7 @@ function ResumeContent() {
                         <div>
                             National Defense Science and Engineering Graduate (NDSEG) Fellow
                         </div>
-                        <div>Aug 2022 – Current</div>
+                        <div className="resume-date">Aug 2022 – Current</div>
                     </div>
 
                     {/* SmallSat Best Paper Honorable Mention */}
@@ -284,7 +306,7 @@ function ResumeContent() {
                         <div>
                             SmallSat 2021 Student Competition Best Paper Honorable Mention
                         </div>
-                        <div>July 2021</div>
+                        <div className="resume-date">July 2021</div>
                     </div>
 
                     {/* Florida Academic Scholars */}
@@ -292,7 +314,7 @@ function ResumeContent() {
                         <div>
                             Florida Academic Scholars Award
                         </div>
-                        <div>Aug 2017 – May 2021</div>
+                        <div className="resume-date">Aug 2017 – May 2021</div>
                     </div>
 
                     {/* SwampHacks */}
@@ -300,7 +322,7 @@ function ResumeContent() {
                         <div>
                             SwampHacks VI Infinite Energy's Best Hack Award Recipient
                         </div>
-                        <div>Jan 2020</div>
+                        <div className="resume-date">Jan 2020</div>
                     </div>
 
                 </div>
@@ -312,6 +334,41 @@ function ResumeContent() {
                 <div className="divider-line"></div>
                 <div className="section-content">
                     <ol className='reference-list'>
+                        <li>
+                            <span className='reference-number'>[J9]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>, A. Mazumdar, A. Young. 
+                                "Metabolically Optimal Control of a Hip-Knee Exoskeleton Using Primitive-Based Optimization". (In Prep)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J8]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>, S. Leapley, R. Casey, C. Nuesslein, G. Sawicki, A. Mazumdar, A. Young.
+                                "Biomechanical Analysis of a Hip-Knee Exoskeleton for Manual Labor Tasks". (In Prep)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J7]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>, D. Chen, M. Gideon, A. Mazumdar. 
+                                “Metabolically Optimal Route Planning for Human Navigation”. (In Prep)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J6]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>, A. Mazumdar, A. Young. 
+                                “Uncertainty-Aware Physiological State Estimation for Wearable Robotics”. (In Prep)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J5]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>, B. Hanna, A. Mazumdar, A. Young. 
+                                “Intuitive Steering Assistance from a Wearable Robotic Assistive System for Visually Impaired Navigation”. (In Prep)
+                            </div>
+                        </li>
                         <li>
                             <span className='reference-number'>[J4]</span>
                             <div>
@@ -380,7 +437,7 @@ function ResumeContent() {
                         {
                             SKILLS.map((data, i) => (
                                     <li key={i}>
-                                        <span><em>{data.category}:</em>&nbsp;</span>
+                                        <span className="resume-bolded">{data.category}:&nbsp;</span>
                                         {
                                             data.contents.map((entry, j) => (
                                                 <span key={j}>
