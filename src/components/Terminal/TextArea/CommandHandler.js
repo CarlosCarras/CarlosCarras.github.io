@@ -7,6 +7,7 @@ const COMMANDS = [
     {name: "pwd", callback: _pwd},
     {name: "clear", callback: _clear},
     {name: "whoami", callback: _whoami},
+    {name: "ping", callback: _ping},
     {name: "su", callback: _su},
     {name: "exit", callback: _exit},
     {name: "help", callback: _help},
@@ -343,4 +344,52 @@ function _exit(args, sudo) {
         return generateTooManyArguementsRes("exit");
     }
     document.getElementsByClassName("terminal-container")[0].classList.add("disabled")
+}
+
+async function* _ping(args, sudo) {
+    const generateNotEnoughArguementsRes = (cmd) => `${cmd}: not enough arguments`;
+    const generateTooManyArguementsRes = (cmd) => `${cmd}: too many arguments`;
+
+    if (args.length < 1) {
+        yield generateNotEnoughArguementsRes("ping");
+        return;
+    }
+    if (args.length > 1) {
+        yield generateTooManyArguementsRes("ping");
+        return;
+    }
+
+    const target = args[0];
+    yield `PING ${target} (${target}): 56 data bytes`;
+
+    let transmitted = 0;
+    let received = 0;
+
+    const sleep = (ms) => new Promise(res => setTimeout(res, ms));
+
+    const fetchWithTimeout = (url, timeout = 500) => {
+        const controller = new AbortController();
+        const id = setTimeout(() => controller.abort(), timeout);
+        return fetch(url, { mode: "no-cors", signal: controller.signal })
+            .finally(() => clearTimeout(id));
+    };
+
+    for (let i = 1; i <= 4; i++) {
+        transmitted += 1;
+        const start = performance.now();
+        try {
+            await fetchWithTimeout(`https://${target}/?cacheBust=${Math.random()}`, 500);
+            const end = performance.now();
+            const time = (end - start).toFixed(1);
+            received += 1;
+            yield `64 bytes from ${target}: icmp_seq=${i} ttl=64 time=${time} ms`;
+        } catch (err) {
+            yield `Request to ${target} failed (icmp_seq=${i})`;
+        }
+        await sleep(500);
+    }
+
+    yield `--- ${target} ping statistics ---`;
+    const loss = Math.round(((transmitted - received) / transmitted) * 100);
+    yield `${transmitted} packets transmitted, ${received} received, ${loss}% packet loss`;
 }

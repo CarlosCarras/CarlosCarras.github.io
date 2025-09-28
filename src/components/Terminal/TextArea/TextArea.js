@@ -15,10 +15,12 @@ function TextArea() {
     useEffect(() => {
         /* focus on input, only if the user has already entered a command. prevents autofocus on load*/
         if (entries.length > 0 && hasKeyBeenEntered) { 
-            const lastEntryId = entries[entries.length - 1].id;
-            inputRefs.current[lastEntryId].focus();
+            const lastEntry = entries[entries.length - 1];
+            if (lastEntry.isUserInput && inputRefs.current[lastEntry.id]) {
+                inputRefs.current[lastEntry.id].focus();
+            }
         }
-    }, [entries, commandHistory, hasKeyBeenEntered]);
+    }, [entries, hasKeyBeenEntered]);
 
     const createNewInputEntry = (entryId, value) => {
         setEntries(prevEntries => {
@@ -29,10 +31,16 @@ function TextArea() {
     
     const createNewResponseEntry = (entryId, res) => {
         setEntries(prevEntries => {
-            const newResponse = { id: entryId, value: res, disabled: true, isUserInput: false };
+            const newResponse = { 
+                id: entryId, 
+                value: String(res ?? ""),
+                disabled: true, 
+                isUserInput: false 
+            };
             return [...prevEntries, newResponse];
         });
-    }
+    };
+
 
     const handleKeyDown = (event, entryId) => {
         setHasKeyBeenEntered(true);
@@ -42,23 +50,37 @@ function TextArea() {
                 const userInput = entries[entryId].value;
                 const res = handleCommand(userInput);
                 let nextEntryId = entryId + 1;
-                if (res) {
-                    if (res === -1) {
-                        /* handle terminal 'clear' */
-                        setEntries([])
-                        nextEntryId = 0;
-                    } else {
-                        /* output response */
-                        createNewResponseEntry(nextEntryId, res);
-                        nextEntryId += 1;
-                    }
-                }
-                
+
                 /* adding command to history */
                 if (userInput.trim()) {
                     setCommandHistory([commandHistory[0], userInput, ...commandHistory.splice(1)]);
                 }
-                
+
+                /* handling response */
+                if (res) {
+                    if (res === -1) {
+                        setEntries([]);
+                        nextEntryId = 0;
+                        
+                    } else if (typeof res === "string") {
+                        createNewResponseEntry(nextEntryId, res);
+                        nextEntryId += 1;
+                        
+                    } else if (res[Symbol.asyncIterator]) {
+                        (async () => {
+                            for await (const line of res) {
+                                createNewResponseEntry(nextEntryId, line);
+                                nextEntryId += 1;
+                            }
+                            createNewInputEntry(nextEntryId, "");
+                        })();
+                        entries[entryId].disabled = true;
+
+                         /* don’t add another input yet */
+                        return;
+                    }
+                }
+                         
                 /* create new line */
                 entries[entryId].disabled = true;
                 createNewInputEntry(nextEntryId, "");

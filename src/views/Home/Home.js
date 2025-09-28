@@ -220,9 +220,9 @@ function Home(props) {
                         <li><samp>alias thwg "To Hell With Georgia!"</samp></li>
                         <li><samp>alias gg "Go Gators!"</samp></li>
                         <li><samp>unalias gg</samp></li>
-                        <li><samp>pwd</samp></li>
                         <li><samp>clear</samp></li>
-                        <li>etc.</li>
+                        <li><samp>ping 8.8.8.8</samp></li>
+                        <li><samp>help</samp></li>
                     </ul>
                     
                     <span className="input-caption"> Theme </span>
