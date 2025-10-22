@@ -390,7 +390,8 @@ function ResumeContent() {
                             <span className='reference-number'>[J2]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>,
-                                C. Carrasquillo, S. Zhou, K. Collins, W. Lee Childers, A. Young, A. Mazumdar. “A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial”. Prosthetics and Orthotics International. 2024. (Submitted)
+                                S. Zhou, W. Lee Childers, A. Young, K. Herrin. 
+                                “<a href="https://journals.lww.com/poijournal/abstract/9900/a_clinical_decision_making_algorithm_for_the.355.aspx" alt="A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial" target="_blank">A Clinical Decision-Making Algorithm for the Personalized Prescription of Prosthetic Microprocessor-Controlled Knees: An Evidence-Based Approach based on a Randomized Trial</a>”. Prosthetics and Orthotics International. 2025.
                             </div>
                         </li>
                         <li>
