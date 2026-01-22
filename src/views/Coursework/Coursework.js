@@ -84,6 +84,18 @@ const GRAD_COURSEWORK = [
                 {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
         ],
     },
+    {
+        semester: "Fall 2025", 
+        coursework: [
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
+        ],
+    },
+    {
+        semester: "Spring 2026", 
+        coursework: [
+                {course: "VIP6600: Vertically Integrated Projects TA", credits: 1},
+        ],
+    },
 ].reverse()
 
 const UNDERGRAD_COURSEWORK = [

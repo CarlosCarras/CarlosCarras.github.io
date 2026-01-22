@@ -173,15 +173,15 @@ function ResumeContent() {
                         </div>
                         <ul className="resume-list">
                             <li>
+                                Applied deep learning techniques (TCNs, VAEs, CNNs, GANs, Transformers, PPO) to estimate human motion, biological
+                                moments, and other physiological states.
+                            </li>
+                            <li>
                                 Developed and validated novel exoskeleton controllers, including impedance-based, primitive-based, uncertainty-aware, and end-to-end
                                 biological torque controllers.                           
                             </li>
                             <li>
                                 Designed mechatronics components, including PCBs, sensor drivers, and orthoses components for several exoskeletons.
-                            </li>
-                            <li>
-                                Applied deep learning techniques (TCNs, VAEs, CNNs, GANs, Transformers, PPO) to estimate human motion, biological
-                                moments, and other physiological states.
                             </li>
                             <li>
                                 Built real-time exoskeleton software, including multiprocessing controller frameworks, communication packages, and GUIs.
@@ -190,8 +190,7 @@ function ResumeContent() {
                                 Created VR/AR games in Unity to provide real-time biofeedback and simulate unstructured environments for human studies.
                             </li>
                             <li>
-                                Conducted human-subject experiments using Delsys EMG, Vicon motion capture, Parvo and COSMED metabolic systems, HTC Vive Pro
-                                and Meta Quest 3S headsets.
+                                Conducted human-subject experiments using EMG, motion capture, metabolic systems, and AR/VR headsets.
                             </li>
                         </ul>
                     </div>
@@ -335,45 +334,54 @@ function ResumeContent() {
                 <div className="section-content">
                     <ol className='reference-list'>
                         <li>
-                            <span className='reference-number'>[J9]</span>
+                            <span className='reference-number'>[J10]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>, A. Mazumdar, A. Young. 
-                                "Metabolically Optimal Control of a Hip-Knee Exoskeleton Using Primitive-Based Optimization". (In Prep)
+                                "Energetically Optimal Control of a Hip-Knee Exoskeleton Using Deep Learning-Based Control and Primitive-Based Optimization". (In Prep)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[J8]</span>
-                            <div>
-                                <span className='author-callout'>C. Carrasquillo</span>, S. Leapley, R. Casey, C. Nuesslein, G. Sawicki, A. Mazumdar, A. Young.
-                                "Biomechanical Analysis of a Hip-Knee Exoskeleton for Manual Labor Tasks". (In Prep)
-                            </div>
-                        </li>
-                        <li>
-                            <span className='reference-number'>[J7]</span>
+                            <span className='reference-number'>[J9]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>, D. Chen, M. Gideon, A. Mazumdar. 
                                 “Metabolically Optimal Route Planning for Human Navigation”. (In Prep)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[J6]</span>
+                            <span className='reference-number'>[J8]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>, A. Mazumdar, A. Young. 
                                 “Uncertainty-Aware Physiological State Estimation for Wearable Robotics”. (In Prep)
                             </div>
                         </li>
                         <li>
-                            <span className='reference-number'>[J5]</span>
+                            <span className='reference-number'>[J7]</span>
+                            <div>
+                                <span className='author-callout'>C. Carrasquillo</span>, S. Leapley, R. Casey, C. Nuesslein, G. Sawicki, A. Mazumdar, A. Young.
+                                "Reducing Joint Loading and Metabolic Energy Expenditure in Manual Labor Tasks using a Robotic Hip-Knee Exoskeleton". (Internal Review)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J6]</span>
                             <div>
                                 <span className='author-callout'>C. Carrasquillo</span>, B. Hanna, A. Mazumdar, A. Young. 
-                                “Intuitive Steering Assistance from a Wearable Robotic Assistive System for Visually Impaired Navigation”. (In Prep)
+                                “Intuitive Steering Assistance from a Wearable Robotic Assistive System for Visually Impaired Navigation”. (Internal Review)
+                            </div>
+                        </li>
+                        <li>
+                            <span className='reference-number'>[J5]</span>
+                            <div>
+                                C. Nuesslein, R. Casey, S. Leapley, <span className='author-callout'>C. A. Carrasquillo</span>, G. Sawicki, A. Mazumdar, A. Young. 
+                                “Generalizing Robotic Assistance for Heavily Augmented Movement to Reduce Joint Loading with a Knee Exoskeleton". (Internal Review)         
                             </div>
                         </li>
                         <li>
                             <span className='reference-number'>[J4]</span>
                             <div>
                                 K. L. Scherpereel, M. C. Gombolay, M. K. Shepherd, <span className='author-callout'>C. A. Carrasquillo</span>, O. T. Inan, A. J. Young. 
-                                "Deep Domain Adaptation Eliminates Costly Data Required for Task-Agnostic Wearable Robotic Control". Science Robotics. 2025. (Submitted)
+                                “<a href="https://doi.org/10.1126/scirobotics.ads8652" alt="Deep Domain Adaptation Eliminates Costly Data Required for Task-Agnostic Wearable Robotic Control" target="_blank">
+                                Deep Domain Adaptation Eliminates Costly Data Required for Task-Agnostic Wearable Robotic Control
+                                </a>”. Science Robotics. 2025.                            
                             </div>
                         </li>
                         <li>
