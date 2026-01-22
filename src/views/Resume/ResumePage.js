@@ -106,7 +106,7 @@ function ResumeContent() {
                         <ul className="resume-list">
                             <li>
                                 <div className="li-content">
-                                    <div>PhD, <em>Robotics</em></div>
+                                    <div>PhD Candidate, <em>Robotics</em></div>
                                     <div>Expected May 2026</div>
                                 </div>
                             </li>
