@@ -45,7 +45,7 @@ const SKILLS = [
         contents: [
             {name: "Amateur Radio Technician (KN4ZUC)", years: 5},
             {name: "SOLIDWORKS Associate", years: 5},
-            {name: "Private Pilot (90+ hours)", years: 5},
+            {name: "Private Pilot (100 hours)", years: 5},
             {name: "Adv. Open Water Diver", years: 5},
         ]
     },
@@ -187,7 +187,7 @@ function ResumeContent() {
                                 Built real-time exoskeleton software, including multiprocessing controller frameworks, communication packages, and GUIs.
                             </li>
                             <li>
-                                Created VR/AR games in Unity to provide real-time biofeedback and simulate unstructured environments for human studies.
+                                Created AR/VR games in Unity to provide real-time biofeedback and simulate unstructured environments for human studies.
                             </li>
                             <li>
                                 Conducted human-subject experiments using EMG, motion capture, metabolic systems, and AR/VR headsets.
@@ -276,6 +276,14 @@ function ResumeContent() {
                 <div className="divider-line"></div>
                 <div className="section-content">
 
+                    {/* GSGC */}
+                    <div className="resume-entry resume-bullet">
+                        <div>
+                        Georgia Space Grant Consortium Fellow
+                        </div>
+                        <span className="resume-date">Aug 2025 – Current</span>
+                    </div>
+
                     {/* Grad REACH */}
                     <div className="resume-entry resume-bullet">
                         <div>
@@ -284,20 +292,20 @@ function ResumeContent() {
                         <span className="resume-date">Aug 2024 – Current</span>
                     </div>
 
-                    {/* Pathbreakers */}
-                    <div className="resume-entry resume-bullet">
-                        <div>
-                            Pathbreakers Fellow (formerly University Center for Exemplary Menotring)
-                        </div>
-                        <div className="resume-date">Aug 2023 – Current</div>
-                    </div>
-
                     {/* NDSEG */}
                     <div className="resume-entry resume-bullet">
                         <div>
                             National Defense Science and Engineering Graduate (NDSEG) Fellow
                         </div>
-                        <div className="resume-date">Aug 2022 – Current</div>
+                        <div className="resume-date">Aug 2022 – Aug 2025</div>
+                    </div>
+
+                    {/* Pathbreakers */}
+                    <div className="resume-entry resume-bullet">
+                        <div>
+                            Pathbreakers Fellow (formerly University Center for Exemplary Menotring)
+                        </div>
+                        <div className="resume-date">Aug 2023 – May 2025</div>
                     </div>
 
                     {/* SmallSat Best Paper Honorable Mention */}
