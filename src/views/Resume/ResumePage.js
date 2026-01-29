@@ -8,16 +8,6 @@ const NAME = "Carlos A. Carrasquillo Torres",
 
 const SKILLS = [
     { 
-        category: "Design & Manufacturing", 
-        contents: [
-            {name: "Altium Designer (PCB)", years: 5},
-            {name: "SolidWorks (CAD,FEA)", years: 5},
-            {name: "Fusion 360 (CAD/CAM)", years: 5},
-            {name: "Machine Shop Equipment (Lathes, Mills, CNC, Welding)", years: 5},
-            {name: "Rapid Prototyping", years: 5},
-        ]
-    }, 
-    { 
         category: "Programming", 
         contents: [
             {name: "Python (NumPy, Pandas, OpenCV, PyTorch, TensorFlow, ROS/ROS2, OpenMDAO)", years: 5},
@@ -31,6 +21,16 @@ const SKILLS = [
             {name: "VHDL", years: 5},
         ]
     },
+    { 
+        category: "Design & Manufacturing", 
+        contents: [
+            {name: "Altium Designer (PCB)", years: 5},
+            {name: "SolidWorks (CAD,FEA)", years: 5},
+            {name: "Fusion 360 (CAD/CAM)", years: 5},
+            {name: "Machine Shop Equipment (Lathes, Mills, CNC, Welding)", years: 5},
+            {name: "Rapid Prototyping", years: 5},
+        ]
+    }, 
     { 
         category: "Experimentation", 
         contents: [
