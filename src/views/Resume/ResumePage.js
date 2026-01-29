@@ -23,6 +23,7 @@ const SKILLS = [
             {name: "Python (NumPy, Pandas, OpenCV, PyTorch, TensorFlow, ROS/ROS2, OpenMDAO)", years: 5},
             {name: "C/C++", years: 5},
             {name: "C# (Unity)", years: 5},
+            {name: "High-Performance Computing (HPC)", years: 5},
             {name: "JavaScript (React.js, MongoDB, Express.js, Node.js)", years: 5},
             {name: "MATLAB", years: 5},
             {name: "Simulink", years: 5},

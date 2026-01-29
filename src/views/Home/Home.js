@@ -19,6 +19,7 @@ const SKILLS_DATA = [
     {"name": "Simulink", "proficiency": 4},
     {"name": "Java", "proficiency": 3},
     {"name": "JavaScript", "proficiency": 5},
+    {"name": "High-Performance Computing", "proficiency": 3},
     {"name": "VBA", "proficiency": 3},
     {"name": "LabVIEW", "proficiency": 2},
     {"name": "VHDL", "proficiency": 2},
@@ -40,9 +41,9 @@ const SKILLS_DATA = [
     {"name": "SPSS", "proficiency": 3},
     {"name": "Unity", "proficiency": 4},
     {"name": "Vicon", "proficiency": 2},
-    {"name": "manual machining", "proficiency": 4},
+    {"name": "Manual Machining", "proficiency": 4},
     {"name": "CNC", "proficiency": 3},
-    {"name": "3D printing", "proficiency": 5},
+    {"name": "3D Printing", "proficiency": 5},
 ]
 
 const colorPallete = ["#1ecbe1", "#e0e300", "#1ee196", "#ff598f", "#d300dd"];
