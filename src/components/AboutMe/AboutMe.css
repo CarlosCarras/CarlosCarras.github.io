@@ -19,16 +19,17 @@
     width: 60%;
 }
 
-.aboutme-container .aboutme-col.text p span {
+.aboutme-container .aboutme-col.text span {
     font-weight: 600;
     color: var(--accent-color-2);
 }
 
 .aboutme-container .aboutme-col.picture img {
-    width: calc(10*(12.5px + 0.5vw));
+    /* width: calc(10*(12.5px + 0.5vw)); */
+    width: calc(10*(20px + 0.5vw));
     border-radius: 100%;
     user-select: none;
-    margin: 0em 50px;
+    margin: 0 25px;
     /* border: 2px solid black; */
 }
 

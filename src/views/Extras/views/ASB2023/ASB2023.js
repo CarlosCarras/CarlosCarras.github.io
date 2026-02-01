@@ -57,7 +57,9 @@ function ASB2023() {
                     </div>
                 </div>
                 
-                <Button name="View Poster"/>
+                <div className='button-group-container'>
+                    <Button name="View Poster"/>
+                </div>
 
                 <div className="asb-logo-container">
                     <img src={ASBLOGO} alt='ASB Logo'/>

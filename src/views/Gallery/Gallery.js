@@ -4,8 +4,8 @@ import "./Gallery.css"
 
 const IMAGE_DATA = [
         {   
-            name: "Longboard", 
-            caption: "My favorite way to get around 🛹", 
+            name: "Longboard 🛹", 
+            caption: "Has survived 10 years of daily use.", 
             link: "",
             src: require('./../../assets/gallery/longboard.jpg')
         },
@@ -131,7 +131,7 @@ const IMAGE_DATA = [
         },
         {   
             name: "NASA JPL", 
-            caption: "One of my favorite places in the world. Shoutout to Marilyn for the tour!", 
+            caption: "One of my favorite places in the world.", 
             link: "",
             src: require('./../../assets/gallery/jpl.JPG')
         },
@@ -142,8 +142,8 @@ const IMAGE_DATA = [
             src: require('./../../assets/gallery/swamp.PNG')
         },
         {   
-            name: "Mi Familia", 
-            caption: "during Christmas @ Tampa", 
+            name: "Ny Family", 
+            caption: "Christmas in Tampa 🎅", 
             link: "",
             src: require('./../../assets/gallery/family.jpg')
         },
@@ -178,7 +178,7 @@ const IMAGE_DATA = [
             src: require('./../../assets/gallery/marilyn.JPG')
         },
         {   
-            name: "Garita", 
+            name: "Garita 🇵🇷", 
             caption: "One of my island's most recognizable symbols.", 
             link: "",
             src: require('./../../assets/gallery/garita.jpg')
@@ -200,6 +200,42 @@ const IMAGE_DATA = [
             caption: "Shark nursery @ Davie Crocker Reef, Key Largo. Dive buddy:  Ilias. Instructor: Ben Perry @ Peachy Diving. Image Credit: Shuhan", 
             link: "",
             src: require('./../../assets/gallery/diving_nursesharks.JPG')
+        },
+        {   
+            name: "ICRA 2025", 
+            caption: "with EPIC Lab.", 
+            link: "",
+            src: require('./../../assets/gallery/icra_2025.png')
+        },
+        {   
+            name: "World Haptics 2025 🇰🇷", 
+            caption: "Research talk in Suwon, Korea.", 
+            link: "",
+            src: require('./../../assets/gallery/worldhaptics_2025.png')
+        },
+        {   
+            name: "Glacier Viewing in Alaska", 
+            caption: "with Mari.", 
+            link: "",
+            src: require('./../../assets/gallery/flight_w_mari.png')
+        },
+        {   
+            name: "Goat Yoga 🐐", 
+            caption: "at Georgia Tech.", 
+            link: "",
+            src: require('./../../assets/gallery/goat_yoga.png')
+        },
+        {   
+            name: "2-DoF Hip Exoskeleton Navigation Study", 
+            caption: "exo originally designed by Jennifer Leestma.", 
+            link: "",
+            src: require('./../../assets/gallery/2dof_exo.png')
+        },
+        {   
+            name: "Ángel Cabrera's Visit", 
+            caption: "Georgia Tech's president came to visit EPIC Lab. Featuring Aaron, Ethan, and Matt.", 
+            link: "",
+            src: require('./../../assets/gallery/gt_president_visit.png')
         },
 ]
 

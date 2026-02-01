@@ -10,15 +10,6 @@
     align-items: center;
 }
 
-.resume-view-container .resume-button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1em 3em;
-    gap: 50px;
-}
-
 .resume-view-container .resume-page {
     opacity: 1;
     animation: slideup 2s forwards;

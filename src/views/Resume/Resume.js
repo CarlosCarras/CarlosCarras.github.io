@@ -10,9 +10,10 @@ const RESUME = require('./../../assets/resume.pdf'),
 function Resume() {
     return (
         <div className="resume-view-container">
-            <div className='resume-button-container'>
+            <div className='button-group-container'>
                 <Button name="Download Resume" href={RESUME} newtab={true}/>
                 <Button name="Download CV" href={CV} newtab={true}/>
+                <Button name="View Research" href={"/research"} newtab={false}/>
                 <Button name="View Coursework" href={"/coursework"} newtab={false}/>
             </div>
             <ResumePage/>

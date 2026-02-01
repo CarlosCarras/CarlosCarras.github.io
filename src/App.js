@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Home from './views/Home/Home';
 import Resume from './views/Resume/Resume';
+import Research from './views/Research/Research'
 import Footer from './components/Footer/Footer';
 import NotFound from './views/NotFound/NotFound';
 import Gallery from './views/Gallery/Gallery';
@@ -45,6 +46,7 @@ function App() {
                 <Routes>
                     <Route exact path="/" element={<Home darkmode={isDarkMode}/>} />   
                     <Route exact path="/resume" element={<Resume/>} />  
+                    <Route exact path="/research" element={<Research/>} />  
                     <Route exact path="/projects" element={<Projects/>} />  
                     <Route exact path="/coursework" element={<Coursework/>} /> 
                     <Route exact path="/contact" element={<Contact/>} /> 

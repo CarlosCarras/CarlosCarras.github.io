@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css"
 
+import Button from "./../../components/Button/Button"
 import ThumbnailList from "./../../components/ThumbnailList/ThumbnailList";
 import RobotArm from "./../../components/RobotArm/RobotArm";
 
@@ -53,11 +54,18 @@ function Projects() {
 
     return (
         <div className="projects-container">
-            <div className="project-thumbnail-container">
-                <ThumbnailList data={projectData}/>
+            <div className="row">
+                <div className='button-group-container'>
+                    <Button name="View Research" href={"/research"} newtab={false}/>
+                </div>
             </div>
-            <div className="robot-container">
-                <RobotArm/>
+            <div className="row">
+                <div className="project-thumbnail-container">
+                    <ThumbnailList data={projectData}/>
+                </div>
+                <div className="robot-container">
+                    <RobotArm/>
+                </div>
             </div>
         </div>
     )
