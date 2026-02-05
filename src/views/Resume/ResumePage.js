@@ -174,24 +174,30 @@ function ResumeContent() {
                         </div>
                         <ul className="resume-list">
                             <li>
-                                Applied deep learning techniques (TCNs, VAEs, CNNs, GANs, Transformers, PPO) to estimate human motion, biological
-                                moments, and other physiological states.
+                                Designed and implemented real-time closed-loop control systems for highly non-linear, multi-DOF wearable robotic platforms for
+                                unstructured and dynamic activities while enforcing strict safety constraints.
                             </li>
                             <li>
-                                Developed and validated novel exoskeleton controllers, including impedance-based, primitive-based, uncertainty-aware, and end-to-end
-                                biological torque controllers.                           
+                                Developed model-based and data-driven exoskeleton controllers, including impedance, adaptive, and end-to-end torque controllers, and
+                                validated on hardware in 200+ human-in-the-loop experiments.                       
                             </li>
                             <li>
-                                Designed mechatronics components, including PCBs, sensor drivers, and orthoses components for several exoskeletons.
+                                Performed state estimation using extended Kalman filters to infer latent system states from noisy, partially observed sensor data.
+                            </li>
+                            <li>
+                                Conducted trajectory planning for both human locomotion and 6-DOF aircraft models.
+                            </li>
+                            <li>
+                                Deployed deep learning-based models (TCNs, VAEs, CNNs, Transformers, PPO) for state estimation into exoskeleton control stacks.
+                            </li>
+                            <li>
+                                Designed and implemented mechatronic hardware, including custom PCBs, sensors, and actuators, and validated in hardware tests.
                             </li>
                             <li>
                                 Built real-time exoskeleton software, including multiprocessing controller frameworks, communication packages, and GUIs.
                             </li>
                             <li>
-                                Created AR/VR games in Unity to provide real-time biofeedback and simulate unstructured environments for human studies.
-                            </li>
-                            <li>
-                                Conducted human-subject experiments using EMG, motion capture, metabolic systems, and AR/VR headsets.
+                                Developed AR/VR games in Unity and conducted human-subject studies with real-time biofeedback using EMG and motion capture.
                             </li>
                         </ul>
                     </div>
@@ -207,13 +213,13 @@ function ResumeContent() {
                         </div>
                         <ul className="resume-list">
                             <li>
-                                Developed a MERN stack web application that streamlined component discovery on printed circuit boards for engineers.
+                                Developed a web application that streamlined component discovery on printed circuit boards for engineers.
                             </li>
                             <li>
-                                Designed and deployed five process programs and Splunk dashboards to monitor and optimize production-grade machinery.
+                                Designed and deployed assembly line programs and dashboards to monitor and optimize production-grade machinery.
                             </li>
                             <li>
-                                Automated a manual material testing process by building a VBA-based application, improving data logging and tracking efficiency.
+                                Automated a manual material testing process by building a desktop application, improving data logging and tracking efficiency.
                             </li>
                         </ul>
                     </div>
@@ -233,10 +239,9 @@ function ResumeContent() {
                         <ul className="resume-list">
                             <li>
                                 Developed embedded C++ avionics software for the D3 CubeSat, creating custom libraries to interface with the satellite's IMU, antenna,
-                                radio, and GPS on a BeagleBone Black microcomputer.                            </li>
+                                radio, and GPS on an Ubuntu microcomputer. Developed a Python-based ground station application to manage satellite communications.                          </li>
                             <li>
-                                Developed a Python-based ground station application to manage satellite mission operations, enabling reliable telecommand transmission
-                                and downlink data acquisition.
+                                Designed satellite circuit boards and CNC-machined parts for custom actuators.
                             </li>
                         </ul>
                     </div>
