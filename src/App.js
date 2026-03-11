@@ -24,6 +24,7 @@ import Swamphacks from './views/Projects/ProjectEntries/Swamphacks';
 import MoutingBracket from './views/Projects/ProjectEntries/MountingBracket';
 import Bioprinter from './views/Projects/ProjectEntries/Bioprinter';
 import PumpController from './views/Projects/ProjectEntries/PumpController';
+import SpaceXCodingInterview from './views/Extras/views/SpaceX/SpaceXCodingInterview';
 
 function App() {
     const [isDarkMode, setDarkMode] = useState(() => {
@@ -62,6 +63,7 @@ function App() {
                     <Route exact path={MoutingBracket.href} element={<ProjectEntryTemplate data={MoutingBracket}/>}/>  
                     <Route exact path={Bioprinter.href} element={<ProjectEntryTemplate data={Bioprinter}/>}/>  
                     <Route exact path={PumpController.href} element={<ProjectEntryTemplate data={PumpController}/>}/>
+                    <Route exact path="spacex" element={<SpaceXCodingInterview/>}/>
                     {/* Add other routes here */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
