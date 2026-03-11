@@ -159,6 +159,9 @@ export function handleTab(entry, cursorPosition) {
 
     /* identifying the possible replacements */
     let possibilities = Object.keys(directory);
+    if (directory === DIRECTORY_STRUCTURE) {
+        possibilities.push("github");
+    }
     let suggestions = [];
     
     for (let i=0; i < possibilities.length; i++) {
@@ -278,10 +281,16 @@ function _cd(args, sudo) {
     }
     if (args.length > 0) {
         args = args[0].toLowerCase()
-        args = (args.slice(0,2) === "./") ? args.slice(2) : args
+        args = (args.slice(0,2) === "./") ? args.slice(2) : args;
+        args = args.endsWith("/") ? args.slice(0, -1) : args;
         
         if (args === "home") {
             args = "";
+        }
+
+        if (args === "github") {
+            window.location.href = "https://github.com/CarlosCarras"; 
+            return;
         }
     }
 
