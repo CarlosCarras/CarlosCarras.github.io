@@ -18,8 +18,7 @@ const DIRECTORY_STRUCTURE = {
     "projects": {"pump-controller": {}, "max": {}, "bioprinter": {}, "rtrescue": {}, "bracket": {}, "custom-pc": {}},
     "contact": {},
     "gallery": {},
-    "extras": {"ndseg2024": {}, "cs8750": {}, "gtaudition": {}, "asb2023": {}},
-    "spacex": {}
+    "extras": {"ndseg2024": {}, "cs8750": {}, "gtaudition": {}, "asb2023": {}}
 }
 
 let ALIASES = []
