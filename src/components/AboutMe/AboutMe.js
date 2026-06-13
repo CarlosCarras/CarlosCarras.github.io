@@ -21,10 +21,10 @@ function AboutMe() {
                     <li><span>experimentation</span>: fully autonomous, human-in-the-loop</li>
                 </ul>
                 <p>
-                    I am currently working on the control of <a href='/research'>active wearable exoskeletons</a> to improve human safety and performance outcomes.
+                    My PhD research tackles the control of <a href='/research'>active wearable exoskeletons</a> to improve human safety and performance outcomes. Several manuscripts are still under review.
                 </p>
                 <p>
-                    Feel free to <a href='/contact'>reach out</a> if you have any questions, or even if you just want to chat!
+                    Please <a href='/contact'>reach out</a> if you have any questions!
                 </p>
             </div>
             <div className="aboutme-col picture">

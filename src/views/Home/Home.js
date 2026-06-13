@@ -161,10 +161,12 @@ function Home(props) {
                              onClick={handleShuttleClick}/>
                     </div>
                     <div className="subtitle-container">
-                        <span> Robotics PhD Candidate @ Georgia Tech </span>
+                        <span> SpaceX Automation & Controls Engineer </span>
                         <br/>
-                        <span> Private Pilot @ Skybound Aviation </span>
+                        <span> Private Pilot </span>
                         <br/>
+                        <br/>
+                        <span> PhD, Robotics @ GT</span> <span className="grad-year">2026</span>
                         <br/>
                         <span> MS, Computer Science @ GT</span> <span className="grad-year">2025</span>
                         <br/>

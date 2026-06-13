@@ -102,13 +102,13 @@ function ResumeContent() {
                                 Georgia Institute of Technology
                                 <span> &nbsp;&nbsp;|&nbsp; GPA: 3.9/4.0 </span>
                             </div>
-                            <div>Aug 2021 - Present</div>
+                            <div>Aug 2021 - Jun 2026</div>
                         </div>
                         <ul className="resume-list">
                             <li>
                                 <div className="li-content">
-                                    <div>PhD Candidate, <em>Robotics</em></div>
-                                    <div>Expected May 2026</div>
+                                    <div>PhD, <em>Robotics</em></div>
+                                    <div>Jun 2026</div>
                                 </div>
                             </li>
                             <li>
@@ -167,7 +167,7 @@ function ResumeContent() {
                                 Graduate Research Assistant
                                 <span> &nbsp;&nbsp;|&nbsp; Georgia Institute of Technology, IRIM </span>
                             </div>
-                            <div> August 2021 - Present </div>
+                            <div> Aug 2021 - June 2026 </div>
                         </div>
                         <div className='resume-entry-supplement'>
                             <span className="resume-bolded">Advisors:</span> Anirban Mazumdar, PhD; Aaron Young, PhD
@@ -287,7 +287,7 @@ function ResumeContent() {
                         <div>
                         Georgia Space Grant Consortium Fellow
                         </div>
-                        <span className="resume-date">Aug 2025 – Current</span>
+                        <span className="resume-date">Aug 2025 – May 2026</span>
                     </div>
 
                     {/* Grad REACH */}
@@ -295,7 +295,7 @@ function ResumeContent() {
                         <div>
                         Grad REACH Fellow and Mentor
                         </div>
-                        <span className="resume-date">Aug 2024 – Current</span>
+                        <span className="resume-date">Aug 2024 – May 2026</span>
                     </div>
 
                     {/* NDSEG */}
